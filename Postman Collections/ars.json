@@ -1191,7 +1191,37 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "{{management_domain}}/api/management/routing-status/{{mnemonic}}"
+								"url": {
+									"raw": "{{management_domain}}/api/management/routing-status/:mnemonic",
+									"host": [
+										"{{management_domain}}"
+									],
+									"path": [
+										"api",
+										"management",
+										"routing-status",
+										":mnemonic"
+									],
+									"variable": [
+										{
+											"key": "mnemonic",
+											"value": ""
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "All Signal RoutingStatus",
+							"id": "83012bba-b157-43c5-b3b4-b0f9bc5a234b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{management_domain}}/api/management/routing-status"
 							},
 							"response": []
 						},
