@@ -918,7 +918,7 @@
 							]
 						},
 						{
-							"name": "Get Ence Status Copy",
+							"name": "All Ences Status",
 							"id": "5b22ac93-3ec3-4210-ad45-be2b325d0f24",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -926,27 +926,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": {
-									"raw": "{{management_domain}}/api/management/routing-status/ence-restriction/:ence",
-									"host": [
-										"{{management_domain}}"
-									],
-									"path": [
-										"api",
-										"management",
-										"routing-status",
-										"ence-restriction",
-										":ence"
-									],
-									"variable": [
-										{
-											"id": "1f1fa6da-0fb2-4f77-a53f-64812bee1c45",
-											"key": "ence",
-											"value": "EN.IE-IL1",
-											"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
-										}
-									]
-								}
+								"url": "{{management_domain}}/api/management/routing-status/ence-restriction"
 							},
 							"response": [
 								{
