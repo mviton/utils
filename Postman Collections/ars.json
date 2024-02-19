@@ -1234,7 +1234,25 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "{{management_domain}}/api/management/routing-status/signal"
+								"url": {
+									"raw": "{{management_domain}}/api/management/routing-status/signal/:mnemonic",
+									"host": [
+										"{{management_domain}}"
+									],
+									"path": [
+										"api",
+										"management",
+										"routing-status",
+										"signal",
+										":mnemonic"
+									],
+									"variable": [
+										{
+											"key": "mnemonic",
+											"value": "SE.IE-MHEN-KLCAN-SL715"
+										}
+									]
+								}
 							},
 							"response": []
 						},
