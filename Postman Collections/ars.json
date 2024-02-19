@@ -1536,6 +1536,38 @@
 					"name": "ScheduledCommands",
 					"item": [
 						{
+							"name": "internal",
+							"item": [
+								{
+									"name": "CommandsARS",
+									"id": "833c8832-43eb-40b1-8453-f8258fd06e44",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": "{{management_domain}}/api/management/scheduled-commands/all-commands-ars"
+									},
+									"response": []
+								},
+								{
+									"name": "CommandARS Detail",
+									"id": "687fe3a9-d7e0-401f-afcd-60f151c7b1d7",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": "{{management_domain}}/api/management/scheduled-commands/commands-ars/gg"
+									},
+									"response": []
+								}
+							],
+							"id": "cb24aeb1-d2e7-4b7c-a1fc-f03872eb0785"
+						},
+						{
 							"name": "ScheduledCommand (ctc)",
 							"id": "ba49b8b5-8bc4-48c6-985f-deb15a7cbad2",
 							"protocolProfileBehavior": {
@@ -1545,32 +1577,6 @@
 								"method": "GET",
 								"header": [],
 								"url": "{{management_domain}}/api/management/scheduled-commands"
-							},
-							"response": []
-						},
-						{
-							"name": "CommandsARS",
-							"id": "833c8832-43eb-40b1-8453-f8258fd06e44",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": "{{management_domain}}/api/management/scheduled-commands/all-commands-ars"
-							},
-							"response": []
-						},
-						{
-							"name": "CommandARS Detail",
-							"id": "687fe3a9-d7e0-401f-afcd-60f151c7b1d7",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": "{{management_domain}}/api/management/scheduled-commands/commands-ars/gg"
 							},
 							"response": []
 						}
