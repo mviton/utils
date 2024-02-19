@@ -603,105 +603,111 @@
 					"name": "RoutingStatus",
 					"item": [
 						{
-							"name": "Get all RoutingStatus",
-							"event": [
+							"name": "internal",
+							"item": [
 								{
-									"listen": "test",
-									"script": {
-										"id": "8c430812-0238-49c1-ab4f-8e9b007d4114",
-										"exec": [
-											"console.log(`--------- '${pm.info.requestName}' / ${pm.info.eventName} -------`);\r",
-											"\r",
-											"// Check response code\r",
-											"pm.test(\"Status code is 200\", function(){\r",
-											"   pm.response.to.have.status(200); \r",
-											"});\r",
-											"\r",
-											"var jsonData = pm.response.json();\r",
-											"\r",
-											"//console.log(`Total: ${jsonData.total} -> ${circulationData.length}`);\r",
-											"let dataVisualization = [];\r",
-											"\r",
-											"_.each(jsonData, (itemRoutingStatus) => {\r",
-											"    dataVisualization.push(\r",
-											"                {\r",
-											"                    \"mnemonic\": itemRoutingStatus.mnemonic,\r",
-											"                    \"user\": itemRoutingStatus.modifiedUser,\r",
-											"                    \"date\": itemRoutingStatus.modifiedDate,\r",
-											"                    \"status\": itemRoutingStatus.operativeStatus,\r",
-											"                    \"type\": itemRoutingStatus.elementType,\r",
-											"                }\r",
-											"    );\r",
-											"});\r",
-											"dataVisualization = _.sortBy(dataVisualization, function(item){ return item.type; });\r",
-											"\r",
-											"var template = `\r",
-											"<html>\r",
-											"    <head>    \r",
-											"    <style type=\"text/css\">\r",
-											"        table {\r",
-											"            font-size: 14px;\r",
-											"        }\r",
-											"    </style>\r",
-											"    <script type=\"text/javascript\">\r",
-											"    </script>\r",
-											"    </head>\r",
-											"    <body>    \r",
-											"    <div class=\"table-responsive\">\r",
-											"    <table class=\"table table-striped\">\r",
-											"        <caption>Routing Status: {{info.total}}</caption>\r",
-											"        <thead class=\"thead-dark\">\r",
-											"            <tr>\r",
-											"                <th>Type</th>\r",
-											"                <th>Mnemonic</th>\r",
-											"                <th>Status</th>\r",
-											"                <th>User</th>\r",
-											"                <th>Date</th>\r",
-											"            </tr>\r",
-											"        </thead>\r",
-											"        <tbody>\r",
-											"            {{#each response}}\r",
-											"                <tr>\r",
-											"                    <td>{{type}}</td>\r",
-											"                    <td>{{mnemonic}}</td>\r",
-											"                    <td>{{status}}</td>\r",
-											"                    <td>{{user}}</td>\r",
-											"                    <td>{{date}}</td>\r",
-											"                </tr>\r",
-											"                {{else}}\r",
-											"                <p>No data</p>\r",
-											"            {{/each}}\r",
-											"        </tbody>\r",
-											"    </table>\r",
-											"    </div>\r",
-											"    </body>\r",
-											"</html>\r",
-											"`;\r",
-											"\r",
-											"// Set visualizer\r",
-											"pm.visualizer.set(template, {\r",
-											"    // Pass the response body parsed as JSON as `data`\r",
-											"    // response: pm.response.json()\r",
-											"    info: {\r",
-											"        total: dataVisualization.length\r",
-											"    },\r",
-											"    response: dataVisualization\r",
-											"});"
-										],
-										"type": "text/javascript"
-									}
+									"name": "Get all RoutingStatus",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "8c430812-0238-49c1-ab4f-8e9b007d4114",
+												"exec": [
+													"console.log(`--------- '${pm.info.requestName}' / ${pm.info.eventName} -------`);\r",
+													"\r",
+													"// Check response code\r",
+													"pm.test(\"Status code is 200\", function(){\r",
+													"   pm.response.to.have.status(200); \r",
+													"});\r",
+													"\r",
+													"var jsonData = pm.response.json();\r",
+													"\r",
+													"//console.log(`Total: ${jsonData.total} -> ${circulationData.length}`);\r",
+													"let dataVisualization = [];\r",
+													"\r",
+													"_.each(jsonData, (itemRoutingStatus) => {\r",
+													"    dataVisualization.push(\r",
+													"                {\r",
+													"                    \"mnemonic\": itemRoutingStatus.mnemonic,\r",
+													"                    \"user\": itemRoutingStatus.modifiedUser,\r",
+													"                    \"date\": itemRoutingStatus.modifiedDate,\r",
+													"                    \"status\": itemRoutingStatus.operativeStatus,\r",
+													"                    \"type\": itemRoutingStatus.elementType,\r",
+													"                }\r",
+													"    );\r",
+													"});\r",
+													"dataVisualization = _.sortBy(dataVisualization, function(item){ return item.type; });\r",
+													"\r",
+													"var template = `\r",
+													"<html>\r",
+													"    <head>    \r",
+													"    <style type=\"text/css\">\r",
+													"        table {\r",
+													"            font-size: 14px;\r",
+													"        }\r",
+													"    </style>\r",
+													"    <script type=\"text/javascript\">\r",
+													"    </script>\r",
+													"    </head>\r",
+													"    <body>    \r",
+													"    <div class=\"table-responsive\">\r",
+													"    <table class=\"table table-striped\">\r",
+													"        <caption>Routing Status: {{info.total}}</caption>\r",
+													"        <thead class=\"thead-dark\">\r",
+													"            <tr>\r",
+													"                <th>Type</th>\r",
+													"                <th>Mnemonic</th>\r",
+													"                <th>Status</th>\r",
+													"                <th>User</th>\r",
+													"                <th>Date</th>\r",
+													"            </tr>\r",
+													"        </thead>\r",
+													"        <tbody>\r",
+													"            {{#each response}}\r",
+													"                <tr>\r",
+													"                    <td>{{type}}</td>\r",
+													"                    <td>{{mnemonic}}</td>\r",
+													"                    <td>{{status}}</td>\r",
+													"                    <td>{{user}}</td>\r",
+													"                    <td>{{date}}</td>\r",
+													"                </tr>\r",
+													"                {{else}}\r",
+													"                <p>No data</p>\r",
+													"            {{/each}}\r",
+													"        </tbody>\r",
+													"    </table>\r",
+													"    </div>\r",
+													"    </body>\r",
+													"</html>\r",
+													"`;\r",
+													"\r",
+													"// Set visualizer\r",
+													"pm.visualizer.set(template, {\r",
+													"    // Pass the response body parsed as JSON as `data`\r",
+													"    // response: pm.response.json()\r",
+													"    info: {\r",
+													"        total: dataVisualization.length\r",
+													"    },\r",
+													"    response: dataVisualization\r",
+													"});"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"id": "f3417dd2-2e59-4ba4-bc8a-556fd1241174",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": "{{management_domain}}/api/management/routing-status"
+									},
+									"response": []
 								}
 							],
-							"id": "f3417dd2-2e59-4ba4-bc8a-556fd1241174",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": "{{management_domain}}/api/management/routing-status"
-							},
-							"response": []
+							"id": "29f4e80b-0ddc-4572-a602-fd2f022be6b4"
 						},
 						{
 							"name": "Get Global Status",
@@ -878,6 +884,106 @@
 								},
 								{
 									"id": "01534a66-96d4-4aa7-9be7-8bfbd3af3684",
+									"name": "IL2 (MHEN)",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{management_domain}}/api/management/routing-status/ence-restriction/:ence",
+											"host": [
+												"{{management_domain}}"
+											],
+											"path": [
+												"api",
+												"management",
+												"routing-status",
+												"ence-restriction",
+												":ence"
+											],
+											"variable": [
+												{
+													"key": "ence",
+													"value": "EN.IE-IL2",
+													"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "Get Ence Status Copy",
+							"id": "5b22ac93-3ec3-4210-ad45-be2b325d0f24",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{management_domain}}/api/management/routing-status/ence-restriction/:ence",
+									"host": [
+										"{{management_domain}}"
+									],
+									"path": [
+										"api",
+										"management",
+										"routing-status",
+										"ence-restriction",
+										":ence"
+									],
+									"variable": [
+										{
+											"id": "1f1fa6da-0fb2-4f77-a53f-64812bee1c45",
+											"key": "ence",
+											"value": "EN.IE-IL1",
+											"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "c67bdbb4-9edf-42ae-8d17-586ae6f9ae59",
+									"name": "IL1 (LDSO)",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{management_domain}}/api/management/routing-status/ence-restriction/:ence",
+											"host": [
+												"{{management_domain}}"
+											],
+											"path": [
+												"api",
+												"management",
+												"routing-status",
+												"ence-restriction",
+												":ence"
+											],
+											"variable": [
+												{
+													"key": "ence",
+													"value": "EN.IE-IL1",
+													"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": null
+								},
+								{
+									"id": "e66ba1e1-68f1-4cca-b068-f5f2e7745823",
 									"name": "IL2 (MHEN)",
 									"originalRequest": {
 										"method": "GET",
