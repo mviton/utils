@@ -1540,30 +1540,186 @@
 								"method": "POST",
 								"header": [],
 								"url": {
-									"raw": "{{management_domain}}/api/authorization/ence?ixl=EN.IE-IL2&mode=SEMIAUTOMATIC",
+									"raw": "{{management_domain}}/api/authorization/ixl/:ixl?authState=SEMIAUTOMATIC",
 									"host": [
 										"{{management_domain}}"
 									],
 									"path": [
 										"api",
 										"authorization",
-										"ence"
+										"ixl",
+										":ixl"
 									],
 									"query": [
 										{
-											"key": "ixl",
-											"value": "EN.IE-IL2",
-											"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
-										},
-										{
-											"key": "mode",
+											"key": "authState",
 											"value": "SEMIAUTOMATIC",
-											"description": "AUTOMATIC / SEMIAUTOMATIC [CONFIRMED_SEMIAUTOMATIC]"
+											"description": "AUTOMATIC / SEMIAUTOMATIC"
+										}
+									],
+									"variable": [
+										{
+											"key": "ixl",
+											"value": "EN.IE-IL1",
+											"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
 										}
 									]
 								}
 							},
-							"response": []
+							"response": [
+								{
+									"id": "f56e074c-079f-46e4-8b92-a059072fa657",
+									"name": "IL1 - LDSO Automatic",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{management_domain}}/api/authorization/ixl/:ixl?authState=AUTOMATIC",
+											"host": [
+												"{{management_domain}}"
+											],
+											"path": [
+												"api",
+												"authorization",
+												"ixl",
+												":ixl"
+											],
+											"query": [
+												{
+													"key": "authState",
+													"value": "AUTOMATIC"
+												}
+											],
+											"variable": [
+												{
+													"key": "ixl",
+													"value": "EN.IE-IL1",
+													"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": null
+								},
+								{
+									"id": "bbf85a9c-ec20-4e36-88fa-e1b3972ef988",
+									"name": "IL1 - LDSO SemiAutomatic",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{management_domain}}/api/authorization/ixl/:ixl?authState=SEMIAUTOMATIC",
+											"host": [
+												"{{management_domain}}"
+											],
+											"path": [
+												"api",
+												"authorization",
+												"ixl",
+												":ixl"
+											],
+											"query": [
+												{
+													"key": "authState",
+													"value": "SEMIAUTOMATIC"
+												}
+											],
+											"variable": [
+												{
+													"key": "ixl",
+													"value": "EN.IE-IL1",
+													"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": null
+								},
+								{
+									"id": "1a23895a-e131-4334-83f8-fa9d81df667c",
+									"name": "IL2 - MHEN Automatic",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{management_domain}}/api/authorization/ixl/:ixl?authState=AUTOMATIC",
+											"host": [
+												"{{management_domain}}"
+											],
+											"path": [
+												"api",
+												"authorization",
+												"ixl",
+												":ixl"
+											],
+											"query": [
+												{
+													"key": "authState",
+													"value": "AUTOMATIC"
+												}
+											],
+											"variable": [
+												{
+													"key": "ixl",
+													"value": "EN.IE-IL2",
+													"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": null
+								},
+								{
+									"id": "047d2628-d8d3-41b8-a23c-8c0641e63ab3",
+									"name": "IL2 - MHEN SemiAutomatic",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{management_domain}}/api/authorization/ixl/:ixl?authState=SEMIAUTOMATIC",
+											"host": [
+												"{{management_domain}}"
+											],
+											"path": [
+												"api",
+												"authorization",
+												"ixl",
+												":ixl"
+											],
+											"query": [
+												{
+													"key": "authState",
+													"value": "SEMIAUTOMATIC"
+												}
+											],
+											"variable": [
+												{
+													"key": "ixl",
+													"value": "EN.IE-IL2",
+													"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": null
+								}
+							]
 						}
 					],
 					"id": "9b12630c-c6f9-4501-b2a7-c786b13237a2",
