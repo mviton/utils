@@ -1213,19 +1213,6 @@
 							]
 						},
 						{
-							"name": "All Signal RoutingStatus",
-							"id": "83012bba-b157-43c5-b3b4-b0f9bc5a234b",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": "{{management_domain}}/api/management/routing-status/signal"
-							},
-							"response": []
-						},
-						{
 							"name": "Get Signal RoutingStatus",
 							"id": "4e52030d-1162-4348-b703-c3a3d0240dc0",
 							"protocolProfileBehavior": {
@@ -1253,6 +1240,19 @@
 										}
 									]
 								}
+							},
+							"response": []
+						},
+						{
+							"name": "All Signal RoutingStatus",
+							"id": "83012bba-b157-43c5-b3b4-b0f9bc5a234b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{management_domain}}/api/management/routing-status/signal"
 							},
 							"response": []
 						},
@@ -1368,236 +1368,26 @@
 					"id": "1c5b03f1-6361-4839-8346-148d62eab1e0"
 				},
 				{
-					"name": "CirculationsStatus",
-					"item": [
-						{
-							"name": "Get all CirculationStatus",
-							"id": "941fe07f-bb33-4a9b-8c7a-3a748ce4c3f5",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": "{{management_domain}}/api/management/routing-circulation"
-							},
-							"response": []
-						},
-						{
-							"name": "CirculationStatus",
-							"id": "ad6aadc4-681b-4052-af3b-28b3c3422b03",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{management_domain}}/api/management/routing-circulation/originNumber?originNumber=0001",
-									"host": [
-										"{{management_domain}}"
-									],
-									"path": [
-										"api",
-										"management",
-										"routing-circulation",
-										"originNumber"
-									],
-									"query": [
-										{
-											"key": "originNumber",
-											"value": "0001",
-											"type": "text"
-										}
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Set CirculationStatus",
-							"id": "884998f0-29f9-4423-919f-bd08433e1761",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"circulation\": {\r\n        \"id\": \"15aeb552-039c-4424-8d05-1c97a3ff13bc\"\r\n    },\r\n    \"properties\":{\r\n        \"ARS_STATUS\": \"SELECTED_SIGNAL_NO\",\r\n        \"EXCLUDED_SIGNAL_ID\": \"SE.IE-LDSO-CKOSH-SL811\"\r\n    }\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": "{{management_domain}}/api/management/routing-circulation/modify"
-							},
-							"response": [
-								{
-									"id": "684ffd87-09be-42fb-a2d9-a20c14f005a5",
-									"name": "DisableForSignal",
-									"originalRequest": {
-										"method": "POST",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "{\r\n    \"circulation\": {\r\n        \"id\": \"{{circulationUUID}}\"\r\n    },\r\n    \"properties\":{\r\n        \"ARS_STATUS\": \"SELECTED_SIGNAL_NO\",\r\n        \"EXCLUDED_SIGNAL_ID\": \"SE.IE-MHEN-KLCAN-SL722\"\r\n    }\r\n}",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": "{{management_domain}}/api/management/routing-circulation/modify"
-									},
-									"_postman_previewlanguage": null,
-									"header": null,
-									"cookie": [],
-									"responseTime": null,
-									"body": null
-								},
-								{
-									"id": "41bd879a-1d60-43e1-a079-f2e75081c163",
-									"name": "Enable",
-									"originalRequest": {
-										"method": "POST",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "{\r\n    \"circulation\": {\r\n        \"id\": \"{{circulationUUID}}\"\r\n    },\r\n    \"properties\":{\r\n        \"ARS_STATUS\": \"ENABLE\",\r\n        \"EXCLUDED_SIGNAL_ID\": null\r\n    }\r\n}",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": "{{management_domain}}/api/management/routing-circulation/modify"
-									},
-									"_postman_previewlanguage": null,
-									"header": null,
-									"cookie": [],
-									"responseTime": null,
-									"body": null
-								},
-								{
-									"id": "d0124a71-bc23-44d4-841c-df07315cf296",
-									"name": "OnlyNextSignal",
-									"originalRequest": {
-										"method": "POST",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "{\r\n    \"circulation\": {\r\n        \"id\": \"{{circulationUUID}}\"\r\n    },\r\n    \"properties\":{\r\n        \"ARS_STATUS\": \"ONLY_NEXT_SIGNAL\",\r\n        \"EXCLUDED_SIGNAL_ID\": null\r\n    }\r\n}",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": "{{management_domain}}/api/management/routing-circulation/modify"
-									},
-									"_postman_previewlanguage": null,
-									"header": null,
-									"cookie": [],
-									"responseTime": null,
-									"body": null
-								},
-								{
-									"id": "38751575-0bcf-463a-81b8-a72819ae3aad",
-									"name": "Disable",
-									"originalRequest": {
-										"method": "POST",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "{\r\n    \"circulation\": {\r\n        \"id\": \"{{circulationUUID}}\"\r\n    },\r\n    \"properties\":{\r\n        \"ARS_STATUS\": \"DISABLE\",\r\n        \"EXCLUDED_SIGNAL_ID\": null\r\n    }\r\n}",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": "{{management_domain}}/api/management/routing-circulation/modify"
-									},
-									"_postman_previewlanguage": null,
-									"header": null,
-									"cookie": [],
-									"responseTime": null,
-									"body": null
-								}
-							]
-						}
-					],
-					"id": "4cfbb16c-8846-458d-ab61-190fc5a4231e"
-				},
-				{
-					"name": "ScheduledCommands",
+					"name": "Authorization",
 					"item": [
 						{
 							"name": "internal",
 							"item": [
 								{
-									"name": "CommandsARS",
-									"id": "833c8832-43eb-40b1-8453-f8258fd06e44",
+									"name": "AuthorizationMode [ALL]",
+									"id": "09d8cd53-59f0-49ae-b44e-a56160d9723e",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
 									"request": {
 										"method": "GET",
 										"header": [],
-										"url": "{{management_domain}}/api/management/scheduled-commands/all-commands-ars"
-									},
-									"response": []
-								},
-								{
-									"name": "CommandARS Detail",
-									"id": "687fe3a9-d7e0-401f-afcd-60f151c7b1d7",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "GET",
-										"header": [],
-										"url": "{{management_domain}}/api/management/scheduled-commands/commands-ars/gg"
+										"url": "{{management_domain}}/api/authorization/signalAuthorization"
 									},
 									"response": []
 								}
 							],
-							"id": "cb24aeb1-d2e7-4b7c-a1fc-f03872eb0785"
-						},
-						{
-							"name": "ScheduledCommand (ctc)",
-							"id": "ba49b8b5-8bc4-48c6-985f-deb15a7cbad2",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": "{{management_domain}}/api/management/scheduled-commands"
-							},
-							"response": []
-						}
-					],
-					"id": "30d7e970-6cde-493d-b142-a516c6b8e29d"
-				},
-				{
-					"name": "Authorization",
-					"item": [
-						{
-							"name": "Authorization Signal [ALL]",
-							"id": "1afdedc8-e761-46e1-bcbc-332c8cafadf3",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": "{{management_domain}}/api/authorization/signal"
-							},
-							"response": []
+							"id": "db0830fe-775b-407c-a9ad-1878fe6a2f68"
 						},
 						{
 							"name": "Authorization Signal",
@@ -1947,6 +1737,222 @@
 							}
 						}
 					]
+				},
+				{
+					"name": "CirculationsStatus",
+					"item": [
+						{
+							"name": "Get all CirculationStatus",
+							"id": "941fe07f-bb33-4a9b-8c7a-3a748ce4c3f5",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{management_domain}}/api/management/routing-circulation"
+							},
+							"response": []
+						},
+						{
+							"name": "CirculationStatus",
+							"id": "ad6aadc4-681b-4052-af3b-28b3c3422b03",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{management_domain}}/api/management/routing-circulation/originNumber?originNumber=0001",
+									"host": [
+										"{{management_domain}}"
+									],
+									"path": [
+										"api",
+										"management",
+										"routing-circulation",
+										"originNumber"
+									],
+									"query": [
+										{
+											"key": "originNumber",
+											"value": "0001",
+											"type": "text"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Set CirculationStatus",
+							"id": "884998f0-29f9-4423-919f-bd08433e1761",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"circulation\": {\r\n        \"id\": \"15aeb552-039c-4424-8d05-1c97a3ff13bc\"\r\n    },\r\n    \"properties\":{\r\n        \"ARS_STATUS\": \"SELECTED_SIGNAL_NO\",\r\n        \"EXCLUDED_SIGNAL_ID\": \"SE.IE-LDSO-CKOSH-SL811\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{management_domain}}/api/management/routing-circulation/modify"
+							},
+							"response": [
+								{
+									"id": "684ffd87-09be-42fb-a2d9-a20c14f005a5",
+									"name": "DisableForSignal",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"circulation\": {\r\n        \"id\": \"{{circulationUUID}}\"\r\n    },\r\n    \"properties\":{\r\n        \"ARS_STATUS\": \"SELECTED_SIGNAL_NO\",\r\n        \"EXCLUDED_SIGNAL_ID\": \"SE.IE-MHEN-KLCAN-SL722\"\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{management_domain}}/api/management/routing-circulation/modify"
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": null
+								},
+								{
+									"id": "41bd879a-1d60-43e1-a079-f2e75081c163",
+									"name": "Enable",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"circulation\": {\r\n        \"id\": \"{{circulationUUID}}\"\r\n    },\r\n    \"properties\":{\r\n        \"ARS_STATUS\": \"ENABLE\",\r\n        \"EXCLUDED_SIGNAL_ID\": null\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{management_domain}}/api/management/routing-circulation/modify"
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": null
+								},
+								{
+									"id": "d0124a71-bc23-44d4-841c-df07315cf296",
+									"name": "OnlyNextSignal",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"circulation\": {\r\n        \"id\": \"{{circulationUUID}}\"\r\n    },\r\n    \"properties\":{\r\n        \"ARS_STATUS\": \"ONLY_NEXT_SIGNAL\",\r\n        \"EXCLUDED_SIGNAL_ID\": null\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{management_domain}}/api/management/routing-circulation/modify"
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": null
+								},
+								{
+									"id": "38751575-0bcf-463a-81b8-a72819ae3aad",
+									"name": "Disable",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"circulation\": {\r\n        \"id\": \"{{circulationUUID}}\"\r\n    },\r\n    \"properties\":{\r\n        \"ARS_STATUS\": \"DISABLE\",\r\n        \"EXCLUDED_SIGNAL_ID\": null\r\n    }\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{management_domain}}/api/management/routing-circulation/modify"
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": null
+								}
+							]
+						}
+					],
+					"id": "4cfbb16c-8846-458d-ab61-190fc5a4231e"
+				},
+				{
+					"name": "ScheduledCommands",
+					"item": [
+						{
+							"name": "internal",
+							"item": [
+								{
+									"name": "CommandsARS",
+									"id": "833c8832-43eb-40b1-8453-f8258fd06e44",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": "{{management_domain}}/api/management/scheduled-commands/all-commands-ars"
+									},
+									"response": []
+								},
+								{
+									"name": "CommandARS Detail",
+									"id": "687fe3a9-d7e0-401f-afcd-60f151c7b1d7",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": "{{management_domain}}/api/management/scheduled-commands/commands-ars/gg"
+									},
+									"response": []
+								}
+							],
+							"id": "cb24aeb1-d2e7-4b7c-a1fc-f03872eb0785"
+						},
+						{
+							"name": "ScheduledCommand (ctc)",
+							"id": "ba49b8b5-8bc4-48c6-985f-deb15a7cbad2",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{management_domain}}/api/management/scheduled-commands"
+							},
+							"response": []
+						}
+					],
+					"id": "30d7e970-6cde-493d-b142-a516c6b8e29d"
 				},
 				{
 					"name": "SignalRules",
