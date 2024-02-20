@@ -1412,7 +1412,7 @@
 									"variable": [
 										{
 											"key": "mnemonic",
-											"value": "SE.IE-LDSO-BOYLE-SL821"
+											"value": "SE.IE-LDSO-SLIGO-SL828"
 										}
 									]
 								}
@@ -1429,56 +1429,58 @@
 								"method": "POST",
 								"header": [],
 								"url": {
-									"raw": "{{management_domain}}/api/authorization/signal?mnemonic=SE.IE-LDSO-SLIGO-SL828&mode=SEMIAUTOMATIC",
+									"raw": "{{management_domain}}/api/authorization/signal/:mnemonic?authState=SEMIAUTOMATIC",
 									"host": [
 										"{{management_domain}}"
 									],
 									"path": [
 										"api",
 										"authorization",
-										"signal"
+										"signal",
+										":mnemonic"
 									],
 									"query": [
 										{
-											"key": "mnemonic",
-											"value": "SE.IE-LDSO-SLIGO-SL828",
-											"description": "Signal"
-										},
+											"key": "authState",
+											"value": "SEMIAUTOMATIC"
+										}
+									],
+									"variable": [
 										{
-											"key": "mode",
-											"value": "SEMIAUTOMATIC",
-											"description": "AUTOMATIC / SEMIAUTOMATIC [CONFIRMED_SEMIAUTOMATIC]"
+											"key": "mnemonic",
+											"value": "SE.IE-LDSO-SLIGO-SL828"
 										}
 									]
 								}
 							},
 							"response": [
 								{
-									"id": "b7194325-38a9-404d-a73b-48abb96a54fa",
+									"id": "d4a2c51f-97ed-4180-b205-0d13df33f157",
 									"name": "Automatic",
 									"originalRequest": {
 										"method": "POST",
 										"header": [],
 										"url": {
-											"raw": "{{management_domain}}/api/authorization/signal?mnemonic=SE.IE-LDSO-SLIGO-SL828&mode=AUTOMATIC",
+											"raw": "{{management_domain}}/api/authorization/signal/:mnemonic?authState=AUTOMATIC",
 											"host": [
 												"{{management_domain}}"
 											],
 											"path": [
 												"api",
 												"authorization",
-												"signal"
+												"signal",
+												":mnemonic"
 											],
 											"query": [
 												{
-													"key": "mnemonic",
-													"value": "SE.IE-LDSO-SLIGO-SL828",
-													"description": "Signal"
-												},
+													"key": "authState",
+													"value": "AUTOMATIC"
+												}
+											],
+											"variable": [
 												{
-													"key": "mode",
-													"value": "AUTOMATIC",
-													"description": "AUTOMATIC / SEMIAUTOMATIC [CONFIRMED_SEMIAUTOMATIC]"
+													"key": "mnemonic",
+													"value": "SE.IE-LDSO-SLIGO-SL828"
 												}
 											]
 										}
@@ -1490,31 +1492,32 @@
 									"body": null
 								},
 								{
-									"id": "307acfd4-ce27-4cf3-8c29-e8cffc3c2f63",
-									"name": "Semi-Automatic",
+									"id": "e1d661e3-a0cd-4346-942c-0edb3cb34d73",
+									"name": "SemiAutomatic",
 									"originalRequest": {
 										"method": "POST",
 										"header": [],
 										"url": {
-											"raw": "{{management_domain}}/api/authorization/signal?mnemonic=SE.IE-LDSO-SLIGO-SL828&mode=SEMIAUTOMATIC",
+											"raw": "{{management_domain}}/api/authorization/signal/:mnemonic?authState=SEMIAUTOMATIC",
 											"host": [
 												"{{management_domain}}"
 											],
 											"path": [
 												"api",
 												"authorization",
-												"signal"
+												"signal",
+												":mnemonic"
 											],
 											"query": [
 												{
-													"key": "mnemonic",
-													"value": "SE.IE-LDSO-SLIGO-SL828",
-													"description": "Signal"
-												},
+													"key": "authState",
+													"value": "SEMIAUTOMATIC"
+												}
+											],
+											"variable": [
 												{
-													"key": "mode",
-													"value": "SEMIAUTOMATIC",
-													"description": "AUTOMATIC / SEMIAUTOMATIC [CONFIRMED_SEMIAUTOMATIC]"
+													"key": "mnemonic",
+													"value": "SE.IE-LDSO-SLIGO-SL828"
 												}
 											]
 										}
@@ -1560,152 +1563,7 @@
 									]
 								}
 							},
-							"response": [
-								{
-									"id": "82d2ebf1-0e85-4161-a449-5dc0ab6c698a",
-									"name": "Automatic MHEN",
-									"originalRequest": {
-										"method": "POST",
-										"header": [],
-										"url": {
-											"raw": "{{management_domain}}/api/authorization/ence?ixl=EN.IE-IL2&mode=AUTOMATIC",
-											"host": [
-												"{{management_domain}}"
-											],
-											"path": [
-												"api",
-												"authorization",
-												"ence"
-											],
-											"query": [
-												{
-													"key": "ixl",
-													"value": "EN.IE-IL2",
-													"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
-												},
-												{
-													"key": "mode",
-													"value": "AUTOMATIC",
-													"description": "AUTOMATIC / SEMIAUTOMATIC [CONFIRMED_SEMIAUTOMATIC]"
-												}
-											]
-										}
-									},
-									"_postman_previewlanguage": null,
-									"header": null,
-									"cookie": [],
-									"responseTime": null,
-									"body": null
-								},
-								{
-									"id": "189dbe72-12e3-48cd-b3f2-08d0c6870df6",
-									"name": "Semi-Automatic MHEN",
-									"originalRequest": {
-										"method": "POST",
-										"header": [],
-										"url": {
-											"raw": "{{management_domain}}/api/authorization/ence?ixl=EN.IE-IL2&mode=SEMIAUTOMATIC",
-											"host": [
-												"{{management_domain}}"
-											],
-											"path": [
-												"api",
-												"authorization",
-												"ence"
-											],
-											"query": [
-												{
-													"key": "ixl",
-													"value": "EN.IE-IL2",
-													"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
-												},
-												{
-													"key": "mode",
-													"value": "SEMIAUTOMATIC",
-													"description": "AUTOMATIC / SEMIAUTOMATIC [CONFIRMED_SEMIAUTOMATIC]"
-												}
-											]
-										}
-									},
-									"_postman_previewlanguage": null,
-									"header": null,
-									"cookie": [],
-									"responseTime": null,
-									"body": null
-								},
-								{
-									"id": "98760236-19ab-4f3b-9b13-57153dd8eb25",
-									"name": "Automatic LDSO",
-									"originalRequest": {
-										"method": "POST",
-										"header": [],
-										"url": {
-											"raw": "{{management_domain}}/api/authorization/ence?ixl=EN.IE-IL1&mode=AUTOMATIC",
-											"host": [
-												"{{management_domain}}"
-											],
-											"path": [
-												"api",
-												"authorization",
-												"ence"
-											],
-											"query": [
-												{
-													"key": "ixl",
-													"value": "EN.IE-IL1",
-													"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
-												},
-												{
-													"key": "mode",
-													"value": "AUTOMATIC",
-													"description": "AUTOMATIC / SEMIAUTOMATIC [CONFIRMED_SEMIAUTOMATIC]"
-												}
-											]
-										}
-									},
-									"_postman_previewlanguage": null,
-									"header": null,
-									"cookie": [],
-									"responseTime": null,
-									"body": null
-								},
-								{
-									"id": "db39a3be-e00d-4562-9e3c-ae0a19241ae7",
-									"name": "Semi-Automatic LDSO",
-									"originalRequest": {
-										"method": "POST",
-										"header": [],
-										"url": {
-											"raw": "{{management_domain}}/api/authorization/ence?ixl=EN.IE-IL1&mode=SEMIAUTOMATIC",
-											"host": [
-												"{{management_domain}}"
-											],
-											"path": [
-												"api",
-												"authorization",
-												"ence"
-											],
-											"query": [
-												{
-													"key": "ixl",
-													"value": "EN.IE-IL1",
-													"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
-												},
-												{
-													"key": "mode",
-													"value": "SEMIAUTOMATIC",
-													"description": "AUTOMATIC / SEMIAUTOMATIC [CONFIRMED_SEMIAUTOMATIC]"
-												}
-											]
-										}
-									},
-									"_postman_previewlanguage": null,
-									"header": null,
-									"cookie": [],
-									"responseTime": null,
-									"body": null
-								}
-							]
+							"response": []
 						}
 					],
 					"id": "9b12630c-c6f9-4501-b2a7-c786b13237a2",
