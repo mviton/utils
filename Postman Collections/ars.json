@@ -529,6 +529,19 @@
 							"response": []
 						},
 						{
+							"name": "Beans",
+							"id": "dc36146c-4c7c-491a-91cf-0899582c68b6",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{management_domain}}/actuator/beans"
+							},
+							"response": []
+						},
+						{
 							"name": "Caches",
 							"id": "756f1108-a91c-4a59-847f-81948d7eb14c",
 							"protocolProfileBehavior": {
