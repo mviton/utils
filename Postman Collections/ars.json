@@ -762,7 +762,7 @@
 								"method": "POST",
 								"header": [],
 								"url": {
-									"raw": "{{management_domain}}/api/management/routing-status/global-restriction?value=ENABLED",
+									"raw": "{{management_domain}}/api/management/routing-status/global-restriction?operativeState=ENABLED",
 									"host": [
 										"{{management_domain}}"
 									],
@@ -774,7 +774,7 @@
 									],
 									"query": [
 										{
-											"key": "value",
+											"key": "operativeState",
 											"value": "ENABLED",
 											"description": "ENABLED / DISABLED"
 										}
@@ -1037,7 +1037,7 @@
 								"method": "POST",
 								"header": [],
 								"url": {
-									"raw": "{{management_domain}}/api/management/routing-status/ence-restriction?operativeStatus=ENABLED&ence=EN.IE-IL2",
+									"raw": "{{management_domain}}/api/management/routing-status/ence-restriction/:ixl?operativeState=ENABLED",
 									"host": [
 										"{{management_domain}}"
 									],
@@ -1045,16 +1045,19 @@
 										"api",
 										"management",
 										"routing-status",
-										"ence-restriction"
+										"ence-restriction",
+										":ixl"
 									],
 									"query": [
 										{
-											"key": "operativeStatus",
+											"key": "operativeState",
 											"value": "ENABLED",
 											"description": "ENABLED / DISABLED"
-										},
+										}
+									],
+									"variable": [
 										{
-											"key": "ence",
+											"key": "ixl",
 											"value": "EN.IE-IL2",
 											"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
 										}
@@ -1069,7 +1072,7 @@
 										"method": "POST",
 										"header": [],
 										"url": {
-											"raw": "{{management_domain}}/api/management/routing-status/ence-restriction?operativeStatus=ENABLED&ence=EN.IE-IL2",
+											"raw": "{{management_domain}}/api/management/routing-status/ence-restriction/:ixl?operativeState=ENABLED",
 											"host": [
 												"{{management_domain}}"
 											],
@@ -1077,16 +1080,19 @@
 												"api",
 												"management",
 												"routing-status",
-												"ence-restriction"
+												"ence-restriction",
+												":ixl"
 											],
 											"query": [
 												{
-													"key": "operativeStatus",
+													"key": "operativeState",
 													"value": "ENABLED",
 													"description": "ENABLED / DISABLED"
-												},
+												}
+											],
+											"variable": [
 												{
-													"key": "ence",
+													"key": "ixl",
 													"value": "EN.IE-IL2",
 													"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
 												}
@@ -1106,7 +1112,7 @@
 										"method": "POST",
 										"header": [],
 										"url": {
-											"raw": "{{management_domain}}/api/management/routing-status/ence-restriction?operativeStatus=DISABLED&ence=EN.IE-IL2",
+											"raw": "{{management_domain}}/api/management/routing-status/ence-restriction/:ixl?operativeState=DISABLED",
 											"host": [
 												"{{management_domain}}"
 											],
@@ -1114,16 +1120,19 @@
 												"api",
 												"management",
 												"routing-status",
-												"ence-restriction"
+												"ence-restriction",
+												":ixl"
 											],
 											"query": [
 												{
-													"key": "operativeStatus",
+													"key": "operativeState",
 													"value": "DISABLED",
 													"description": "ENABLED / DISABLED"
-												},
+												}
+											],
+											"variable": [
 												{
-													"key": "ence",
+													"key": "ixl",
 													"value": "EN.IE-IL2",
 													"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
 												}
@@ -1143,7 +1152,7 @@
 										"method": "POST",
 										"header": [],
 										"url": {
-											"raw": "{{management_domain}}/api/management/routing-status/ence-restriction?operativeStatus=ENABLED&ence=EN.IE-IL1",
+											"raw": "{{management_domain}}/api/management/routing-status/ence-restriction/:ixl?operativeState=ENABLED",
 											"host": [
 												"{{management_domain}}"
 											],
@@ -1151,16 +1160,19 @@
 												"api",
 												"management",
 												"routing-status",
-												"ence-restriction"
+												"ence-restriction",
+												":ixl"
 											],
 											"query": [
 												{
-													"key": "operativeStatus",
+													"key": "operativeState",
 													"value": "ENABLED",
 													"description": "ENABLED / DISABLED"
-												},
+												}
+											],
+											"variable": [
 												{
-													"key": "ence",
+													"key": "ixl",
 													"value": "EN.IE-IL1",
 													"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
 												}
@@ -1180,7 +1192,7 @@
 										"method": "POST",
 										"header": [],
 										"url": {
-											"raw": "{{management_domain}}/api/management/routing-status/ence-restriction?operativeStatus=DISABLED&ence=EN.IE-IL1",
+											"raw": "{{management_domain}}/api/management/routing-status/ence-restriction?operativeState=DISABLED&ence=EN.IE-IL1",
 											"host": [
 												"{{management_domain}}"
 											],
@@ -1192,7 +1204,7 @@
 											],
 											"query": [
 												{
-													"key": "operativeStatus",
+													"key": "operativeState",
 													"value": "DISABLED",
 													"description": "ENABLED / DISABLED"
 												},
