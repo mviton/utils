@@ -1312,7 +1312,7 @@
 										"method": "POST",
 										"header": [],
 										"url": {
-											"raw": "{{management_domain}}/api/management/routing-status/signal?operativeStatus=ENABLED&mnemonic=SE.IE-MHEN-KLCAN-SL715",
+											"raw": "{{management_domain}}/api/management/routing-status/signal/:mnemonic?operativeState=ENABLED",
 											"host": [
 												"{{management_domain}}"
 											],
@@ -1320,14 +1320,16 @@
 												"api",
 												"management",
 												"routing-status",
-												"signal"
+												"signal",
+												":mnemonic"
 											],
 											"query": [
 												{
-													"key": "operativeStatus",
-													"value": "ENABLED",
-													"description": "ENABLED / DISABLED"
-												},
+													"key": "operativeState",
+													"value": "ENABLED"
+												}
+											],
+											"variable": [
 												{
 													"key": "mnemonic",
 													"value": "SE.IE-MHEN-KLCAN-SL715"
