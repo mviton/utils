@@ -10,6 +10,49 @@
 			"name": "GeneralUtils",
 			"item": [
 				{
+					"name": "Eulynx",
+					"item": [
+						{
+							"name": "Translate",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"id": "9cc18c7d-38c2-4486-8f2d-ea592671da4b",
+										"exec": [
+											"console.log(`--------- '${pm.info.requestName}' / ${pm.info.eventName} -------`);\r",
+											"\r",
+											"const eulynxMessage = pm.globals.get('eulynxMsg');"
+										],
+										"type": "text/javascript"
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"id": "83ace1d7-bea0-4df1-a838-2f1ad06e7a3c",
+										"exec": [
+											"console.log(`--------- '${pm.info.requestName}' / ${pm.info.eventName} -------`);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "3c1fdb30-2dd0-4603-9523-d730fb97258b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "postman-echo.com/get"
+							},
+							"response": []
+						}
+					],
+					"id": "48b42708-3aa1-4f06-886a-306006b8a070"
+				},
+				{
 					"name": "IsSignalOutput",
 					"id": "83f8c8b0-903f-4063-b32f-c10e3cfd56b4",
 					"protocolProfileBehavior": {
@@ -439,49 +482,6 @@
 				}
 			],
 			"id": "50d09995-d569-49fe-aa75-b66cc040edcc"
-		},
-		{
-			"name": "Eulynx",
-			"item": [
-				{
-					"name": "Translate",
-					"event": [
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "9cc18c7d-38c2-4486-8f2d-ea592671da4b",
-								"exec": [
-									"console.log(`--------- '${pm.info.requestName}' / ${pm.info.eventName} -------`);\r",
-									"\r",
-									"const eulynxMessage = pm.globals.get('eulynxMsg');"
-								],
-								"type": "text/javascript"
-							}
-						},
-						{
-							"listen": "test",
-							"script": {
-								"id": "83ace1d7-bea0-4df1-a838-2f1ad06e7a3c",
-								"exec": [
-									"console.log(`--------- '${pm.info.requestName}' / ${pm.info.eventName} -------`);"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "3c1fdb30-2dd0-4603-9523-d730fb97258b",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": "postman-echo.com/get"
-					},
-					"response": []
-				}
-			],
-			"id": "48b42708-3aa1-4f06-886a-306006b8a070"
 		},
 		{
 			"name": "Management",
