@@ -802,7 +802,7 @@
 										"method": "POST",
 										"header": [],
 										"url": {
-											"raw": "{{management_domain}}/api/management/routing-status/global-restriction?value=ENABLED",
+											"raw": "{{management_domain}}/api/management/routing-status/global-restriction?operativeState=ENABLED",
 											"host": [
 												"{{management_domain}}"
 											],
@@ -814,7 +814,7 @@
 											],
 											"query": [
 												{
-													"key": "value",
+													"key": "operativeState",
 													"value": "ENABLED",
 													"description": "ENABLED / DISABLED"
 												}
@@ -834,7 +834,7 @@
 										"method": "POST",
 										"header": [],
 										"url": {
-											"raw": "{{management_domain}}/api/management/routing-status/global-restriction?value=DISABLED",
+											"raw": "{{management_domain}}/api/management/routing-status/global-restriction?operativeState=DISABLED",
 											"host": [
 												"{{management_domain}}"
 											],
@@ -846,7 +846,7 @@
 											],
 											"query": [
 												{
-													"key": "value",
+													"key": "operativeState",
 													"value": "DISABLED",
 													"description": "ENABLED / DISABLED"
 												}
@@ -1447,7 +1447,7 @@
 									"variable": [
 										{
 											"key": "mnemonic",
-											"value": "SE.IE-LDSO-SLIGO-SL828"
+											"value": "SE.IE-MHEN-MLGAR-SL746"
 										}
 									]
 								}
