@@ -1241,7 +1241,7 @@
 							]
 						},
 						{
-							"name": "Get Signal RoutingStatus",
+							"name": "Signal RoutingStatus",
 							"id": "4e52030d-1162-4348-b703-c3a3d0240dc0",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
