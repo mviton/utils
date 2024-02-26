@@ -3597,11 +3597,6 @@
 			"name": "Commands",
 			"item": [
 				{
-					"name": "cache-info",
-					"item": [],
-					"id": "d6e5516b-f59d-440c-bcc2-db09e4a57bd0"
-				},
-				{
 					"name": "actuator",
 					"item": [
 						{
@@ -3897,28 +3892,6 @@
 								}
 							],
 							"id": "e12c374e-467e-4c3d-98d9-d274da331ec5"
-						},
-						{
-							"name": "Change AuthorizationMode",
-							"id": "0509d5a0-6026-4848-b85e-f4f332a6cb8c",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"mode\": \"AUTOMATIC\",\r\n    \"signal\": \"signalId1\"\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": "{{command_domain}}/internal/api/commands/authorization"
-							},
-							"response": []
 						},
 						{
 							"name": "Get Command Info cache",
@@ -4554,136 +4527,67 @@
 					"id": "fb8cd89d-1176-4d08-a212-a317d5255e05"
 				},
 				{
-					"name": "Consult",
-					"item": [
-						{
-							"name": "List Command",
-							"id": "5b95acd8-93d5-4051-9d21-94a55869b355",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": "{{command_domain}}/api/commands/list-commands"
-							},
-							"response": []
-						}
-					],
-					"id": "f587b9ec-344f-4aed-b11a-16a79d5621fd",
-					"auth": {
-						"type": "bearer",
-						"bearer": {
-							"token": "{{token}}"
-						}
+					"name": "List Command",
+					"id": "5b95acd8-93d5-4051-9d21-94a55869b355",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
 					},
-					"event": [
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "6c07b032-0672-4e2d-b3cd-115f656b3b45",
-								"type": "text/javascript",
-								"exec": [
-									""
-								]
-							}
-						},
-						{
-							"listen": "test",
-							"script": {
-								"id": "7fcc5051-364c-4b4e-8806-694b8e8b9db6",
-								"type": "text/javascript",
-								"exec": [
-									""
-								]
-							}
-						}
-					]
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{command_domain}}/api/commands/list-commands"
+					},
+					"response": []
 				},
 				{
-					"name": "SendCommand",
-					"item": [
-						{
-							"name": "Send Command",
-							"event": [
-								{
-									"listen": "prerequest",
-									"script": {
-										"id": "ed79e74a-e145-4155-9b94-804c8f1e1165",
-										"exec": [
-											"console.log(`--------- '${pm.info.requestName}' / ${pm.info.eventName} -------`);\r",
-											"\r",
-											"const moment = require('moment');\r",
-											"\r",
-											"// appDay\r",
-											"const appDayToday = moment().utc().startOf('day').unix() * 1000;\r",
-											"\r",
-											"// 10 seconds after\r",
-											"const aMomentAgo = (moment().utc().unix() - 1*10) * 1000;\r",
-											"// 50 minutos\r",
-											"const executionTime = (moment().utc().unix() + 60*50) * 1000;\r",
-											"\r",
-											"\r",
-											"pm.collectionVariables.set(\"cmdTimeExecution\", executionTime);\r",
-											"pm.collectionVariables.set(\"timeReceive\", aMomentAgo);\r",
-											"pm.collectionVariables.set(\"appDay\", appDayToday);\r",
-											""
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"id": "b5aaf000-7133-4cb7-b0d7-c9016accb7a6",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"command\": \"LDSO.ROUTE_OK SL783 SL771\",\r\n    \"circulationNumber\": \"0008\",\r\n    \"applicationDay\": {{appDay}}, \r\n    \"circulationUUID\": \"e4a225a2-65cb-490b-82ac-52440ee7e20c\",\r\n    \"signalId\": \"SE.IE-LDSO-LFORD-SL783\",\r\n    \"signalDestinationId\": \"SE.IE-MHEN-ETOWN-SL771\",\r\n    \"timeExecution\": {{cmdTimeExecution}},\r\n    \"timeReceived\": {{timeReceive}}\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": "{{command_domain}}/api/commands/send"
-							},
-							"response": []
-						}
-					],
-					"id": "5605be81-0a19-4ffe-950d-50f608d36323",
+					"name": "Send Command",
 					"event": [
 						{
 							"listen": "prerequest",
 							"script": {
-								"type": "text/javascript",
+								"id": "ed79e74a-e145-4155-9b94-804c8f1e1165",
 								"exec": [
-									"if(pm.info.requestName.startsWith('Send Command')){",
-									"    let commandVar = pm.collectionVariables.get('cmdVar');",
-									"    commandVar = +commandVar + 1;",
-									"    pm.collectionVariables.set('cmdVar', commandVar);",
-									"    ",
-									"    pm.collectionVariables.set('sendCommandId', `command_${commandVar}`);",
-									"}",
+									"console.log(`--------- '${pm.info.requestName}' / ${pm.info.eventName} -------`);\r",
+									"\r",
+									"const moment = require('moment');\r",
+									"\r",
+									"// appDay\r",
+									"const appDayToday = moment().utc().startOf('day').unix() * 1000;\r",
+									"\r",
+									"// 10 seconds after\r",
+									"const aMomentAgo = (moment().utc().unix() - 1*10) * 1000;\r",
+									"// 50 minutos\r",
+									"const executionTime = (moment().utc().unix() + 60*50) * 1000;\r",
+									"\r",
+									"\r",
+									"pm.collectionVariables.set(\"cmdTimeExecution\", executionTime);\r",
+									"pm.collectionVariables.set(\"timeReceive\", aMomentAgo);\r",
+									"pm.collectionVariables.set(\"appDay\", appDayToday);\r",
 									""
 								],
-								"id": "0209fc53-d4ff-46e5-8681-2358c81a0a17"
-							}
-						},
-						{
-							"listen": "test",
-							"script": {
-								"type": "text/javascript",
-								"exec": [
-									""
-								],
-								"id": "9af9e6c3-43a1-4abf-88b7-abff6d1c5da7"
+								"type": "text/javascript"
 							}
 						}
-					]
+					],
+					"id": "b5aaf000-7133-4cb7-b0d7-c9016accb7a6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"command\": \"LDSO.ROUTE_OK SL783 SL771\",\r\n    \"circulationNumber\": \"0008\",\r\n    \"applicationDay\": {{appDay}}, \r\n    \"circulationUUID\": \"e4a225a2-65cb-490b-82ac-52440ee7e20c\",\r\n    \"signalId\": \"SE.IE-LDSO-LFORD-SL783\",\r\n    \"signalDestinationId\": \"SE.IE-MHEN-ETOWN-SL771\",\r\n    \"timeExecution\": {{cmdTimeExecution}},\r\n    \"timeReceived\": {{timeReceive}}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{command_domain}}/api/commands/send"
+					},
+					"response": []
 				}
 			],
 			"id": "e138978a-7fda-48dc-bc0f-b0ede43adfde",
