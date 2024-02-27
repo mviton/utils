@@ -5708,7 +5708,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "4f02a26a-2427-4e64-892e-2403ff88c202",
+				"id": "9611dbe9-833f-46bb-ae3b-8c0373779b8a",
 				"type": "text/javascript",
 				"exec": [
 					"console.log(`----ARS----- '${pm.info.requestName}' / ${pm.info.eventName} -------`);",
@@ -5812,8 +5812,13 @@
 					"    console.log(\"Token not update!\");",
 					"}",
 					"/** FIN Get Token  */",
-					"",
-					"const trainNameTranslate = JSON.parse(pm.globals.get(\"translateTrainNumber\"));",
+					"let trainNameTranslate = [];",
+					"const globalTranslateTainNumber = pm.globals.get(\"translateTrainNumber\");",
+					"if(!globalTranslateTainNumber){",
+					"    trainNameTranslate = [];",
+					"}else {",
+					"    trainNameTranslate = JSON.parse(globalTranslateTainNumber);",
+					"}",
 					"",
 					"utils = {",
 					"    convertTrainUuidToNumber: (uuidTrain) => {",
@@ -5838,7 +5843,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "dd28f2e7-69c0-4efc-9756-39eba916a85e",
+				"id": "52a68f5a-6967-4f47-8069-cd1aad0bafc0",
 				"type": "text/javascript",
 				"exec": [
 					""
