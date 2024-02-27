@@ -50,7 +50,7 @@
 					"response": []
 				},
 				{
-					"name": "TRS status",
+					"name": "Change TRS status",
 					"id": "24377c47-8dcb-465d-a6a3-a8127c3f8e0c",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -140,7 +140,7 @@
 										},
 										{
 											"key": "tczOrder",
-											"value": "2"
+											"value": "0"
 										}
 									]
 								}
@@ -206,7 +206,7 @@
 					]
 				},
 				{
-					"name": "TRS status [ALL]",
+					"name": "Change TRS status [ALL tczs]",
 					"id": "a16401ee-4dd2-4b77-8107-8eabc2237f99",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
