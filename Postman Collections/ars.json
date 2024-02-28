@@ -1863,7 +1863,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n    \"circulation\": {\r\n        \"id\": \"{{circulationUUID}}\"\r\n    },\r\n    \"properties\":{\r\n        \"ARS_STATUS\": \"SELECTED_SIGNAL_NO\",\r\n        \"EXCLUDED_SIGNAL_ID\": \"SE.IE-MHEN-KLCAN-SL722\"\r\n    }\r\n}",
+											"raw": "{\r\n    \"circulation\": {\r\n        \"id\": \"{{circulationUUID}}\"\r\n    },\r\n    \"properties\":{\r\n        \"ARS_STATUS\": \"SELECTED_SIGNAL_NO\",\r\n        \"EXCLUDED_SIGNAL_ID\": \"SE.IE-MHEN-KLCAN-SL715\"\r\n    }\r\n}",
 											"options": {
 												"raw": {
 													"language": "json"
