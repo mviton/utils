@@ -753,52 +753,15 @@
 							"id": "29f4e80b-0ddc-4572-a602-fd2f022be6b4"
 						},
 						{
-							"name": "Get Global Status",
-							"id": "7392c269-6406-4126-b226-d0980c07394e",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": "{{management_domain}}/api/management/routing-status/global-restriction"
-							},
-							"response": []
-						},
-						{
-							"name": "Set Global Status",
-							"id": "4e72212e-34de-4417-a9fc-11ba4a00674c",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [],
-								"url": {
-									"raw": "{{management_domain}}/api/management/routing-status/global-restriction?operativeState=ENABLED",
-									"host": [
-										"{{management_domain}}"
-									],
-									"path": [
-										"api",
-										"management",
-										"routing-status",
-										"global-restriction"
-									],
-									"query": [
-										{
-											"key": "operativeState",
-											"value": "ENABLED",
-											"description": "ENABLED / DISABLED"
-										}
-									]
-								}
-							},
-							"response": [
+							"name": "modify",
+							"item": [
 								{
-									"id": "7a266d16-53bb-4764-8c1a-0a6625091c51",
-									"name": "Enable Global",
-									"originalRequest": {
+									"name": "Set Global Status",
+									"id": "4e72212e-34de-4417-a9fc-11ba4a00674c",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
 										"method": "POST",
 										"header": [],
 										"url": {
@@ -821,20 +784,84 @@
 											]
 										}
 									},
-									"_postman_previewlanguage": null,
-									"header": null,
-									"cookie": [],
-									"responseTime": null,
-									"body": null
+									"response": [
+										{
+											"id": "7a266d16-53bb-4764-8c1a-0a6625091c51",
+											"name": "Enable Global",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{management_domain}}/api/management/routing-status/global-restriction?operativeState=ENABLED",
+													"host": [
+														"{{management_domain}}"
+													],
+													"path": [
+														"api",
+														"management",
+														"routing-status",
+														"global-restriction"
+													],
+													"query": [
+														{
+															"key": "operativeState",
+															"value": "ENABLED",
+															"description": "ENABLED / DISABLED"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
+										},
+										{
+											"id": "4e5e8994-4676-4025-a2e2-f531b87e6d7b",
+											"name": "Disable Global",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{management_domain}}/api/management/routing-status/global-restriction?operativeState=DISABLED",
+													"host": [
+														"{{management_domain}}"
+													],
+													"path": [
+														"api",
+														"management",
+														"routing-status",
+														"global-restriction"
+													],
+													"query": [
+														{
+															"key": "operativeState",
+															"value": "DISABLED",
+															"description": "ENABLED / DISABLED"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
+										}
+									]
 								},
 								{
-									"id": "4e5e8994-4676-4025-a2e2-f531b87e6d7b",
-									"name": "Disable Global",
-									"originalRequest": {
+									"name": "Set Ence Status",
+									"id": "fa42e49b-917c-4b1e-a388-32ea44da6362",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
 										"method": "POST",
 										"header": [],
 										"url": {
-											"raw": "{{management_domain}}/api/management/routing-status/global-restriction?operativeState=DISABLED",
+											"raw": "{{management_domain}}/api/management/routing-status/ence-restriction/:ixl?operativeState=ENABLED",
 											"host": [
 												"{{management_domain}}"
 											],
@@ -842,24 +869,318 @@
 												"api",
 												"management",
 												"routing-status",
-												"global-restriction"
+												"ence-restriction",
+												":ixl"
 											],
 											"query": [
 												{
 													"key": "operativeState",
-													"value": "DISABLED",
+													"value": "ENABLED",
 													"description": "ENABLED / DISABLED"
+												}
+											],
+											"variable": [
+												{
+													"key": "ixl",
+													"value": "EN.IE-IL2",
+													"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
 												}
 											]
 										}
 									},
-									"_postman_previewlanguage": null,
-									"header": null,
-									"cookie": [],
-									"responseTime": null,
-									"body": null
+									"response": [
+										{
+											"id": "fa06c0b8-ac99-4367-b9bd-13be2891ea52",
+											"name": "Enable MHEN",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{management_domain}}/api/management/routing-status/ence-restriction/:ixl?operativeState=ENABLED",
+													"host": [
+														"{{management_domain}}"
+													],
+													"path": [
+														"api",
+														"management",
+														"routing-status",
+														"ence-restriction",
+														":ixl"
+													],
+													"query": [
+														{
+															"key": "operativeState",
+															"value": "ENABLED",
+															"description": "ENABLED / DISABLED"
+														}
+													],
+													"variable": [
+														{
+															"key": "ixl",
+															"value": "EN.IE-IL2",
+															"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
+										},
+										{
+											"id": "60fbb00b-903a-4df8-8a17-ed69ddd9950b",
+											"name": "Disable MHEN",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{management_domain}}/api/management/routing-status/ence-restriction/:ixl?operativeState=DISABLED",
+													"host": [
+														"{{management_domain}}"
+													],
+													"path": [
+														"api",
+														"management",
+														"routing-status",
+														"ence-restriction",
+														":ixl"
+													],
+													"query": [
+														{
+															"key": "operativeState",
+															"value": "DISABLED",
+															"description": "ENABLED / DISABLED"
+														}
+													],
+													"variable": [
+														{
+															"key": "ixl",
+															"value": "EN.IE-IL2",
+															"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
+										},
+										{
+											"id": "502421f3-f212-44de-8367-0164340c1c5e",
+											"name": "Enable LDSO",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{management_domain}}/api/management/routing-status/ence-restriction/:ixl?operativeState=ENABLED",
+													"host": [
+														"{{management_domain}}"
+													],
+													"path": [
+														"api",
+														"management",
+														"routing-status",
+														"ence-restriction",
+														":ixl"
+													],
+													"query": [
+														{
+															"key": "operativeState",
+															"value": "ENABLED",
+															"description": "ENABLED / DISABLED"
+														}
+													],
+													"variable": [
+														{
+															"key": "ixl",
+															"value": "EN.IE-IL1",
+															"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
+										},
+										{
+											"id": "c199326b-af40-4833-bad5-160b5da51b3a",
+											"name": "Disable LDSO",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{management_domain}}/api/management/routing-status/ence-restriction/:ixl?operativeState=DISABLED",
+													"host": [
+														"{{management_domain}}"
+													],
+													"path": [
+														"api",
+														"management",
+														"routing-status",
+														"ence-restriction",
+														":ixl"
+													],
+													"query": [
+														{
+															"key": "operativeState",
+															"value": "DISABLED",
+															"description": "ENABLED / DISABLED"
+														}
+													],
+													"variable": [
+														{
+															"key": "ixl",
+															"value": "EN.IE-IL1",
+															"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
+										}
+									]
+								},
+								{
+									"name": "Set Signal RoutingStatus",
+									"id": "0a174e6e-2b55-4e8f-88ac-10a938829e47",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{management_domain}}/api/management/routing-status/signal/:mnemonic?operativeState=ENABLED",
+											"host": [
+												"{{management_domain}}"
+											],
+											"path": [
+												"api",
+												"management",
+												"routing-status",
+												"signal",
+												":mnemonic"
+											],
+											"query": [
+												{
+													"key": "operativeState",
+													"value": "ENABLED",
+													"description": "ENABLED / DISABLED"
+												}
+											],
+											"variable": [
+												{
+													"key": "mnemonic",
+													"value": "SE.IE-MHEN-KLCAN-SL715"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "7511c2b8-2481-4790-9976-034951f3d13f",
+											"name": "Enable",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{management_domain}}/api/management/routing-status/signal/:mnemonic?operativeState=ENABLED",
+													"host": [
+														"{{management_domain}}"
+													],
+													"path": [
+														"api",
+														"management",
+														"routing-status",
+														"signal",
+														":mnemonic"
+													],
+													"query": [
+														{
+															"key": "operativeState",
+															"value": "ENABLED"
+														}
+													],
+													"variable": [
+														{
+															"key": "mnemonic",
+															"value": "SE.IE-MHEN-KLCAN-SL715"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
+										},
+										{
+											"id": "4821bb6a-2f61-4d0a-a6fa-7d030588eef9",
+											"name": "Disable",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{management_domain}}/api/management/routing-status/signal/:mnemonic?operativeState=DISABLED",
+													"host": [
+														"{{management_domain}}"
+													],
+													"path": [
+														"api",
+														"management",
+														"routing-status",
+														"signal",
+														":mnemonic"
+													],
+													"query": [
+														{
+															"key": "operativeState",
+															"value": "DISABLED"
+														}
+													],
+													"variable": [
+														{
+															"key": "mnemonic",
+															"value": "SE.IE-MHEN-KLCAN-SL715"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
+										}
+									]
 								}
-							]
+							],
+							"id": "85224ee5-c60f-467b-93f6-d004c74d256d"
+						},
+						{
+							"name": "Get Global Status",
+							"id": "7392c269-6406-4126-b226-d0980c07394e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{management_domain}}/api/management/routing-status/global-restriction"
+							},
+							"response": []
 						},
 						{
 							"name": "Get Ence Status",
@@ -1041,206 +1362,6 @@
 							]
 						},
 						{
-							"name": "Set Ence Status",
-							"id": "fa42e49b-917c-4b1e-a388-32ea44da6362",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [],
-								"url": {
-									"raw": "{{management_domain}}/api/management/routing-status/ence-restriction/:ixl?operativeState=ENABLED",
-									"host": [
-										"{{management_domain}}"
-									],
-									"path": [
-										"api",
-										"management",
-										"routing-status",
-										"ence-restriction",
-										":ixl"
-									],
-									"query": [
-										{
-											"key": "operativeState",
-											"value": "ENABLED",
-											"description": "ENABLED / DISABLED"
-										}
-									],
-									"variable": [
-										{
-											"key": "ixl",
-											"value": "EN.IE-IL2",
-											"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
-										}
-									]
-								}
-							},
-							"response": [
-								{
-									"id": "fa06c0b8-ac99-4367-b9bd-13be2891ea52",
-									"name": "Enable MHEN",
-									"originalRequest": {
-										"method": "POST",
-										"header": [],
-										"url": {
-											"raw": "{{management_domain}}/api/management/routing-status/ence-restriction/:ixl?operativeState=ENABLED",
-											"host": [
-												"{{management_domain}}"
-											],
-											"path": [
-												"api",
-												"management",
-												"routing-status",
-												"ence-restriction",
-												":ixl"
-											],
-											"query": [
-												{
-													"key": "operativeState",
-													"value": "ENABLED",
-													"description": "ENABLED / DISABLED"
-												}
-											],
-											"variable": [
-												{
-													"key": "ixl",
-													"value": "EN.IE-IL2",
-													"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
-												}
-											]
-										}
-									},
-									"_postman_previewlanguage": null,
-									"header": null,
-									"cookie": [],
-									"responseTime": null,
-									"body": null
-								},
-								{
-									"id": "60fbb00b-903a-4df8-8a17-ed69ddd9950b",
-									"name": "Disable MHEN",
-									"originalRequest": {
-										"method": "POST",
-										"header": [],
-										"url": {
-											"raw": "{{management_domain}}/api/management/routing-status/ence-restriction/:ixl?operativeState=DISABLED",
-											"host": [
-												"{{management_domain}}"
-											],
-											"path": [
-												"api",
-												"management",
-												"routing-status",
-												"ence-restriction",
-												":ixl"
-											],
-											"query": [
-												{
-													"key": "operativeState",
-													"value": "DISABLED",
-													"description": "ENABLED / DISABLED"
-												}
-											],
-											"variable": [
-												{
-													"key": "ixl",
-													"value": "EN.IE-IL2",
-													"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
-												}
-											]
-										}
-									},
-									"_postman_previewlanguage": null,
-									"header": null,
-									"cookie": [],
-									"responseTime": null,
-									"body": null
-								},
-								{
-									"id": "502421f3-f212-44de-8367-0164340c1c5e",
-									"name": "Enable LDSO",
-									"originalRequest": {
-										"method": "POST",
-										"header": [],
-										"url": {
-											"raw": "{{management_domain}}/api/management/routing-status/ence-restriction/:ixl?operativeState=ENABLED",
-											"host": [
-												"{{management_domain}}"
-											],
-											"path": [
-												"api",
-												"management",
-												"routing-status",
-												"ence-restriction",
-												":ixl"
-											],
-											"query": [
-												{
-													"key": "operativeState",
-													"value": "ENABLED",
-													"description": "ENABLED / DISABLED"
-												}
-											],
-											"variable": [
-												{
-													"key": "ixl",
-													"value": "EN.IE-IL1",
-													"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
-												}
-											]
-										}
-									},
-									"_postman_previewlanguage": null,
-									"header": null,
-									"cookie": [],
-									"responseTime": null,
-									"body": null
-								},
-								{
-									"id": "c199326b-af40-4833-bad5-160b5da51b3a",
-									"name": "Disable LDSO",
-									"originalRequest": {
-										"method": "POST",
-										"header": [],
-										"url": {
-											"raw": "{{management_domain}}/api/management/routing-status/ence-restriction/:ixl?operativeState=DISABLED",
-											"host": [
-												"{{management_domain}}"
-											],
-											"path": [
-												"api",
-												"management",
-												"routing-status",
-												"ence-restriction",
-												":ixl"
-											],
-											"query": [
-												{
-													"key": "operativeState",
-													"value": "DISABLED",
-													"description": "ENABLED / DISABLED"
-												}
-											],
-											"variable": [
-												{
-													"key": "ixl",
-													"value": "EN.IE-IL1",
-													"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
-												}
-											]
-										}
-									},
-									"_postman_previewlanguage": null,
-									"header": null,
-									"cookie": [],
-									"responseTime": null,
-									"body": null
-								}
-							]
-						},
-						{
 							"name": "Signal RoutingStatus",
 							"id": "4e52030d-1162-4348-b703-c3a3d0240dc0",
 							"protocolProfileBehavior": {
@@ -1343,121 +1464,6 @@
 								"url": "{{management_domain}}/api/management/routing-status/signal"
 							},
 							"response": []
-						},
-						{
-							"name": "Set Signal RoutingStatus",
-							"id": "0a174e6e-2b55-4e8f-88ac-10a938829e47",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [],
-								"url": {
-									"raw": "{{management_domain}}/api/management/routing-status/signal/:mnemonic?operativeState=ENABLED",
-									"host": [
-										"{{management_domain}}"
-									],
-									"path": [
-										"api",
-										"management",
-										"routing-status",
-										"signal",
-										":mnemonic"
-									],
-									"query": [
-										{
-											"key": "operativeState",
-											"value": "ENABLED",
-											"description": "ENABLED / DISABLED"
-										}
-									],
-									"variable": [
-										{
-											"key": "mnemonic",
-											"value": "SE.IE-MHEN-KLCAN-SL715"
-										}
-									]
-								}
-							},
-							"response": [
-								{
-									"id": "7511c2b8-2481-4790-9976-034951f3d13f",
-									"name": "Enable",
-									"originalRequest": {
-										"method": "POST",
-										"header": [],
-										"url": {
-											"raw": "{{management_domain}}/api/management/routing-status/signal/:mnemonic?operativeState=ENABLED",
-											"host": [
-												"{{management_domain}}"
-											],
-											"path": [
-												"api",
-												"management",
-												"routing-status",
-												"signal",
-												":mnemonic"
-											],
-											"query": [
-												{
-													"key": "operativeState",
-													"value": "ENABLED"
-												}
-											],
-											"variable": [
-												{
-													"key": "mnemonic",
-													"value": "SE.IE-MHEN-KLCAN-SL715"
-												}
-											]
-										}
-									},
-									"_postman_previewlanguage": null,
-									"header": null,
-									"cookie": [],
-									"responseTime": null,
-									"body": null
-								},
-								{
-									"id": "4821bb6a-2f61-4d0a-a6fa-7d030588eef9",
-									"name": "Disable",
-									"originalRequest": {
-										"method": "POST",
-										"header": [],
-										"url": {
-											"raw": "{{management_domain}}/api/management/routing-status/signal/:mnemonic?operativeState=DISABLED",
-											"host": [
-												"{{management_domain}}"
-											],
-											"path": [
-												"api",
-												"management",
-												"routing-status",
-												"signal",
-												":mnemonic"
-											],
-											"query": [
-												{
-													"key": "operativeState",
-													"value": "DISABLED"
-												}
-											],
-											"variable": [
-												{
-													"key": "mnemonic",
-													"value": "SE.IE-MHEN-KLCAN-SL715"
-												}
-											]
-										}
-									},
-									"_postman_previewlanguage": null,
-									"header": null,
-									"cookie": [],
-									"responseTime": null,
-									"body": null
-								}
-							]
 						}
 					],
 					"id": "1c5b03f1-6361-4839-8346-148d62eab1e0"
@@ -1483,6 +1489,314 @@
 								}
 							],
 							"id": "db0830fe-775b-407c-a9ad-1878fe6a2f68"
+						},
+						{
+							"name": "modify",
+							"item": [
+								{
+									"name": "Authorization Signal",
+									"id": "c9ee6e6b-e90f-417f-9273-00c8cb00f7d8",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{management_domain}}/api/authorization/signal/:mnemonic?authState=SEMIAUTOMATIC",
+											"host": [
+												"{{management_domain}}"
+											],
+											"path": [
+												"api",
+												"authorization",
+												"signal",
+												":mnemonic"
+											],
+											"query": [
+												{
+													"key": "authState",
+													"value": "SEMIAUTOMATIC"
+												}
+											],
+											"variable": [
+												{
+													"key": "mnemonic",
+													"value": "SE.IE-MHEN-KLCAN-SL715"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "d4a2c51f-97ed-4180-b205-0d13df33f157",
+											"name": "Automatic",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{management_domain}}/api/authorization/signal/:mnemonic?authState=AUTOMATIC",
+													"host": [
+														"{{management_domain}}"
+													],
+													"path": [
+														"api",
+														"authorization",
+														"signal",
+														":mnemonic"
+													],
+													"query": [
+														{
+															"key": "authState",
+															"value": "AUTOMATIC"
+														}
+													],
+													"variable": [
+														{
+															"key": "mnemonic",
+															"value": "SE.IE-MHEN-KLCAN-SL715"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
+										},
+										{
+											"id": "e1d661e3-a0cd-4346-942c-0edb3cb34d73",
+											"name": "SemiAutomatic",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{management_domain}}/api/authorization/signal/:mnemonic?authState=SEMIAUTOMATIC",
+													"host": [
+														"{{management_domain}}"
+													],
+													"path": [
+														"api",
+														"authorization",
+														"signal",
+														":mnemonic"
+													],
+													"query": [
+														{
+															"key": "authState",
+															"value": "SEMIAUTOMATIC"
+														}
+													],
+													"variable": [
+														{
+															"key": "mnemonic",
+															"value": "SE.IE-MHEN-KLCAN-SL715"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
+										}
+									]
+								},
+								{
+									"name": "Authorization ENCE",
+									"id": "38a1626a-87ee-4f48-bd62-d02dee4dadf2",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{management_domain}}/api/authorization/ixl/:ixl?authState=SEMIAUTOMATIC",
+											"host": [
+												"{{management_domain}}"
+											],
+											"path": [
+												"api",
+												"authorization",
+												"ixl",
+												":ixl"
+											],
+											"query": [
+												{
+													"key": "authState",
+													"value": "SEMIAUTOMATIC",
+													"description": "AUTOMATIC / SEMIAUTOMATIC"
+												}
+											],
+											"variable": [
+												{
+													"key": "ixl",
+													"value": "EN.IE-IL1",
+													"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "f56e074c-079f-46e4-8b92-a059072fa657",
+											"name": "IL1 - LDSO Automatic",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{management_domain}}/api/authorization/ixl/:ixl?authState=AUTOMATIC",
+													"host": [
+														"{{management_domain}}"
+													],
+													"path": [
+														"api",
+														"authorization",
+														"ixl",
+														":ixl"
+													],
+													"query": [
+														{
+															"key": "authState",
+															"value": "AUTOMATIC"
+														}
+													],
+													"variable": [
+														{
+															"key": "ixl",
+															"value": "EN.IE-IL1",
+															"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
+										},
+										{
+											"id": "bbf85a9c-ec20-4e36-88fa-e1b3972ef988",
+											"name": "IL1 - LDSO SemiAutomatic",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{management_domain}}/api/authorization/ixl/:ixl?authState=SEMIAUTOMATIC",
+													"host": [
+														"{{management_domain}}"
+													],
+													"path": [
+														"api",
+														"authorization",
+														"ixl",
+														":ixl"
+													],
+													"query": [
+														{
+															"key": "authState",
+															"value": "SEMIAUTOMATIC"
+														}
+													],
+													"variable": [
+														{
+															"key": "ixl",
+															"value": "EN.IE-IL1",
+															"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
+										},
+										{
+											"id": "1a23895a-e131-4334-83f8-fa9d81df667c",
+											"name": "IL2 - MHEN Automatic",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{management_domain}}/api/authorization/ixl/:ixl?authState=AUTOMATIC",
+													"host": [
+														"{{management_domain}}"
+													],
+													"path": [
+														"api",
+														"authorization",
+														"ixl",
+														":ixl"
+													],
+													"query": [
+														{
+															"key": "authState",
+															"value": "AUTOMATIC"
+														}
+													],
+													"variable": [
+														{
+															"key": "ixl",
+															"value": "EN.IE-IL2",
+															"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
+										},
+										{
+											"id": "047d2628-d8d3-41b8-a23c-8c0641e63ab3",
+											"name": "IL2 - MHEN SemiAutomatic",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{management_domain}}/api/authorization/ixl/:ixl?authState=SEMIAUTOMATIC",
+													"host": [
+														"{{management_domain}}"
+													],
+													"path": [
+														"api",
+														"authorization",
+														"ixl",
+														":ixl"
+													],
+													"query": [
+														{
+															"key": "authState",
+															"value": "SEMIAUTOMATIC"
+														}
+													],
+													"variable": [
+														{
+															"key": "ixl",
+															"value": "EN.IE-IL2",
+															"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
+										}
+									]
+								}
+							],
+							"id": "de99399c-2196-4f79-a53c-924aa41f3643"
 						},
 						{
 							"name": "Authorization Signal",
@@ -1513,308 +1827,6 @@
 								}
 							},
 							"response": []
-						},
-						{
-							"name": "Authorization Signal",
-							"id": "c9ee6e6b-e90f-417f-9273-00c8cb00f7d8",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [],
-								"url": {
-									"raw": "{{management_domain}}/api/authorization/signal/:mnemonic?authState=SEMIAUTOMATIC",
-									"host": [
-										"{{management_domain}}"
-									],
-									"path": [
-										"api",
-										"authorization",
-										"signal",
-										":mnemonic"
-									],
-									"query": [
-										{
-											"key": "authState",
-											"value": "SEMIAUTOMATIC"
-										}
-									],
-									"variable": [
-										{
-											"key": "mnemonic",
-											"value": "SE.IE-MHEN-KLCAN-SL715"
-										}
-									]
-								}
-							},
-							"response": [
-								{
-									"id": "d4a2c51f-97ed-4180-b205-0d13df33f157",
-									"name": "Automatic",
-									"originalRequest": {
-										"method": "POST",
-										"header": [],
-										"url": {
-											"raw": "{{management_domain}}/api/authorization/signal/:mnemonic?authState=AUTOMATIC",
-											"host": [
-												"{{management_domain}}"
-											],
-											"path": [
-												"api",
-												"authorization",
-												"signal",
-												":mnemonic"
-											],
-											"query": [
-												{
-													"key": "authState",
-													"value": "AUTOMATIC"
-												}
-											],
-											"variable": [
-												{
-													"key": "mnemonic",
-													"value": "SE.IE-MHEN-KLCAN-SL715"
-												}
-											]
-										}
-									},
-									"_postman_previewlanguage": null,
-									"header": null,
-									"cookie": [],
-									"responseTime": null,
-									"body": null
-								},
-								{
-									"id": "e1d661e3-a0cd-4346-942c-0edb3cb34d73",
-									"name": "SemiAutomatic",
-									"originalRequest": {
-										"method": "POST",
-										"header": [],
-										"url": {
-											"raw": "{{management_domain}}/api/authorization/signal/:mnemonic?authState=SEMIAUTOMATIC",
-											"host": [
-												"{{management_domain}}"
-											],
-											"path": [
-												"api",
-												"authorization",
-												"signal",
-												":mnemonic"
-											],
-											"query": [
-												{
-													"key": "authState",
-													"value": "SEMIAUTOMATIC"
-												}
-											],
-											"variable": [
-												{
-													"key": "mnemonic",
-													"value": "SE.IE-MHEN-KLCAN-SL715"
-												}
-											]
-										}
-									},
-									"_postman_previewlanguage": null,
-									"header": null,
-									"cookie": [],
-									"responseTime": null,
-									"body": null
-								}
-							]
-						},
-						{
-							"name": "Authorization ENCE",
-							"id": "38a1626a-87ee-4f48-bd62-d02dee4dadf2",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [],
-								"url": {
-									"raw": "{{management_domain}}/api/authorization/ixl/:ixl?authState=SEMIAUTOMATIC",
-									"host": [
-										"{{management_domain}}"
-									],
-									"path": [
-										"api",
-										"authorization",
-										"ixl",
-										":ixl"
-									],
-									"query": [
-										{
-											"key": "authState",
-											"value": "SEMIAUTOMATIC",
-											"description": "AUTOMATIC / SEMIAUTOMATIC"
-										}
-									],
-									"variable": [
-										{
-											"key": "ixl",
-											"value": "EN.IE-IL1",
-											"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
-										}
-									]
-								}
-							},
-							"response": [
-								{
-									"id": "f56e074c-079f-46e4-8b92-a059072fa657",
-									"name": "IL1 - LDSO Automatic",
-									"originalRequest": {
-										"method": "POST",
-										"header": [],
-										"url": {
-											"raw": "{{management_domain}}/api/authorization/ixl/:ixl?authState=AUTOMATIC",
-											"host": [
-												"{{management_domain}}"
-											],
-											"path": [
-												"api",
-												"authorization",
-												"ixl",
-												":ixl"
-											],
-											"query": [
-												{
-													"key": "authState",
-													"value": "AUTOMATIC"
-												}
-											],
-											"variable": [
-												{
-													"key": "ixl",
-													"value": "EN.IE-IL1",
-													"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
-												}
-											]
-										}
-									},
-									"_postman_previewlanguage": null,
-									"header": null,
-									"cookie": [],
-									"responseTime": null,
-									"body": null
-								},
-								{
-									"id": "bbf85a9c-ec20-4e36-88fa-e1b3972ef988",
-									"name": "IL1 - LDSO SemiAutomatic",
-									"originalRequest": {
-										"method": "POST",
-										"header": [],
-										"url": {
-											"raw": "{{management_domain}}/api/authorization/ixl/:ixl?authState=SEMIAUTOMATIC",
-											"host": [
-												"{{management_domain}}"
-											],
-											"path": [
-												"api",
-												"authorization",
-												"ixl",
-												":ixl"
-											],
-											"query": [
-												{
-													"key": "authState",
-													"value": "SEMIAUTOMATIC"
-												}
-											],
-											"variable": [
-												{
-													"key": "ixl",
-													"value": "EN.IE-IL1",
-													"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
-												}
-											]
-										}
-									},
-									"_postman_previewlanguage": null,
-									"header": null,
-									"cookie": [],
-									"responseTime": null,
-									"body": null
-								},
-								{
-									"id": "1a23895a-e131-4334-83f8-fa9d81df667c",
-									"name": "IL2 - MHEN Automatic",
-									"originalRequest": {
-										"method": "POST",
-										"header": [],
-										"url": {
-											"raw": "{{management_domain}}/api/authorization/ixl/:ixl?authState=AUTOMATIC",
-											"host": [
-												"{{management_domain}}"
-											],
-											"path": [
-												"api",
-												"authorization",
-												"ixl",
-												":ixl"
-											],
-											"query": [
-												{
-													"key": "authState",
-													"value": "AUTOMATIC"
-												}
-											],
-											"variable": [
-												{
-													"key": "ixl",
-													"value": "EN.IE-IL2",
-													"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
-												}
-											]
-										}
-									},
-									"_postman_previewlanguage": null,
-									"header": null,
-									"cookie": [],
-									"responseTime": null,
-									"body": null
-								},
-								{
-									"id": "047d2628-d8d3-41b8-a23c-8c0641e63ab3",
-									"name": "IL2 - MHEN SemiAutomatic",
-									"originalRequest": {
-										"method": "POST",
-										"header": [],
-										"url": {
-											"raw": "{{management_domain}}/api/authorization/ixl/:ixl?authState=SEMIAUTOMATIC",
-											"host": [
-												"{{management_domain}}"
-											],
-											"path": [
-												"api",
-												"authorization",
-												"ixl",
-												":ixl"
-											],
-											"query": [
-												{
-													"key": "authState",
-													"value": "SEMIAUTOMATIC"
-												}
-											],
-											"variable": [
-												{
-													"key": "ixl",
-													"value": "EN.IE-IL2",
-													"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
-												}
-											]
-										}
-									},
-									"_postman_previewlanguage": null,
-									"header": null,
-									"cookie": [],
-									"responseTime": null,
-									"body": null
-								}
-							]
 						}
 					],
 					"id": "9b12630c-c6f9-4501-b2a7-c786b13237a2",
