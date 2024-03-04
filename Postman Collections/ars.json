@@ -2338,6 +2338,183 @@
 					"id": "ceeb2490-90b3-4cd1-b4aa-ce2d45350478"
 				},
 				{
+					"name": "modify",
+					"item": [],
+					"id": "c2f9a649-6ef8-4a40-8437-06b395da15b3"
+				},
+				{
+					"name": "Modify Circulation",
+					"id": "f1ff8818-c2d7-4107-9c72-82935f02edd7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"circulation\": {\r\n        \"id\": \"cc3ead9f-8132-4d5d-bb2e-206272cffddc\"\r\n    },\r\n    \"properties\":{\r\n        \"ARS_STATUS\": \"SELECTED_SIGNAL_NO\",\r\n        \"EXCLUDED_SIGNAL_ID\": \"SE.IE-LDSO-CKOSH-SL811\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{circulation_domain}}/api/circulation/modify"
+					},
+					"response": [
+						{
+							"id": "0f42970b-bea1-4e61-9fea-56e4f781c5fe",
+							"name": "DisabledForSignal",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"circulation\": {\r\n        \"id\": \"15aeb552-039c-4424-8d05-1c97a3ff13bc\"\r\n    },\r\n    \"properties\":{\r\n        \"ARS_STATUS\": \"SELECTED_SIGNAL_NO\",\r\n        \"EXCLUDED_SIGNAL_ID\": \"SE.IE-LDSO-CKOSH-SL811\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{circulation_domain}}/api/circulation/modify"
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": null
+						},
+						{
+							"id": "a3f6793d-8561-4860-ab18-2806429056be",
+							"name": "OnlyNextSignal",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"circulation\": {\r\n        \"id\": \"3f397e2c-778a-4cb5-a866-4b9d6dfd426f\"\r\n    },\r\n    \"properties\":{\r\n        \"ARS_STATUS\": \"ONLY_NEXT_SIGNAL\",\r\n        \"EXCLUDED_SIGNAL_ID\": null\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{circulation_domain}}/api/circulation/modify"
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": null
+						},
+						{
+							"id": "3ef5bfae-8299-43e4-b863-5712fb29ba0a",
+							"name": "Disable",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"circulation\": {\r\n        \"id\": \"e8a8c893-d525-4431-9ea0-dd75fcb553ca\"\r\n    },\r\n    \"properties\":{\r\n        \"ARS_STATUS\": \"DISABLE\",\r\n        \"EXCLUDED_SIGNAL_ID\": null\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{circulation_domain}}/api/circulation/modify"
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": null
+						},
+						{
+							"id": "ca5a47d6-24bb-43a2-acd2-5b546e87ba7a",
+							"name": "Enable",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"circulation\": {\r\n        \"id\": \"3f397e2c-778a-4cb5-a866-4b9d6dfd426f\"\r\n    },\r\n    \"properties\":{\r\n        \"ARS_STATUS\": \"ENABLE\",\r\n        \"EXCLUDED_SIGNAL_ID\": null\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{circulation_domain}}/api/circulation/modify"
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Get Circulations By OriginNumber",
+					"id": "7fa5c7c6-4812-4c35-b624-b8f605b74605",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{circulation_domain}}/api/circulation?originNumber=1001",
+							"host": [
+								"{{circulation_domain}}"
+							],
+							"path": [
+								"api",
+								"circulation"
+							],
+							"query": [
+								{
+									"key": "originNumber",
+									"value": "1001"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Circulation TrainDetector",
+					"id": "2fdbc9ec-2268-4a9d-9ac4-a96bd4841e0a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{circulation_domain}}/api/circulation/traindetector?trainDetectorId=CV.IE-LDSO-SLIGO-6398R",
+							"host": [
+								"{{circulation_domain}}"
+							],
+							"path": [
+								"api",
+								"circulation",
+								"traindetector"
+							],
+							"query": [
+								{
+									"key": "trainDetectorId",
+									"value": "CV.IE-LDSO-SLIGO-6398R"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Circulations (all)",
 					"event": [
 						{
@@ -2461,178 +2638,6 @@
 						"url": "{{circulation_domain}}/api/circulation/all"
 					},
 					"response": []
-				},
-				{
-					"name": "Circulation TrainDetector",
-					"id": "2fdbc9ec-2268-4a9d-9ac4-a96bd4841e0a",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{circulation_domain}}/api/circulation/traindetector?trainDetectorId=CV.IE-LDSO-SLIGO-6398R",
-							"host": [
-								"{{circulation_domain}}"
-							],
-							"path": [
-								"api",
-								"circulation",
-								"traindetector"
-							],
-							"query": [
-								{
-									"key": "trainDetectorId",
-									"value": "CV.IE-LDSO-SLIGO-6398R"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get Circulations By OriginNumber",
-					"id": "7fa5c7c6-4812-4c35-b624-b8f605b74605",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{circulation_domain}}/api/circulation?originNumber=1001",
-							"host": [
-								"{{circulation_domain}}"
-							],
-							"path": [
-								"api",
-								"circulation"
-							],
-							"query": [
-								{
-									"key": "originNumber",
-									"value": "1001"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Modify Circulation",
-					"id": "f1ff8818-c2d7-4107-9c72-82935f02edd7",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"circulation\": {\r\n        \"id\": \"cc3ead9f-8132-4d5d-bb2e-206272cffddc\"\r\n    },\r\n    \"properties\":{\r\n        \"ARS_STATUS\": \"SELECTED_SIGNAL_NO\",\r\n        \"EXCLUDED_SIGNAL_ID\": \"SE.IE-LDSO-CKOSH-SL811\"\r\n    }\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{circulation_domain}}/api/circulation/modify"
-					},
-					"response": [
-						{
-							"id": "0f42970b-bea1-4e61-9fea-56e4f781c5fe",
-							"name": "DisabledForSignal",
-							"originalRequest": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"circulation\": {\r\n        \"id\": \"15aeb552-039c-4424-8d05-1c97a3ff13bc\"\r\n    },\r\n    \"properties\":{\r\n        \"ARS_STATUS\": \"SELECTED_SIGNAL_NO\",\r\n        \"EXCLUDED_SIGNAL_ID\": \"SE.IE-LDSO-CKOSH-SL811\"\r\n    }\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": "{{circulation_domain}}/api/circulation/modify"
-							},
-							"_postman_previewlanguage": null,
-							"header": null,
-							"cookie": [],
-							"responseTime": null,
-							"body": null
-						},
-						{
-							"id": "a3f6793d-8561-4860-ab18-2806429056be",
-							"name": "OnlyNextSignal",
-							"originalRequest": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"circulation\": {\r\n        \"id\": \"3f397e2c-778a-4cb5-a866-4b9d6dfd426f\"\r\n    },\r\n    \"properties\":{\r\n        \"ARS_STATUS\": \"ONLY_NEXT_SIGNAL\",\r\n        \"EXCLUDED_SIGNAL_ID\": null\r\n    }\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": "{{circulation_domain}}/api/circulation/modify"
-							},
-							"_postman_previewlanguage": null,
-							"header": null,
-							"cookie": [],
-							"responseTime": null,
-							"body": null
-						},
-						{
-							"id": "3ef5bfae-8299-43e4-b863-5712fb29ba0a",
-							"name": "Disable",
-							"originalRequest": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"circulation\": {\r\n        \"id\": \"e8a8c893-d525-4431-9ea0-dd75fcb553ca\"\r\n    },\r\n    \"properties\":{\r\n        \"ARS_STATUS\": \"DISABLE\",\r\n        \"EXCLUDED_SIGNAL_ID\": null\r\n    }\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": "{{circulation_domain}}/api/circulation/modify"
-							},
-							"_postman_previewlanguage": null,
-							"header": null,
-							"cookie": [],
-							"responseTime": null,
-							"body": null
-						},
-						{
-							"id": "ca5a47d6-24bb-43a2-acd2-5b546e87ba7a",
-							"name": "Enable",
-							"originalRequest": {
-								"method": "POST",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\r\n    \"circulation\": {\r\n        \"id\": \"3f397e2c-778a-4cb5-a866-4b9d6dfd426f\"\r\n    },\r\n    \"properties\":{\r\n        \"ARS_STATUS\": \"ENABLE\",\r\n        \"EXCLUDED_SIGNAL_ID\": null\r\n    }\r\n}",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": "{{circulation_domain}}/api/circulation/modify"
-							},
-							"_postman_previewlanguage": null,
-							"header": null,
-							"cookie": [],
-							"responseTime": null,
-							"body": null
-						}
-					]
 				}
 			],
 			"id": "ffe8a10c-3e54-428a-8d87-47f716405150"
