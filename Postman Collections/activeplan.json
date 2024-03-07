@@ -2407,7 +2407,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "17efbf4d-c123-4181-bb33-14194722658c",
+				"id": "20273ac3-31bc-40d8-9736-df0173ac25d6",
 				"type": "text/javascript",
 				"exec": [
 					"",
@@ -2838,13 +2838,6 @@
 					"    <title>Postman result</title>",
 					"    <link rel=\"stylesheet\" href=\"https://uicdn.toast.com/grid/latest/tui-grid.min.css\" />",
 					"    <script src=\"https://uicdn.toast.com/grid/latest/tui-grid.min.js\"></script>",
-					"    <style type=\"text/css\">",
-					"        table-result {",
-					"            font-size: 12px;",
-					"            outline: thick double #03fc98;",
-					"            margin: 12px;",
-					"        }",
-					"    </style>",
 					"    <script type=\"text/javascript\">",
 					"        pm.getData(function (err, value) {            ",
 					"            //instance.resetData(value.res);",
@@ -2859,8 +2852,9 @@
 					"                    border: '#aaa',",
 					"                    text: '#333'",
 					"                },",
-					"                scrollX: true,",
+					"                scrollX: false,",
 					"                scrollY: true,",
+					"                width: 2000,",
 					"                bodyHeight: 320,",
 					"                columnOptions: {",
 					"                    resizable: true",
@@ -2883,7 +2877,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "d22d08ca-f6b7-4ffb-91f7-e56d60b6da34",
+				"id": "97273cdc-9336-4998-a894-3492a73e276b",
 				"type": "text/javascript",
 				"exec": [
 					""
