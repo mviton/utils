@@ -2407,7 +2407,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "20273ac3-31bc-40d8-9736-df0173ac25d6",
+				"id": "f6d8e6f0-373c-4f33-92d5-af41f2539981",
 				"type": "text/javascript",
 				"exec": [
 					"",
@@ -2854,7 +2854,7 @@
 					"                },",
 					"                scrollX: false,",
 					"                scrollY: true,",
-					"                width: 2000,",
+					"                width: 1500,",
 					"                bodyHeight: 320,",
 					"                columnOptions: {",
 					"                    resizable: true",
@@ -2877,7 +2877,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "97273cdc-9336-4998-a894-3492a73e276b",
+				"id": "ade9899d-271e-43de-bb14-f9d5eda9385f",
 				"type": "text/javascript",
 				"exec": [
 					""
