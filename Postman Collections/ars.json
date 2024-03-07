@@ -62,7 +62,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{circulation_domain}}/internal/api/circulation/isSignalOutput?signalMnemonic=SE.IE-MHEN-ETOWN-SL769",
+							"raw": "{{circulation_domain}}/internal/api/circulation/isSignalOutput?signalMnemonic=SE.IE-LDSO-BOYLE-SL815",
 							"host": [
 								"{{circulation_domain}}"
 							],
@@ -75,7 +75,7 @@
 							"query": [
 								{
 									"key": "signalMnemonic",
-									"value": "SE.IE-MHEN-ETOWN-SL769"
+									"value": "SE.IE-LDSO-BOYLE-SL815"
 								}
 							]
 						}
