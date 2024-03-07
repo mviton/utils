@@ -1772,7 +1772,7 @@
 									"        {\r",
 									"            header: 'ID',\r",
 									"            name: 'uuid',\r",
-									"            filter: { type: 'text', showApplyBtn: true, showClearBtn: true }\r",
+									"            minWidth: 320,\r",
 									"        },\r",
 									"        {\r",
 									"            header: 'TrefficType',\r",
