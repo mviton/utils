@@ -690,7 +690,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"operation\": \"set\",\r\n    \"tczName\": \"Sligo Loop\",\r\n    \"arrival\": \"17:09.00\",\r\n    \"departure\": \"17:12.00\"\r\n}",
+									"raw": "{\r\n    \"operation\": \"set\",\r\n    \"tczName\": \"Mullingar\",\r\n    \"arrival\": \"11:00.00\",\r\n    \"departure\": \"11:12.00\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -698,7 +698,7 @@
 									}
 								},
 								"url": {
-									"raw": "postman-echo.com/get?sourceOriginNumber=0018&originNumber=0018Y",
+									"raw": "postman-echo.com/get?sourceOriginNumber=A900&originNumber=0069",
 									"host": [
 										"postman-echo",
 										"com"
@@ -715,12 +715,12 @@
 										},
 										{
 											"key": "sourceOriginNumber",
-											"value": "0018",
+											"value": "A900",
 											"description": "circulationUUI or sourceOriginNumber"
 										},
 										{
 											"key": "originNumber",
-											"value": "0018Y"
+											"value": "0069"
 										},
 										{
 											"key": "removeSource",
