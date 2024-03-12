@@ -690,7 +690,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"operation\": \"set\",\r\n    \"tczName\": \"Mullingar\",\r\n    \"arrival\": \"11:00.00\",\r\n    \"departure\": \"11:12.00\"\r\n}",
+									"raw": "{\r\n    \"operation\": \"set\",\r\n    \"tczName\": \"Enfield\",\r\n    \"arrival\": \"17:42.00\",\r\n    \"departure\": \"17:47.00\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -698,7 +698,7 @@
 									}
 								},
 								"url": {
-									"raw": "postman-echo.com/get?sourceOriginNumber=A900&originNumber=0069",
+									"raw": "postman-echo.com/get?sourceOriginNumber=A900&originNumber=9070",
 									"host": [
 										"postman-echo",
 										"com"
@@ -720,7 +720,7 @@
 										},
 										{
 											"key": "originNumber",
-											"value": "0069"
+											"value": "9070"
 										},
 										{
 											"key": "removeSource",
