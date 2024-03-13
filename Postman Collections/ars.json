@@ -53,6 +53,38 @@
 					"id": "48b42708-3aa1-4f06-886a-306006b8a070"
 				},
 				{
+					"name": "Init ARS",
+					"item": [
+						{
+							"name": "ReInit ARS",
+							"id": "3d5f9d31-3379-42aa-9a79-e26ac090eda1",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{management_domain}}/internal/api/management/reinitSystem"
+							},
+							"response": []
+						},
+						{
+							"name": "ReInit Mng ARS",
+							"id": "a808ed1d-6666-46f0-9300-c2f90c0aca8e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{management_domain}}/internal/api/management/reinitManagement"
+							},
+							"response": []
+						}
+					],
+					"id": "f6c48fa4-0021-4b8e-b756-ad590030ad52"
+				},
+				{
 					"name": "IsSignalOutput",
 					"id": "83f8c8b0-903f-4063-b32f-c10e3cfd56b4",
 					"protocolProfileBehavior": {
