@@ -3455,7 +3455,7 @@
 							"response": []
 						},
 						{
-							"name": "Get Info RoutingOrder cache",
+							"name": "RoutingOrder (Get Info cache)",
 							"event": [
 								{
 									"listen": "test",
