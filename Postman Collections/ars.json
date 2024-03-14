@@ -91,11 +91,14 @@
 								"method": "POST",
 								"header": [],
 								"url": {
-									"raw": "{{management_domain}}/injectSystemStatus/:up",
+									"raw": "{{management_domain}}/internal/api/management/injectSystemStatus/:up",
 									"host": [
 										"{{management_domain}}"
 									],
 									"path": [
+										"internal",
+										"api",
+										"management",
 										"injectSystemStatus",
 										":up"
 									],
