@@ -80,6 +80,19 @@
 								"url": "{{management_domain}}/internal/api/management/reinitManagement"
 							},
 							"response": []
+						},
+						{
+							"name": "Simulate StartUp/Down",
+							"id": "4f4cbb7a-bb29-4767-b2e4-dc329d6c14f0",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{management_domain}}/internal/api/management/reinitManagement"
+							},
+							"response": []
 						}
 					],
 					"id": "f6c48fa4-0021-4b8e-b756-ad590030ad52"
