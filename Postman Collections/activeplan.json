@@ -546,7 +546,8 @@
 											"\r",
 											""
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"packages": {}
 									}
 								},
 								{
@@ -677,7 +678,8 @@
 											"    resTable: dataTableVisualization\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"packages": {}
 									}
 								}
 							],
@@ -690,7 +692,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"operation\": \"set\",\r\n    \"tczName\": \"Enfield\",\r\n    \"arrival\": \"17:42.00\",\r\n    \"departure\": \"17:47.00\"\r\n}",
+									"raw": "{\r\n    \"operation\": \"set\",\r\n    \"tczName\": \"Enfield\",\r\n    \"arrival\": \"09:20.00\",\r\n    \"departure\": \"09:20.00\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -698,7 +700,7 @@
 									}
 								},
 								"url": {
-									"raw": "postman-echo.com/get?sourceOriginNumber=A900&originNumber=9070",
+									"raw": "postman-echo.com/get?sourceOriginNumber=A900&originNumber=0666",
 									"host": [
 										"postman-echo",
 										"com"
@@ -720,7 +722,7 @@
 										},
 										{
 											"key": "originNumber",
-											"value": "9070"
+											"value": "0666"
 										},
 										{
 											"key": "removeSource",
