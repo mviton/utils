@@ -90,7 +90,23 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "{{management_domain}}/internal/api/management/reinitManagement"
+								"url": {
+									"raw": "{{management_domain}}/injectSystemStatus/:up",
+									"host": [
+										"{{management_domain}}"
+									],
+									"path": [
+										"injectSystemStatus",
+										":up"
+									],
+									"variable": [
+										{
+											"key": "up",
+											"value": "true",
+											"description": "true / false"
+										}
+									]
+								}
 							},
 							"response": []
 						}
