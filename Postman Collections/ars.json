@@ -1884,7 +1884,7 @@
 									"variable": [
 										{
 											"key": "mnemonic",
-											"value": "SE.IE-MHEN-ENFLD-SL707"
+											"value": "SE.IE-MHEN-KLCAN-SL715"
 										}
 									]
 								}
@@ -3613,6 +3613,220 @@
 								"url": "{{process_domain}}/internal/api/process/info-routingOrder-cache"
 							},
 							"response": []
+						},
+						{
+							"name": "CompatibilityResult Cache",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "fc167949-87f9-4ef9-ac23-6c87f3be7536",
+										"exec": [
+											"console.log(`--------- '${pm.info.requestName}' / ${pm.info.eventName} -------`);\r",
+											"\r",
+											"var moment = require('moment');\r",
+											"\r",
+											"var jsonData = pm.response.json();\r",
+											"const routingOrderData = jsonData;\r",
+											"\r",
+											"let dataVisualization = [];\r",
+											"\r",
+											"_.each(routingOrderData, (itemRoutingOrderCZ) => {\r",
+											"    _.each(itemRoutingOrderCZ.lstRoutingOrderDto, (itemRoutingOrder) => {\r",
+											"        dataVisualization.push(\r",
+											"                {\r",
+											"                    czId: itemRoutingOrderCZ.compatibilityZoneId,\r",
+											"                    command: itemRoutingOrder.command,\r",
+											"                    signalId: itemRoutingOrder.signalId,\r",
+											"                    timeExecution: utils.convertToTime(itemRoutingOrder.timeExecution, true, \"DD/MM HH:mm.ss\"),\r",
+											"                    circulationNumber: itemRoutingOrder.circulationNumber,\r",
+											"                    applicationDay: moment.utc(itemRoutingOrder.applicationDay).format(\"DD/MM/YYYY\")\r",
+											"                }\r",
+											"        );\r",
+											"    });\r",
+											"});\r",
+											"\r",
+											"var template = `\r",
+											"<html>\r",
+											"    <head>\r",
+											"    <style type=\"text/css\">\r",
+											"        table {\r",
+											"            font-size: 14px;\r",
+											"        }\r",
+											"    </style>    \r",
+											"    </head>\r",
+											"    <body>    \r",
+											"    <div class=\"table-responsive\">\r",
+											"    <table class=\"table table-striped\">        \r",
+											"        <thead class=\"thead-dark\">\r",
+											"            <tr>\r",
+											"                <th>CZ</th>\r",
+											"                <th>Command</th>\r",
+											"                <th>Signal</th>\r",
+											"                <th>TimeExecution</th>\r",
+											"                <th>O. Number</th>\r",
+											"                <th>Application Day</th>\r",
+											"            </tr>\r",
+											"        </thead>\r",
+											"        <tbody>\r",
+											"            {{#each response}}\r",
+											"                <tr>\r",
+											"                    <td>{{czId}}</td>                 \r",
+											"                    <td>{{command}}</td>\r",
+											"                    <td>{{signalId}}</td>\r",
+											"                    <td>{{timeExecution}}</td>\r",
+											"                    <td>{{circulationNumber}}</td>\r",
+											"                    <td>{{applicationDay}}</td>                    \r",
+											"                </tr>\r",
+											"                {{else}}\r",
+											"                <p>No data</p>\r",
+											"            {{/each}}\r",
+											"        </tbody>\r",
+											"    </table>\r",
+											"    </div>\r",
+											"    </body>\r",
+											"</html>\r",
+											"\r",
+											"`;\r",
+											"\r",
+											"// Set visualizer\r",
+											"pm.visualizer.set(template, {\r",
+											"    // Pass the response body parsed as JSON as `data`\r",
+											"    // response: pm.response.json()\r",
+											"    response: dataVisualization\r",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"id": "aeae5bc0-9fd0-42e4-a7d3-fb12ebcdc1f0",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{process_domain}}/internal/api/process/info-compatibilityresult-cache"
+							},
+							"response": []
+						},
+						{
+							"name": "isCirculationInCompatibilityZoneResult",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "fc167949-87f9-4ef9-ac23-6c87f3be7536",
+										"exec": [
+											"console.log(`--------- '${pm.info.requestName}' / ${pm.info.eventName} -------`);\r",
+											"\r",
+											"var moment = require('moment');\r",
+											"\r",
+											"var jsonData = pm.response.json();\r",
+											"const routingOrderData = jsonData;\r",
+											"\r",
+											"let dataVisualization = [];\r",
+											"\r",
+											"_.each(routingOrderData, (itemRoutingOrderCZ) => {\r",
+											"    _.each(itemRoutingOrderCZ.lstRoutingOrderDto, (itemRoutingOrder) => {\r",
+											"        dataVisualization.push(\r",
+											"                {\r",
+											"                    czId: itemRoutingOrderCZ.compatibilityZoneId,\r",
+											"                    command: itemRoutingOrder.command,\r",
+											"                    signalId: itemRoutingOrder.signalId,\r",
+											"                    timeExecution: utils.convertToTime(itemRoutingOrder.timeExecution, true, \"DD/MM HH:mm.ss\"),\r",
+											"                    circulationNumber: itemRoutingOrder.circulationNumber,\r",
+											"                    applicationDay: moment.utc(itemRoutingOrder.applicationDay).format(\"DD/MM/YYYY\")\r",
+											"                }\r",
+											"        );\r",
+											"    });\r",
+											"});\r",
+											"\r",
+											"var template = `\r",
+											"<html>\r",
+											"    <head>\r",
+											"    <style type=\"text/css\">\r",
+											"        table {\r",
+											"            font-size: 14px;\r",
+											"        }\r",
+											"    </style>    \r",
+											"    </head>\r",
+											"    <body>    \r",
+											"    <div class=\"table-responsive\">\r",
+											"    <table class=\"table table-striped\">        \r",
+											"        <thead class=\"thead-dark\">\r",
+											"            <tr>\r",
+											"                <th>CZ</th>\r",
+											"                <th>Command</th>\r",
+											"                <th>Signal</th>\r",
+											"                <th>TimeExecution</th>\r",
+											"                <th>O. Number</th>\r",
+											"                <th>Application Day</th>\r",
+											"            </tr>\r",
+											"        </thead>\r",
+											"        <tbody>\r",
+											"            {{#each response}}\r",
+											"                <tr>\r",
+											"                    <td>{{czId}}</td>                 \r",
+											"                    <td>{{command}}</td>\r",
+											"                    <td>{{signalId}}</td>\r",
+											"                    <td>{{timeExecution}}</td>\r",
+											"                    <td>{{circulationNumber}}</td>\r",
+											"                    <td>{{applicationDay}}</td>                    \r",
+											"                </tr>\r",
+											"                {{else}}\r",
+											"                <p>No data</p>\r",
+											"            {{/each}}\r",
+											"        </tbody>\r",
+											"    </table>\r",
+											"    </div>\r",
+											"    </body>\r",
+											"</html>\r",
+											"\r",
+											"`;\r",
+											"\r",
+											"// Set visualizer\r",
+											"pm.visualizer.set(template, {\r",
+											"    // Pass the response body parsed as JSON as `data`\r",
+											"    // response: pm.response.json()\r",
+											"    response: dataVisualization\r",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"id": "3deb75ed-23bc-4d1d-92b3-450e2fdda037",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{process_domain}}/internal/api/process/isCirculationInCompatibilityZoneResult?circulationUUID=c30132b1-0f62-411c-8983-cb497c1aa779",
+									"host": [
+										"{{process_domain}}"
+									],
+									"path": [
+										"internal",
+										"api",
+										"process",
+										"isCirculationInCompatibilityZoneResult"
+									],
+									"query": [
+										{
+											"key": "circulationUUID",
+											"value": "c30132b1-0f62-411c-8983-cb497c1aa779",
+											"type": "text"
+										}
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"id": "288cb496-2b49-44b0-8e8c-c6d268e66346"
@@ -4134,7 +4348,7 @@
 								"method": "PUT",
 								"header": [],
 								"url": {
-									"raw": "{{command_domain}}/internal/api/commands/remove?command=MHEN.ROUTE_OK SL724 SL718",
+									"raw": "{{command_domain}}/internal/api/commands/remove?command=MHEN.ROUTE_OK SL715 SL722",
 									"host": [
 										"{{command_domain}}"
 									],
@@ -4147,7 +4361,7 @@
 									"query": [
 										{
 											"key": "command",
-											"value": "MHEN.ROUTE_OK SL724 SL718"
+											"value": "MHEN.ROUTE_OK SL715 SL722"
 										}
 									]
 								}
@@ -4665,6 +4879,40 @@
 							"response": []
 						},
 						{
+							"name": "Find In Command Catalog Copy",
+							"id": "a83a570b-85c5-4073-927a-d50f706fef54",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{command_domain}}/internal/api/commands/findInCatalog?command=MHEN.ROUTE_OK SL723 SL731&signal=SE.IE-MHEN-KLCAN-SL723",
+									"host": [
+										"{{command_domain}}"
+									],
+									"path": [
+										"internal",
+										"api",
+										"commands",
+										"findInCatalog"
+									],
+									"query": [
+										{
+											"key": "command",
+											"value": "MHEN.ROUTE_OK SL723 SL731"
+										},
+										{
+											"key": "signal",
+											"value": "SE.IE-MHEN-KLCAN-SL723"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
 							"name": "Show CirculationEnabledSignal",
 							"id": "1c9620d2-7c3b-4d3a-8f58-412ee5cfc48c",
 							"protocolProfileBehavior": {
@@ -4729,6 +4977,116 @@
 				},
 				{
 					"name": "List Command",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "d1263360-5aec-4d93-8d1c-53fe0f372d28",
+								"exec": [
+									"console.log(`--------- '${pm.info.requestName}' / ${pm.info.eventName} -------`);\r",
+									"\r",
+									"var moment = require('moment');\r",
+									"const now = moment().utc();\r",
+									"\r",
+									"// Check response code\r",
+									"pm.test(\"Status code is 200\", function(){\r",
+									"   pm.response.to.have.status(200); \r",
+									"});\r",
+									"\r",
+									"var jsonData = pm.response.json();\r",
+									"\r",
+									"//console.log(`Total: ${jsonData.total} -> ${circulationData.length}`);\r",
+									"let dataVisualization = [];\r",
+									"\r",
+									"_.each(jsonData, (itemCommandARS) => {\r",
+									"    dataVisualization.push(\r",
+									"                {\r",
+									"                    \"command\": itemCommandARS.command,\r",
+									"                    \"signalId\": itemCommandARS.signalId,\r",
+									"                    \"auth\": itemCommandARS.modeAuthorization,\r",
+									"                    \"status\": itemCommandARS.status,\r",
+									"                    \"exec\": utils.convertToTime(itemCommandARS.timeExecution, true, \"DD/MM HH:mm.ss\"),\r",
+									"                    \"exec_ms\": itemCommandARS.timeExecution,\r",
+									"                    \"receivedUtc\": utils.convertToTime(itemCommandARS.timeReceived, false, \"DD/MM HH:mm.ss\"),\r",
+									"                    \"received\": utils.convertToTime(itemCommandARS.timeReceived, true, \"DD/MM HH:mm.ss\"),\r",
+									"                    \"cirUUID\": itemCommandARS.circulationUUID,\r",
+									"                    \"trainNumber\": utils.convertTrainUuidToNumber(itemCommandARS.circulationUUID)\r",
+									"                }\r",
+									"    );\r",
+									"});\r",
+									"dataVisualization = _.sortBy(dataVisualization, function(item){ return -item.exec_ms; });\r",
+									"\r",
+									"var template = `\r",
+									"<html>\r",
+									"    <head>    \r",
+									"    <style type=\"text/css\">\r",
+									"        table {\r",
+									"            font-size: 12px;\r",
+									"            /*border: 1px solid #03fc98;*/\r",
+									"            outline: thick double #03fc98;\r",
+									"            margin: 12px;\r",
+									"        }        \r",
+									"    </style>\r",
+									"    <script type=\"text/javascript\">\r",
+									"    </script>\r",
+									"    </head>\r",
+									"    <body>    \r",
+									"    <div class=\"table-responsive\">\r",
+									"    <table class=\"table table-striped\">\r",
+									"        <caption>Commands: {{info.total}} -  RequestTime: {{info.reqTime}}</caption>\r",
+									"        <thead class=\"thead-dark\">\r",
+									"            <tr>\r",
+									"                <th>Signal</th>\r",
+									"                <th>Command</th>                \r",
+									"                <th>Authorization</th>\r",
+									"                <th>Status</th>\r",
+									"                <th>Execution (local)</th>\r",
+									"                <th>Received (utc)</th>\r",
+									"                <th>Received (local)</th>\r",
+									"                <th>Circ_UUID</th>\r",
+									"                <th>Train Number</th>\r",
+									"            </tr>\r",
+									"        </thead>\r",
+									"        <tbody>\r",
+									"            {{#each response}}\r",
+									"                <tr>\r",
+									"                    <td>{{signalId}}</td>\r",
+									"                    <td>{{command}}</td>                    \r",
+									"                    <td>{{auth}}</td>\r",
+									"                    <td>{{status}}</td>\r",
+									"                    <td>{{exec}}</td>\r",
+									"                    <td>{{receivedUtc}}</td>\r",
+									"                    <td>{{received}}</td>\r",
+									"                    <td>{{cirUUID}}</td>\r",
+									"                    <td>{{trainNumber}}</td>\r",
+									"                </tr>\r",
+									"                {{else}}\r",
+									"                <p>No data</p>\r",
+									"            {{/each}}\r",
+									"        </tbody>\r",
+									"    </table>\r",
+									"    </div>\r",
+									"    </body>\r",
+									"</html>\r",
+									"`;\r",
+									"\r",
+									"// Set visualizer\r",
+									"pm.visualizer.set(template, {\r",
+									"    // Pass the response body parsed as JSON as `data`\r",
+									"    // response: pm.response.json()\r",
+									"    info: {\r",
+									"        total: dataVisualization.length,\r",
+									"        //utils.convertToTime(itemCommandARS.timeReceived, true, \"DD/MM HH:mm.ss\")\r",
+									"        reqTime: utils.convertToTime(now, true, \"DD/MM HH:mm.ss\")\r",
+									"    },\r",
+									"    response: dataVisualization\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
 					"id": "5b95acd8-93d5-4051-9d21-94a55869b355",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
