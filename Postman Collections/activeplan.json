@@ -692,7 +692,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"operation\": \"set\",\r\n    \"tczName\": \"Enfield\",\r\n    \"arrival\": \"09:20.00\",\r\n    \"departure\": \"09:20.00\"\r\n}",
+									"raw": "{\r\n    \"operation\": \"set\",\r\n    \"tczName\": \"Sligo\",\r\n    \"arrival\": \"20:10.00\",\r\n    \"departure\": \"20:15.00\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -700,7 +700,7 @@
 									}
 								},
 								"url": {
-									"raw": "postman-echo.com/get?sourceOriginNumber=A900&originNumber=0666",
+									"raw": "postman-echo.com/get?sourceOriginNumber=A909&originNumber=VIT01",
 									"host": [
 										"postman-echo",
 										"com"
@@ -717,12 +717,12 @@
 										},
 										{
 											"key": "sourceOriginNumber",
-											"value": "A900",
+											"value": "A909",
 											"description": "circulationUUI or sourceOriginNumber"
 										},
 										{
 											"key": "originNumber",
-											"value": "0666"
+											"value": "VIT01"
 										},
 										{
 											"key": "removeSource",
