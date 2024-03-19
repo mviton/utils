@@ -4895,7 +4895,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{command_domain}}/internal/api/commands/findInCatalog?command=MHEN.ROUTE_OK SL723 SL731&signal=SE.IE-MHEN-KLCAN-SL723",
+									"raw": "{{command_domain}}/internal/api/commands/findInCatalog?command=LDSO.ROUTE_OK SL815 SL821&signal=SE.IE-LDSO-BOYLE-SL815",
 									"host": [
 										"{{command_domain}}"
 									],
@@ -4908,45 +4908,11 @@
 									"query": [
 										{
 											"key": "command",
-											"value": "MHEN.ROUTE_OK SL723 SL731"
+											"value": "LDSO.ROUTE_OK SL815 SL821"
 										},
 										{
 											"key": "signal",
-											"value": "SE.IE-MHEN-KLCAN-SL723"
-										}
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Find In Command Catalog Copy",
-							"id": "a83a570b-85c5-4073-927a-d50f706fef54",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{command_domain}}/internal/api/commands/findInCatalog?command=MHEN.ROUTE_OK SL723 SL731&signal=SE.IE-MHEN-KLCAN-SL723",
-									"host": [
-										"{{command_domain}}"
-									],
-									"path": [
-										"internal",
-										"api",
-										"commands",
-										"findInCatalog"
-									],
-									"query": [
-										{
-											"key": "command",
-											"value": "MHEN.ROUTE_OK SL723 SL731"
-										},
-										{
-											"key": "signal",
-											"value": "SE.IE-MHEN-KLCAN-SL723"
+											"value": "SE.IE-LDSO-BOYLE-SL815"
 										}
 									]
 								}
