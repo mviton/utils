@@ -2224,11 +2224,11 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
+								"method": "POST",
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"commands\": [\r\n        {\r\n            \"commandsId\": \"\",\r\n            \"originSignal\": \"\"\r\n        }\r\n    ]\r\n}",
+									"raw": "{\r\n    \"commands\": [\r\n        {\r\n            \"commandsId\": \"LDSO.ROUTE_OK SL815 SL821\",\r\n            \"originSignal\": \"SE.IE-LDSO-BOYLE-SL815\"\r\n        }\r\n    ]\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
