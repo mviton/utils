@@ -1962,15 +1962,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://opefrvirl-int-activeplanmng-dataaccess-irlint.apps.k8s.mova.indra.es/api/activeplanmng/circulation/:uuidTren",
-							"protocol": "https",
+							"raw": "{{activeplan}}/api/activeplanmng/circulation/:uuidTren",
 							"host": [
-								"opefrvirl-int-activeplanmng-dataaccess-irlint",
-								"apps",
-								"k8s",
-								"mova",
-								"indra",
-								"es"
+								"{{activeplan}}"
 							],
 							"path": [
 								"api",
@@ -1980,9 +1974,8 @@
 							],
 							"variable": [
 								{
-									"id": "50d58755-17e0-478b-a333-09fdecef30b7",
 									"key": "uuidTren",
-									"value": "1706c41b-031c-475d-8bf7-6f512b31c7fe"
+									"value": "3f159667-10fe-40a8-b7d2-bee18b016178"
 								}
 							]
 						}
