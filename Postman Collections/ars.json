@@ -2200,6 +2200,47 @@
 					"name": "SignalRules",
 					"item": [],
 					"id": "b7e535dd-b377-4616-b77a-ffe58e1d0c93"
+				},
+				{
+					"name": "Compatibility",
+					"item": [
+						{
+							"name": "Command compatibility",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "0b3e9479-f8f8-43e2-91e9-7bacb97b3abb",
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"id": "563892e7-5f27-4d07-b3be-c349f4f950a5",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"commands\": [\r\n        {\r\n            \"commandsId\": \"\",\r\n            \"originSignal\": \"\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{management_domain}}/api/compatibility/command"
+							},
+							"response": []
+						}
+					],
+					"id": "31da25f8-2434-473b-ac2c-2fbe8222234b"
 				}
 			],
 			"id": "6b73f6ac-4f09-4a73-b87e-069db3c7ad60"
