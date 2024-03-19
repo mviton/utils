@@ -1951,6 +1951,43 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Circulation Detail",
+					"id": "996e382b-55ed-4b56-a5dc-c93edbc99340",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://opefrvirl-int-activeplanmng-dataaccess-irlint.apps.k8s.mova.indra.es/api/activeplanmng/circulation/:uuidTren",
+							"protocol": "https",
+							"host": [
+								"opefrvirl-int-activeplanmng-dataaccess-irlint",
+								"apps",
+								"k8s",
+								"mova",
+								"indra",
+								"es"
+							],
+							"path": [
+								"api",
+								"activeplanmng",
+								"circulation",
+								":uuidTren"
+							],
+							"variable": [
+								{
+									"id": "50d58755-17e0-478b-a333-09fdecef30b7",
+									"key": "uuidTren",
+									"value": "1706c41b-031c-475d-8bf7-6f512b31c7fe"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"id": "06158ae7-6c21-49db-9e6d-cedd0f4b779d",
