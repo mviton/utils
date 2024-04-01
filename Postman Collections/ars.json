@@ -2888,6 +2888,11 @@
 					"name": "Controller",
 					"item": [
 						{
+							"name": "ZonesInfo",
+							"item": [],
+							"id": "150cd05d-1a54-4c38-b540-9b9ad4f8680f"
+						},
+						{
 							"name": "Force reload Zones",
 							"id": "758ba3ed-28c9-4174-ab40-8883c0618eb9",
 							"protocolProfileBehavior": {
