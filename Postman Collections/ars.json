@@ -2888,40 +2888,165 @@
 					"name": "Controller",
 					"item": [
 						{
-							"name": "ZonesInfo",
-							"item": [],
-							"id": "150cd05d-1a54-4c38-b540-9b9ad4f8680f"
-						},
-						{
-							"name": "Force reload Zones",
-							"id": "758ba3ed-28c9-4174-ab40-8883c0618eb9",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{detection_domain}}/internal/api/detection/reloadzones?policy=always",
-									"host": [
-										"{{detection_domain}}"
-									],
-									"path": [
-										"internal",
-										"api",
-										"detection",
-										"reloadzones"
-									],
-									"query": [
-										{
-											"key": "policy",
-											"value": "always",
-											"description": "no / always / once"
+							"name": "Zones",
+							"item": [
+								{
+									"name": "Force reload Zones",
+									"id": "758ba3ed-28c9-4174-ab40-8883c0618eb9",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{detection_domain}}/internal/api/detection/reloadzones?policy=always",
+											"host": [
+												"{{detection_domain}}"
+											],
+											"path": [
+												"internal",
+												"api",
+												"detection",
+												"reloadzones"
+											],
+											"query": [
+												{
+													"key": "policy",
+													"value": "always",
+													"description": "no / always / once"
+												}
+											]
 										}
-									]
+									},
+									"response": []
+								},
+								{
+									"name": "Get Zone Proximity Info",
+									"id": "caba1745-bd0d-4242-9bb8-5d70bf17f7cc",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{detection_domain}}/internal/api/detection/zoneproximitybysignal?signalId=SE.IE-MHEN-KLCAN-SL722",
+											"host": [
+												"{{detection_domain}}"
+											],
+											"path": [
+												"internal",
+												"api",
+												"detection",
+												"zoneproximitybysignal"
+											],
+											"query": [
+												{
+													"key": "signalId",
+													"value": "SE.IE-MHEN-KLCAN-SL722",
+													"description": "Mnemonic FieldElement"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Zone Proximity JSON",
+									"id": "933825ef-291a-4e8e-a538-08f35151d1ca",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{detection_domain}}/internal/api/detection/zoneproximity_jsonbysignal?signalId=SE.IE-MHEN-KLCAN-SL722",
+											"host": [
+												"{{detection_domain}}"
+											],
+											"path": [
+												"internal",
+												"api",
+												"detection",
+												"zoneproximity_jsonbysignal"
+											],
+											"query": [
+												{
+													"key": "signalId",
+													"value": "SE.IE-MHEN-KLCAN-SL722",
+													"description": "Mnemonic FieldElement"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get Zone Verification Info",
+									"id": "9864dcbc-2408-4737-8e31-41f3672db777",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{detection_domain}}/internal/api/detection/zoneverificationbysignal?signalId=SE.IE-LDSO-DRMOD-SL802",
+											"host": [
+												"{{detection_domain}}"
+											],
+											"path": [
+												"internal",
+												"api",
+												"detection",
+												"zoneverificationbysignal"
+											],
+											"query": [
+												{
+													"key": "signalId",
+													"value": "SE.IE-LDSO-DRMOD-SL802",
+													"description": "Mnemonic FieldElement"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Get Zone Compatibility Info",
+									"id": "0b64b529-8fd7-442a-bdff-7b22b7f7381d",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{detection_domain}}/internal/api/detection/zonecompatibilitybysignal?signalId=SE.IE-MHEN-MLGAR-SL741",
+											"host": [
+												"{{detection_domain}}"
+											],
+											"path": [
+												"internal",
+												"api",
+												"detection",
+												"zonecompatibilitybysignal"
+											],
+											"query": [
+												{
+													"key": "signalId",
+													"value": "SE.IE-MHEN-MLGAR-SL741",
+													"description": "Mnemonic FieldElement"
+												}
+											]
+										}
+									},
+									"response": []
 								}
-							},
-							"response": []
+							],
+							"id": "150cd05d-1a54-4c38-b540-9b9ad4f8680f"
 						},
 						{
 							"name": "Get List SignalIds from FieldElement",
@@ -2947,99 +3072,6 @@
 										{
 											"key": "fieldElementId",
 											"value": "CV.IE-LDSO-SLIGO-6397",
-											"description": "Mnemonic FieldElement"
-										}
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Get Zone Proximity Info",
-							"id": "caba1745-bd0d-4242-9bb8-5d70bf17f7cc",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{detection_domain}}/internal/api/detection/zoneproximitybysignal?signalId=SE.IE-MHEN-KLCAN-SL722",
-									"host": [
-										"{{detection_domain}}"
-									],
-									"path": [
-										"internal",
-										"api",
-										"detection",
-										"zoneproximitybysignal"
-									],
-									"query": [
-										{
-											"key": "signalId",
-											"value": "SE.IE-MHEN-KLCAN-SL722",
-											"description": "Mnemonic FieldElement"
-										}
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Get Zone Verification Info",
-							"id": "9864dcbc-2408-4737-8e31-41f3672db777",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{detection_domain}}/internal/api/detection/zoneverificationbysignal?signalId=SE.IE-LDSO-DRMOD-SL802",
-									"host": [
-										"{{detection_domain}}"
-									],
-									"path": [
-										"internal",
-										"api",
-										"detection",
-										"zoneverificationbysignal"
-									],
-									"query": [
-										{
-											"key": "signalId",
-											"value": "SE.IE-LDSO-DRMOD-SL802",
-											"description": "Mnemonic FieldElement"
-										}
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Get Zone Compatibility Info",
-							"id": "0b64b529-8fd7-442a-bdff-7b22b7f7381d",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{detection_domain}}/internal/api/detection/zonecompatibilitybysignal?signalId=SE.IE-MHEN-MLGAR-SL741",
-									"host": [
-										"{{detection_domain}}"
-									],
-									"path": [
-										"internal",
-										"api",
-										"detection",
-										"zonecompatibilitybysignal"
-									],
-									"query": [
-										{
-											"key": "signalId",
-											"value": "SE.IE-MHEN-MLGAR-SL741",
 											"description": "Mnemonic FieldElement"
 										}
 									]
