@@ -2959,7 +2959,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{detection_domain}}/internal/api/detection/zoneproximitybysignal?signalId=SE.IE-LDSO-SLIGO-SL832",
+									"raw": "{{detection_domain}}/internal/api/detection/zoneproximitybysignal?signalId=SE.IE-MHEN-KLCAN-SL722",
 									"host": [
 										"{{detection_domain}}"
 									],
@@ -2972,7 +2972,7 @@
 									"query": [
 										{
 											"key": "signalId",
-											"value": "SE.IE-LDSO-SLIGO-SL832",
+											"value": "SE.IE-MHEN-KLCAN-SL722",
 											"description": "Mnemonic FieldElement"
 										}
 									]
