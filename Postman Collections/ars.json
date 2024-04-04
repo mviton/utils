@@ -3331,7 +3331,7 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{process_domain}}/internal/api/process/signalbymnemonic?signalMnemo=SE.IE-MHEN-MLGAR-SL731(S)",
+											"raw": "{{process_domain}}/internal/api/process/signalbymnemonic?signalMnemo=SE.IE-LK01-LMRCK-LK461",
 											"host": [
 												"{{process_domain}}"
 											],
@@ -3344,7 +3344,7 @@
 											"query": [
 												{
 													"key": "signalMnemo",
-													"value": "SE.IE-MHEN-MLGAR-SL731(S)"
+													"value": "SE.IE-LK01-LMRCK-LK461"
 												}
 											]
 										}
