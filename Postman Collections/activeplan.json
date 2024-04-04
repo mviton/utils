@@ -700,7 +700,7 @@
 									}
 								},
 								"url": {
-									"raw": "postman-echo.com/get?sourceOriginNumber=A909&originNumber=VIT01",
+									"raw": "postman-echo.com/get?sourceOriginNumber=A406&originNumber=ARS406",
 									"host": [
 										"postman-echo",
 										"com"
@@ -717,12 +717,12 @@
 										},
 										{
 											"key": "sourceOriginNumber",
-											"value": "A909",
+											"value": "A406",
 											"description": "circulationUUI or sourceOriginNumber"
 										},
 										{
 											"key": "originNumber",
-											"value": "VIT01"
+											"value": "ARS406"
 										},
 										{
 											"key": "removeSource",
