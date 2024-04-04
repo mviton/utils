@@ -807,6 +807,136 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": null
+								},
+								{
+									"id": "b5963414-1f12-4dde-bd5a-2df1794d0587",
+									"name": "Limerik",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"operation\": \"set\",\r\n    \"tczName\": \"Dromkeen\",\r\n    \"arrival\": \"10:00.00\",\r\n    \"departure\": \"10:10.00\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "postman-echo.com/get?sourceOriginNumber=A406&originNumber=ARS406",
+											"host": [
+												"postman-echo",
+												"com"
+											],
+											"path": [
+												"get"
+											],
+											"query": [
+												{
+													"key": "circulationUUID",
+													"value": "bd498371-af3a-4d4f-bf48-c93cbad19d66",
+													"description": "circulationUUI or sourceOriginNumber",
+													"disabled": true
+												},
+												{
+													"key": "sourceOriginNumber",
+													"value": "A406",
+													"description": "circulationUUI or sourceOriginNumber"
+												},
+												{
+													"key": "originNumber",
+													"value": "ARS406"
+												},
+												{
+													"key": "removeSource",
+													"value": "true",
+													"disabled": true
+												},
+												{
+													"key": "trafficType",
+													"value": "PASSENGER",
+													"description": "FREIGHT / PASSENGER",
+													"disabled": true
+												},
+												{
+													"key": "formationLength",
+													"value": "201",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": null
+								},
+								{
+									"id": "b528daef-3d8e-428a-99e5-7173dacc5eac",
+									"name": "Line8",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"operation\": \"set\",\r\n    \"tczName\": \"Sligo\",\r\n    \"arrival\": \"20:10.00\",\r\n    \"departure\": \"20:15.00\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "postman-echo.com/get?sourceOriginNumber=A909&originNumber=VIT01",
+											"host": [
+												"postman-echo",
+												"com"
+											],
+											"path": [
+												"get"
+											],
+											"query": [
+												{
+													"key": "circulationUUID",
+													"value": "bd498371-af3a-4d4f-bf48-c93cbad19d66",
+													"description": "circulationUUI or sourceOriginNumber",
+													"disabled": true
+												},
+												{
+													"key": "sourceOriginNumber",
+													"value": "A909",
+													"description": "circulationUUI or sourceOriginNumber"
+												},
+												{
+													"key": "originNumber",
+													"value": "VIT01"
+												},
+												{
+													"key": "removeSource",
+													"value": "true",
+													"disabled": true
+												},
+												{
+													"key": "trafficType",
+													"value": "PASSENGER",
+													"description": "FREIGHT / PASSENGER",
+													"disabled": true
+												},
+												{
+													"key": "formationLength",
+													"value": "201",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": null
 								}
 							]
 						}
