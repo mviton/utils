@@ -2600,7 +2600,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n    \"circulation\": {\r\n        \"id\": \"fefd8d82-6da1-4062-979e-2b297f889319\"\r\n    },\r\n    \"properties\":{\r\n        \"ARS_STATUS\": \"ENABLE\",\r\n        \"EXCLUDED_SIGNAL_ID\": null\r\n    }\r\n}",
+											"raw": "{\r\n    \"circulation\": {\r\n        \"id\": \"1d9d9aa6-6f7f-4bd6-81c0-3d7fff841d18\"\r\n    },\r\n    \"properties\":{\r\n        \"ARS_STATUS\": \"ENABLE\",\r\n        \"EXCLUDED_SIGNAL_ID\": null\r\n    }\r\n}",
 											"options": {
 												"raw": {
 													"language": "json"
@@ -2658,7 +2658,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{circulation_domain}}/api/circulation/traindetector?trainDetectorId=CV.IE-LDSO-SLIGO-6398R",
+							"raw": "{{circulation_domain}}/api/circulation/traindetector?trainDetectorId=CV.IE-LK01-LMRCK-4266",
 							"host": [
 								"{{circulation_domain}}"
 							],
@@ -2670,7 +2670,7 @@
 							"query": [
 								{
 									"key": "trainDetectorId",
-									"value": "CV.IE-LDSO-SLIGO-6398R"
+									"value": "CV.IE-LK01-LMRCK-4266"
 								}
 							]
 						}
