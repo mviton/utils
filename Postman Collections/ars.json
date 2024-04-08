@@ -3234,12 +3234,130 @@
 									"variable": [
 										{
 											"key": "logId",
-											"value": "com.indra.tms.ars.eulynx"
+											"value": "com.indra.tms.ars.process.service.ProcessService"
 										}
 									]
 								}
 							},
-							"response": []
+							"response": [
+								{
+									"id": "e32885bb-5705-4b66-84dd-5482ac92e5ea",
+									"name": "Eulynx",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"configuredLevel\": \"DEBUG\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{process_domain}}/actuator/loggers/:logId",
+											"host": [
+												"{{process_domain}}"
+											],
+											"path": [
+												"actuator",
+												"loggers",
+												":logId"
+											],
+											"variable": [
+												{
+													"key": "logId",
+													"value": "com.indra.tms.ars.eulynx"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": null
+								},
+								{
+									"id": "bb4526d4-925f-452f-9103-22f5175416a9",
+									"name": "ProcessService",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"configuredLevel\": \"DEBUG\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{process_domain}}/actuator/loggers/:logId",
+											"host": [
+												"{{process_domain}}"
+											],
+											"path": [
+												"actuator",
+												"loggers",
+												":logId"
+											],
+											"variable": [
+												{
+													"key": "logId",
+													"value": "com.indra.tms.ars.process.service.ProcessService"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": null
+								},
+								{
+									"id": "4154eb6e-a855-4763-ad24-ea29a16262b2",
+									"name": "SignalRules",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"configuredLevel\": \"DEBUG\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{process_domain}}/actuator/loggers/:logId",
+											"host": [
+												"{{process_domain}}"
+											],
+											"path": [
+												"actuator",
+												"loggers",
+												":logId"
+											],
+											"variable": [
+												{
+													"key": "logId",
+													"value": "com.indra.tms.ars.signalrules.service.SignalRulesService"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": null
+								}
+							]
 						},
 						{
 							"name": "Logger detail",
@@ -3263,7 +3381,7 @@
 									"variable": [
 										{
 											"key": "logId",
-											"value": "com.indra.tms.ars.eulynx"
+											"value": "com.indra.tms.ars.process.service.ProcessService"
 										}
 									]
 								}
@@ -4076,7 +4194,7 @@
 							"variable": [
 								{
 									"key": "signalId",
-									"value": "SE.IE-MHEN-MLGAR-SL749"
+									"value": "SE.IE-LK01-LMRCK-LK483"
 								}
 							]
 						}
