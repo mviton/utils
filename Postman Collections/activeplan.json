@@ -1618,16 +1618,6 @@
 									"            sortable: true\r",
 									"        },\r",
 									"        {\r",
-									"            header: 'Current Status TD',\r",
-									"            name: 'csTd'\r",
-									"        },\r",
-									"        {\r",
-									"            header: 'CS Direction',\r",
-									"            name: 'csDirection',\r",
-									"            filter: { type: 'select', showApplyBtn: true, showClearBtn: true },\r",
-									"            sortable: true\r",
-									"        },\r",
-									"        {\r",
 									"            header: 'CS Hour (local)',\r",
 									"            name: 'csHour',\r",
 									"            sortable: true\r",
@@ -1635,7 +1625,8 @@
 									"    ]\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						}
 					],
