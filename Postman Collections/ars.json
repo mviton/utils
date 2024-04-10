@@ -3191,6 +3191,19 @@
 							"response": []
 						},
 						{
+							"name": "Environment Copy",
+							"id": "1b4e2be2-39a3-4811-8a83-cde8afd113c4",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{process_domain}}/actuator/env"
+							},
+							"response": []
+						},
+						{
 							"name": "Loggers",
 							"id": "e37467ab-ff4b-4e34-bf46-6b7bd7a80e76",
 							"protocolProfileBehavior": {
