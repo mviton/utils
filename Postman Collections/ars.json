@@ -3102,7 +3102,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{detection_domain}}/internal/api/detection/getFieldElementState?fieldElementId=SE.IE-MHEN-KLCAN-SL715",
+									"raw": "{{detection_domain}}/internal/api/detection/getFieldElementState?fieldElementId=CV.IE-LK01-LMRCK-4291",
 									"host": [
 										"{{detection_domain}}"
 									],
@@ -3115,7 +3115,7 @@
 									"query": [
 										{
 											"key": "fieldElementId",
-											"value": "SE.IE-MHEN-KLCAN-SL715"
+											"value": "CV.IE-LK01-LMRCK-4291"
 										}
 									]
 								}
