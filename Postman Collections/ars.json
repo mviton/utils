@@ -3191,7 +3191,7 @@
 							"response": []
 						},
 						{
-							"name": "Environment Copy",
+							"name": "Beans",
 							"id": "1b4e2be2-39a3-4811-8a83-cde8afd113c4",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -3199,7 +3199,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "{{process_domain}}/actuator/env"
+								"url": "{{process_domain}}/actuator/beans"
 							},
 							"response": []
 						},
