@@ -1234,7 +1234,7 @@
 										},
 										{
 											"id": "45ed70d8-04d7-44c0-b3c8-1a44ce62e9e1",
-											"name": "Enable IL46 (DNRI) Copy",
+											"name": "Disable IL46 (DNRI)",
 											"originalRequest": {
 												"method": "POST",
 												"header": [],
@@ -1313,8 +1313,88 @@
 											"body": null
 										},
 										{
+											"id": "95a4b311-751f-4d79-92d7-dd66d74f3b72",
+											"name": "Disable IL12 (LK01)",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{management_domain}}/api/management/routing-status/ence-restriction/:ixl?operativeState=ENABLED",
+													"host": [
+														"{{management_domain}}"
+													],
+													"path": [
+														"api",
+														"management",
+														"routing-status",
+														"ence-restriction",
+														":ixl"
+													],
+													"query": [
+														{
+															"key": "operativeState",
+															"value": "ENABLED",
+															"description": "ENABLED / DISABLED"
+														}
+													],
+													"variable": [
+														{
+															"key": "ixl",
+															"value": "EN.IE-IL12",
+															"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
+										},
+										{
 											"id": "3812c863-4246-4773-9b0e-4dcedf185b96",
 											"name": "Enable IL13 (LKGT)",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{management_domain}}/api/management/routing-status/ence-restriction/:ixl?operativeState=ENABLED",
+													"host": [
+														"{{management_domain}}"
+													],
+													"path": [
+														"api",
+														"management",
+														"routing-status",
+														"ence-restriction",
+														":ixl"
+													],
+													"query": [
+														{
+															"key": "operativeState",
+															"value": "ENABLED",
+															"description": "ENABLED / DISABLED"
+														}
+													],
+													"variable": [
+														{
+															"key": "ixl",
+															"value": "EN.IE-IL13",
+															"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
+										},
+										{
+											"id": "a8e7c2f5-dd94-4894-9a6e-c79f688bddaa",
+											"name": "Enable IL13 (LKGT) Copy",
 											"originalRequest": {
 												"method": "POST",
 												"header": [],
