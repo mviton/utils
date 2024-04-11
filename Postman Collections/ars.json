@@ -3814,45 +3814,6 @@
 									"body": null
 								},
 								{
-									"id": "ad8e21d2-b167-4a67-a0c9-bbf5701a267b",
-									"name": "Set Logger",
-									"originalRequest": {
-										"method": "POST",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "{\r\n    \"configuredLevel\": \"DEBUG\"\r\n}",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": {
-											"raw": "{{process_domain}}/actuator/loggers/:logId",
-											"host": [
-												"{{process_domain}}"
-											],
-											"path": [
-												"actuator",
-												"loggers",
-												":logId"
-											],
-											"variable": [
-												{
-													"key": "logId",
-													"value": "com.indra.tms.ars.process.service.ProcessService"
-												}
-											]
-										}
-									},
-									"_postman_previewlanguage": null,
-									"header": null,
-									"cookie": [],
-									"responseTime": null,
-									"body": null
-								},
-								{
 									"id": "d25d5594-181e-4ac4-8d1c-1c4359a30cf7",
 									"name": "ProximityService",
 									"originalRequest": {
