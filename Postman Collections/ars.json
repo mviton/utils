@@ -1268,7 +1268,7 @@
 											"                {\r",
 											"                    \"ixl\": itemEnce.mnemonic,\r",
 											"                    \"name\": utils.convertIxlName(itemEnce.mnemonic),\r",
-											"                    \"state\": itemEnce.opertativeState\r",
+											"                    \"state\": itemEnce.operativeState\r",
 											"                }\r",
 											"    );\r",
 											"});\r",
