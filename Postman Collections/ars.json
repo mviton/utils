@@ -3121,6 +3121,35 @@
 					"response": []
 				},
 				{
+					"name": "Circulation TrainDetector Copy",
+					"id": "86b1af06-e350-4364-b566-5032170abbbe",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{circulation_domain}}/api/circulation/traindetector?trainDetectorId=CV.IE-LK01-LMRCK-4266",
+							"host": [
+								"{{circulation_domain}}"
+							],
+							"path": [
+								"api",
+								"circulation",
+								"traindetector"
+							],
+							"query": [
+								{
+									"key": "trainDetectorId",
+									"value": "CV.IE-LK01-LMRCK-4266"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Circulations (all)",
 					"event": [
 						{
