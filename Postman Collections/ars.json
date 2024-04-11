@@ -993,6 +993,46 @@
 											"body": null
 										},
 										{
+											"id": "c199326b-af40-4833-bad5-160b5da51b3a",
+											"name": "Disable IL1 (LDSO)",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{management_domain}}/api/management/routing-status/ence-restriction/:ixl?operativeState=DISABLED",
+													"host": [
+														"{{management_domain}}"
+													],
+													"path": [
+														"api",
+														"management",
+														"routing-status",
+														"ence-restriction",
+														":ixl"
+													],
+													"query": [
+														{
+															"key": "operativeState",
+															"value": "DISABLED",
+															"description": "ENABLED / DISABLED"
+														}
+													],
+													"variable": [
+														{
+															"key": "ixl",
+															"value": "EN.IE-IL1",
+															"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
+										},
+										{
 											"id": "fa06c0b8-ac99-4367-b9bd-13be2891ea52",
 											"name": "Enable IL2 (MHEN)",
 											"originalRequest": {
@@ -1073,13 +1113,13 @@
 											"body": null
 										},
 										{
-											"id": "c199326b-af40-4833-bad5-160b5da51b3a",
-											"name": "Disable IL1 (LDSO)",
+											"id": "64fce62a-8f3d-4f3a-a99c-dde645546827",
+											"name": "Enable IL45 (KNRI)",
 											"originalRequest": {
 												"method": "POST",
 												"header": [],
 												"url": {
-													"raw": "{{management_domain}}/api/management/routing-status/ence-restriction/:ixl?operativeState=DISABLED",
+													"raw": "{{management_domain}}/api/management/routing-status/ence-restriction/:ixl?operativeState=ENABLED",
 													"host": [
 														"{{management_domain}}"
 													],
@@ -1093,14 +1133,54 @@
 													"query": [
 														{
 															"key": "operativeState",
-															"value": "DISABLED",
+															"value": "ENABLED",
 															"description": "ENABLED / DISABLED"
 														}
 													],
 													"variable": [
 														{
 															"key": "ixl",
-															"value": "EN.IE-IL1",
+															"value": "EN.IE-IL45",
+															"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
+										},
+										{
+											"id": "e1bdcfcc-8bcd-4bc6-8a9b-4f9bed278795",
+											"name": "Enable IL45 (KNRI) Copy",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{management_domain}}/api/management/routing-status/ence-restriction/:ixl?operativeState=ENABLED",
+													"host": [
+														"{{management_domain}}"
+													],
+													"path": [
+														"api",
+														"management",
+														"routing-status",
+														"ence-restriction",
+														":ixl"
+													],
+													"query": [
+														{
+															"key": "operativeState",
+															"value": "ENABLED",
+															"description": "ENABLED / DISABLED"
+														}
+													],
+													"variable": [
+														{
+															"key": "ixl",
+															"value": "EN.IE-IL45",
 															"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
 														}
 													]
