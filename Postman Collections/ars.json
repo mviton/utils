@@ -2905,7 +2905,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{circulation_domain}}/internal/api/circulation/getOverlapSignal",
+									"raw": "{{circulation_domain}}/internal/api/circulation/getOverlapSignal?mnemonicTD=f",
 									"host": [
 										"{{circulation_domain}}"
 									],
@@ -2919,8 +2919,7 @@
 										{
 											"key": "mnemonicTD",
 											"value": "f",
-											"type": "text",
-											"disabled": true
+											"type": "text"
 										}
 									]
 								}
