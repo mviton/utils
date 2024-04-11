@@ -1531,7 +1531,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "8fb387ba-0943-43a3-bf0f-ac6178cdd12b",
+								"id": "5957d9a3-4f90-432c-8432-d41fa0226b9e",
 								"exec": [
 									"console.log(`--------- '${pm.info.requestName}' / ${pm.info.eventName} -------`);\r",
 									"\r",
