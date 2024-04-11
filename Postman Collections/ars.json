@@ -5426,7 +5426,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "4615276c-84c0-4fc6-a747-e749362c5196",
+				"id": "13b2ddb4-745c-4c78-b719-7c55d1cbb689",
 				"type": "text/javascript",
 				"exec": [
 					"console.log(`----ARS----- '${pm.info.requestName}' / ${pm.info.eventName} -------`);",
@@ -5538,6 +5538,14 @@
 					"    trainNameTranslate = JSON.parse(globalTranslateTainNumber);",
 					"}",
 					"",
+					"let translateIxl = [];",
+					"const globalTranslateIxl = pm.globals.get(\"translateIxl\");",
+					"if(!globalTranslateIxl){",
+					"    translateIxl = [];",
+					"}else {",
+					"    translateIxl = JSON.parse(globalTranslateIxl);",
+					"}",
+					"",
 					"utils = {",
 					"    convertTrainUuidToNumber: (uuidTrain) => {",
 					"        const itemNumberTrain = _.find(trainNameTranslate, (item) => item.uuid === uuidTrain);",
@@ -5552,6 +5560,10 @@
 					"            tzOffset = new Date().getTimezoneOffset();",
 					"        }",
 					"        return moment.utc(utcTime).utcOffset(-tzOffset).format(strFormat);",
+					"    },",
+					"    convertIxlName: (enceId) => {",
+					"        const itemIxl = _.find(translateIxl, (item) => item.ixl === enceId);",
+					"        return (itemIxl && itemIxl.name)? itemIxl.name : \"-\";",
 					"    }",
 					"};",
 					"",
@@ -5608,7 +5620,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "292d9f60-7b14-46a0-b4e5-5939b1684eab",
+				"id": "3796d102-1d3e-464f-92de-1462506f1cf1",
 				"type": "text/javascript",
 				"exec": [
 					""
