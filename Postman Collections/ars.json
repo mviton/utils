@@ -1364,7 +1364,7 @@
 							"response": [
 								{
 									"id": "d9307404-a8ac-49e3-b4cf-fa13a7401c22",
-									"name": "IL1 (LDSO)",
+									"name": "EN.IE-IL1 (LDSO)",
 									"originalRequest": {
 										"method": "GET",
 										"header": [],
@@ -1397,7 +1397,7 @@
 								},
 								{
 									"id": "01534a66-96d4-4aa7-9be7-8bfbd3af3684",
-									"name": "IL2 (MHEN)",
+									"name": "EN.IE-IL2 (MHEN)",
 									"originalRequest": {
 										"method": "GET",
 										"header": [],
@@ -1430,6 +1430,39 @@
 								},
 								{
 									"id": "9b534151-22a8-40b5-b0c4-b00c0aebf43a",
+									"name": "EN.IE-IL45 (KNRI)",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{management_domain}}/api/management/routing-status/ence-restriction/:ence",
+											"host": [
+												"{{management_domain}}"
+											],
+											"path": [
+												"api",
+												"management",
+												"routing-status",
+												"ence-restriction",
+												":ence"
+											],
+											"variable": [
+												{
+													"key": "ence",
+													"value": "EN.IE-IL1",
+													"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": null
+								},
+								{
+									"id": "a260bd0a-4a77-457c-b2d7-7702498542e9",
 									"name": "Get Ence Status",
 									"originalRequest": {
 										"method": "GET",
