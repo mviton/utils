@@ -3666,19 +3666,6 @@
 							"id": "98f1c2c0-a0fe-4227-aa5f-14f09d8d70ab"
 						},
 						{
-							"name": "Forze Reload Topology",
-							"id": "e2a0b762-9479-45ae-8811-a557d94011d9",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "PUT",
-								"header": [],
-								"url": "{{process_domain}}/internal/api/process/reload-topology"
-							},
-							"response": []
-						},
-						{
 							"name": "AnalyzeCommands",
 							"id": "5e720538-ee0c-4e06-b2a1-e1a49c87a622",
 							"protocolProfileBehavior": {
@@ -4472,19 +4459,6 @@
 										"method": "GET",
 										"header": [],
 										"url": "{{command_domain}}/internal/api/commands/reload-commands-catalog"
-									},
-									"response": []
-								},
-								{
-									"name": "Reload Topology",
-									"id": "9876d430-c7c2-4b92-9009-b81c3ab5cec6",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "PUT",
-										"header": [],
-										"url": "{{command_domain}}/internal/api/commands/reload-topology"
 									},
 									"response": []
 								},
