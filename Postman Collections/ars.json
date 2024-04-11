@@ -953,6 +953,46 @@
 									},
 									"response": [
 										{
+											"id": "502421f3-f212-44de-8367-0164340c1c5e",
+											"name": "Enable IL1 (LDSO)",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{management_domain}}/api/management/routing-status/ence-restriction/:ixl?operativeState=ENABLED",
+													"host": [
+														"{{management_domain}}"
+													],
+													"path": [
+														"api",
+														"management",
+														"routing-status",
+														"ence-restriction",
+														":ixl"
+													],
+													"query": [
+														{
+															"key": "operativeState",
+															"value": "ENABLED",
+															"description": "ENABLED / DISABLED"
+														}
+													],
+													"variable": [
+														{
+															"key": "ixl",
+															"value": "EN.IE-IL1",
+															"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
+										},
+										{
 											"id": "fa06c0b8-ac99-4367-b9bd-13be2891ea52",
 											"name": "Enable IL2 (MHEN)",
 											"originalRequest": {
@@ -994,7 +1034,7 @@
 										},
 										{
 											"id": "60fbb00b-903a-4df8-8a17-ed69ddd9950b",
-											"name": "Disable MHEN IL2",
+											"name": "Disable IL2 (MHEN)",
 											"originalRequest": {
 												"method": "POST",
 												"header": [],
@@ -1033,48 +1073,8 @@
 											"body": null
 										},
 										{
-											"id": "502421f3-f212-44de-8367-0164340c1c5e",
-											"name": "Enable LDSO IL1",
-											"originalRequest": {
-												"method": "POST",
-												"header": [],
-												"url": {
-													"raw": "{{management_domain}}/api/management/routing-status/ence-restriction/:ixl?operativeState=ENABLED",
-													"host": [
-														"{{management_domain}}"
-													],
-													"path": [
-														"api",
-														"management",
-														"routing-status",
-														"ence-restriction",
-														":ixl"
-													],
-													"query": [
-														{
-															"key": "operativeState",
-															"value": "ENABLED",
-															"description": "ENABLED / DISABLED"
-														}
-													],
-													"variable": [
-														{
-															"key": "ixl",
-															"value": "EN.IE-IL1",
-															"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
-														}
-													]
-												}
-											},
-											"_postman_previewlanguage": null,
-											"header": null,
-											"cookie": [],
-											"responseTime": null,
-											"body": null
-										},
-										{
 											"id": "c199326b-af40-4833-bad5-160b5da51b3a",
-											"name": "Disable LDSO IL1",
+											"name": "Disable IL1 (LDSO)",
 											"originalRequest": {
 												"method": "POST",
 												"header": [],
