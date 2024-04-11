@@ -1234,7 +1234,7 @@
 										},
 										{
 											"id": "45ed70d8-04d7-44c0-b3c8-1a44ce62e9e1",
-											"name": "Enable IL46 (DNRI) Copy",
+											"name": "Disable IL46 (DNRI)",
 											"originalRequest": {
 												"method": "POST",
 												"header": [],
@@ -1314,7 +1314,7 @@
 										},
 										{
 											"id": "95a4b311-751f-4d79-92d7-dd66d74f3b72",
-											"name": "Enable IL12 (LK01) Copy",
+											"name": "Disable IL12 (LK01)",
 											"originalRequest": {
 												"method": "POST",
 												"header": [],
@@ -1394,7 +1394,7 @@
 										},
 										{
 											"id": "a8e7c2f5-dd94-4894-9a6e-c79f688bddaa",
-											"name": "Enable IL13 (LKGT) Copy",
+											"name": "Disable IL13 (LKGT)",
 											"originalRequest": {
 												"method": "POST",
 												"header": [],
