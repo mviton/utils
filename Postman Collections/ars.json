@@ -1234,12 +1234,12 @@
 										},
 										{
 											"id": "45ed70d8-04d7-44c0-b3c8-1a44ce62e9e1",
-											"name": "Disable IL46 (DNRI)",
+											"name": "Enable IL46 (DNRI) Copy",
 											"originalRequest": {
 												"method": "POST",
 												"header": [],
 												"url": {
-													"raw": "{{management_domain}}/api/management/routing-status/ence-restriction/:ixl?operativeState=ENABLED",
+													"raw": "{{management_domain}}/api/management/routing-status/ence-restriction/:ixl?operativeState=DISABLED",
 													"host": [
 														"{{management_domain}}"
 													],
@@ -1253,7 +1253,7 @@
 													"query": [
 														{
 															"key": "operativeState",
-															"value": "ENABLED",
+															"value": "DISABLED",
 															"description": "ENABLED / DISABLED"
 														}
 													],
@@ -1314,12 +1314,12 @@
 										},
 										{
 											"id": "95a4b311-751f-4d79-92d7-dd66d74f3b72",
-											"name": "Disable IL12 (LK01)",
+											"name": "Enable IL12 (LK01) Copy",
 											"originalRequest": {
 												"method": "POST",
 												"header": [],
 												"url": {
-													"raw": "{{management_domain}}/api/management/routing-status/ence-restriction/:ixl?operativeState=ENABLED",
+													"raw": "{{management_domain}}/api/management/routing-status/ence-restriction/:ixl?operativeState=DISABLED",
 													"host": [
 														"{{management_domain}}"
 													],
@@ -1333,7 +1333,7 @@
 													"query": [
 														{
 															"key": "operativeState",
-															"value": "ENABLED",
+															"value": "DISABLED",
 															"description": "ENABLED / DISABLED"
 														}
 													],
@@ -1399,7 +1399,7 @@
 												"method": "POST",
 												"header": [],
 												"url": {
-													"raw": "{{management_domain}}/api/management/routing-status/ence-restriction/:ixl?operativeState=ENABLED",
+													"raw": "{{management_domain}}/api/management/routing-status/ence-restriction/:ixl?operativeState=DISABLED",
 													"host": [
 														"{{management_domain}}"
 													],
@@ -1413,7 +1413,7 @@
 													"query": [
 														{
 															"key": "operativeState",
-															"value": "ENABLED",
+															"value": "DISABLED",
 															"description": "ENABLED / DISABLED"
 														}
 													],
