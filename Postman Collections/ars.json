@@ -1256,74 +1256,7 @@
 								"header": [],
 								"url": "{{management_domain}}/api/management/routing-status/ence-restriction"
 							},
-							"response": [
-								{
-									"id": "c67bdbb4-9edf-42ae-8d17-586ae6f9ae59",
-									"name": "IL1 (LDSO)",
-									"originalRequest": {
-										"method": "GET",
-										"header": [],
-										"url": {
-											"raw": "{{management_domain}}/api/management/routing-status/ence-restriction/:ence",
-											"host": [
-												"{{management_domain}}"
-											],
-											"path": [
-												"api",
-												"management",
-												"routing-status",
-												"ence-restriction",
-												":ence"
-											],
-											"variable": [
-												{
-													"key": "ence",
-													"value": "EN.IE-IL1",
-													"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
-												}
-											]
-										}
-									},
-									"_postman_previewlanguage": null,
-									"header": null,
-									"cookie": [],
-									"responseTime": null,
-									"body": null
-								},
-								{
-									"id": "e66ba1e1-68f1-4cca-b068-f5f2e7745823",
-									"name": "IL2 (MHEN)",
-									"originalRequest": {
-										"method": "GET",
-										"header": [],
-										"url": {
-											"raw": "{{management_domain}}/api/management/routing-status/ence-restriction/:ence",
-											"host": [
-												"{{management_domain}}"
-											],
-											"path": [
-												"api",
-												"management",
-												"routing-status",
-												"ence-restriction",
-												":ence"
-											],
-											"variable": [
-												{
-													"key": "ence",
-													"value": "EN.IE-IL2",
-													"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
-												}
-											]
-										}
-									},
-									"_postman_previewlanguage": null,
-									"header": null,
-									"cookie": [],
-									"responseTime": null,
-									"body": null
-								}
-							]
+							"response": []
 						},
 						{
 							"name": "RoutingStatus Signal [ALL]",
