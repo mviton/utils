@@ -2896,7 +2896,7 @@
 							"response": []
 						},
 						{
-							"name": "Get Circulation by TrainDetector Copy",
+							"name": "Overlap Signal",
 							"id": "9e284394-39f2-4a4a-afd9-96e96634e5cc",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -2905,7 +2905,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{circulation_domain}}/internal/api/circulation/circulationbytd?trainDetectorId=CV.IE-LDSO-BOYLE-6367",
+									"raw": "{{circulation_domain}}/internal/api/circulation/getOverlapSignal",
 									"host": [
 										"{{circulation_domain}}"
 									],
@@ -2913,13 +2913,14 @@
 										"internal",
 										"api",
 										"circulation",
-										"circulationbytd"
+										"getOverlapSignal"
 									],
 									"query": [
 										{
-											"key": "trainDetectorId",
-											"value": "CV.IE-LDSO-BOYLE-6367",
-											"description": "Mnemonic FieldElement"
+											"key": "mnemonicTD",
+											"value": "f",
+											"type": "text",
+											"disabled": true
 										}
 									]
 								}
