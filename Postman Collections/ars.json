@@ -3851,6 +3851,45 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": null
+								},
+								{
+									"id": "d25d5594-181e-4ac4-8d1c-1c4359a30cf7",
+									"name": "ProximityService",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"configuredLevel\": \"DEBUG\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{process_domain}}/actuator/loggers/:logId",
+											"host": [
+												"{{process_domain}}"
+											],
+											"path": [
+												"actuator",
+												"loggers",
+												":logId"
+											],
+											"variable": [
+												{
+													"key": "logId",
+													"value": "com.indra.tms.ars.process.service.ProximityService"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": null
 								}
 							]
 						},
