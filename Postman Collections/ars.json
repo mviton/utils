@@ -1153,6 +1153,46 @@
 											"body": null
 										},
 										{
+											"id": "cf5a28ef-fc1b-46a8-9e41-12d4bfdcdfb3",
+											"name": "Enable IL45 (KNRI) Copy",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{management_domain}}/api/management/routing-status/ence-restriction/:ixl?operativeState=DISABLED",
+													"host": [
+														"{{management_domain}}"
+													],
+													"path": [
+														"api",
+														"management",
+														"routing-status",
+														"ence-restriction",
+														":ixl"
+													],
+													"query": [
+														{
+															"key": "operativeState",
+															"value": "DISABLED",
+															"description": "ENABLED / DISABLED"
+														}
+													],
+													"variable": [
+														{
+															"key": "ixl",
+															"value": "EN.IE-IL45",
+															"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
+										},
+										{
 											"id": "e1bdcfcc-8bcd-4bc6-8a9b-4f9bed278795",
 											"name": "Enable IL46 (DNRI)",
 											"originalRequest": {
@@ -1234,7 +1274,7 @@
 										},
 										{
 											"id": "3812c863-4246-4773-9b0e-4dcedf185b96",
-											"name": "Enable IL12 (LK01) Copy",
+											"name": "Enable IL13 (LKGT)",
 											"originalRequest": {
 												"method": "POST",
 												"header": [],
@@ -1260,7 +1300,7 @@
 													"variable": [
 														{
 															"key": "ixl",
-															"value": "EN.IE-IL12",
+															"value": "EN.IE-IL13",
 															"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
 														}
 													]
