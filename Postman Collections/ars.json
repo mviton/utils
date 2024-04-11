@@ -1427,6 +1427,39 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": null
+								},
+								{
+									"id": "9b534151-22a8-40b5-b0c4-b00c0aebf43a",
+									"name": "Get Ence Status",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{management_domain}}/api/management/routing-status/ence-restriction/:ence",
+											"host": [
+												"{{management_domain}}"
+											],
+											"path": [
+												"api",
+												"management",
+												"routing-status",
+												"ence-restriction",
+												":ence"
+											],
+											"variable": [
+												{
+													"key": "ence",
+													"value": "EN.IE-IL1",
+													"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": null
 								}
 							]
 						},
