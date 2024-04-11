@@ -2896,6 +2896,37 @@
 							"response": []
 						},
 						{
+							"name": "Get Circulation by TrainDetector Copy",
+							"id": "9e284394-39f2-4a4a-afd9-96e96634e5cc",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{circulation_domain}}/internal/api/circulation/circulationbytd?trainDetectorId=CV.IE-LDSO-BOYLE-6367",
+									"host": [
+										"{{circulation_domain}}"
+									],
+									"path": [
+										"internal",
+										"api",
+										"circulation",
+										"circulationbytd"
+									],
+									"query": [
+										{
+											"key": "trainDetectorId",
+											"value": "CV.IE-LDSO-BOYLE-6367",
+											"description": "Mnemonic FieldElement"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
 							"name": "Refresh Cache Circulations",
 							"id": "c799c398-a9e3-4f11-b223-d5875fc807d6",
 							"protocolProfileBehavior": {
@@ -3064,6 +3095,35 @@
 					"id": "c2f9a649-6ef8-4a40-8437-06b395da15b3"
 				},
 				{
+					"name": "Circulation TrainDetector Copy",
+					"id": "86b1af06-e350-4364-b566-5032170abbbe",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{circulation_domain}}/api/circulation/traindetector?trainDetectorId=CV.IE-LK01-LMRCK-4266",
+							"host": [
+								"{{circulation_domain}}"
+							],
+							"path": [
+								"api",
+								"circulation",
+								"traindetector"
+							],
+							"query": [
+								{
+									"key": "trainDetectorId",
+									"value": "CV.IE-LK01-LMRCK-4266"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Get Circulations By OriginNumber",
 					"id": "7fa5c7c6-4812-4c35-b624-b8f605b74605",
 					"protocolProfileBehavior": {
@@ -3094,35 +3154,6 @@
 				{
 					"name": "Circulation TrainDetector",
 					"id": "2fdbc9ec-2268-4a9d-9ac4-a96bd4841e0a",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{circulation_domain}}/api/circulation/traindetector?trainDetectorId=CV.IE-LK01-LMRCK-4266",
-							"host": [
-								"{{circulation_domain}}"
-							],
-							"path": [
-								"api",
-								"circulation",
-								"traindetector"
-							],
-							"query": [
-								{
-									"key": "trainDetectorId",
-									"value": "CV.IE-LK01-LMRCK-4266"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Circulation TrainDetector Copy",
-					"id": "86b1af06-e350-4364-b566-5032170abbbe",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
