@@ -343,7 +343,8 @@
 									"    resTable: dataTableVisualization\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						}
 					],
@@ -355,7 +356,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{circulation_domain}}/internal/api/circulation/getInfoCirculation?circulationUUID={{circulationUUID}}&direction=ODD",
+							"raw": "{{circulation_domain}}/internal/api/circulation/getInfoCirculation?circulationUUID=298f9a08-037b-4d5b-b7d0-43c3424df77f&direction=EVEN",
 							"host": [
 								"{{circulation_domain}}"
 							],
@@ -368,16 +369,16 @@
 							"query": [
 								{
 									"key": "circulationUUID",
-									"value": "90955289-cf75-4aab-9bb3-0a6e15e0d55d",
-									"disabled": true
+									"value": "298f9a08-037b-4d5b-b7d0-43c3424df77f"
 								},
 								{
 									"key": "circulationUUID",
-									"value": "{{circulationUUID}}"
+									"value": "{{circulationUUID}}",
+									"disabled": true
 								},
 								{
 									"key": "direction",
-									"value": "ODD",
+									"value": "EVEN",
 									"description": "ODD / EVEN (empty not overide circulation direction)"
 								}
 							]
