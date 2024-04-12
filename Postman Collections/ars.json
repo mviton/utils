@@ -3559,7 +3559,7 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{detection_domain}}/internal/api/detection/zonecompatibility_jsonbysignal?signalId=SE.IE-MHEN-ENFLD-SL707",
+											"raw": "{{detection_domain}}/internal/api/detection/zonecompatibility_jsonbysignal?signalId=SE.IE-LK01-LMRCK-LK462",
 											"host": [
 												"{{detection_domain}}"
 											],
@@ -3572,7 +3572,7 @@
 											"query": [
 												{
 													"key": "signalId",
-													"value": "SE.IE-MHEN-ENFLD-SL707",
+													"value": "SE.IE-LK01-LMRCK-LK462",
 													"description": "Mnemonic FieldElement"
 												}
 											]
