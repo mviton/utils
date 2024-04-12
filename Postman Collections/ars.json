@@ -356,7 +356,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{circulation_domain}}/internal/api/circulation/getInfoCirculation?circulationUUID=298f9a08-037b-4d5b-b7d0-43c3424df77f&direction=EVEN",
+							"raw": "{{circulation_domain}}/internal/api/circulation/getInfoCirculation?circulationUUID=fb958efa-e753-4ff1-8be7-6a02276c64f7&direction=ODD",
 							"host": [
 								"{{circulation_domain}}"
 							],
@@ -369,7 +369,7 @@
 							"query": [
 								{
 									"key": "circulationUUID",
-									"value": "298f9a08-037b-4d5b-b7d0-43c3424df77f"
+									"value": "fb958efa-e753-4ff1-8be7-6a02276c64f7"
 								},
 								{
 									"key": "circulationUUID",
@@ -378,7 +378,7 @@
 								},
 								{
 									"key": "direction",
-									"value": "EVEN",
+									"value": "ODD",
 									"description": "ODD / EVEN (empty not overide circulation direction)"
 								}
 							]
