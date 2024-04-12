@@ -3548,6 +3548,37 @@
 										}
 									},
 									"response": []
+								},
+								{
+									"name": "Zone Compatibility JSON",
+									"id": "64e58395-5e03-442d-aa3f-f846cdb90fbd",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{detection_domain}}/internal/api/detection/zonecompatibility_jsonbysignal?signalId=SE.IE-MHEN-ENFLD-SL707",
+											"host": [
+												"{{detection_domain}}"
+											],
+											"path": [
+												"internal",
+												"api",
+												"detection",
+												"zonecompatibility_jsonbysignal"
+											],
+											"query": [
+												{
+													"key": "signalId",
+													"value": "SE.IE-MHEN-ENFLD-SL707",
+													"description": "Mnemonic FieldElement"
+												}
+											]
+										}
+									},
+									"response": []
 								}
 							],
 							"id": "150cd05d-1a54-4c38-b540-9b9ad4f8680f"
