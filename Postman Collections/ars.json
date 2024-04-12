@@ -261,9 +261,9 @@
 									"                    tczOrder: item.order,\r",
 									"                    node: item.nodeMnemonic,\r",
 									"                    movement: 'OUT',\r",
-									"                    edge: inEdge,\r",
-									"                    tcEdge: inTC_Edge,\r",
-									"                    signal: inSignal\r",
+									"                    edge: outEdge,\r",
+									"                    tcEdge: outTC_Edge,\r",
+									"                    signal: outSignal\r",
 									"                }\r",
 									"            ];\r",
 									"        });\r",
@@ -356,7 +356,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{circulation_domain}}/internal/api/circulation/getInfoCirculation?circulationUUID=fb958efa-e753-4ff1-8be7-6a02276c64f7&direction=ODD",
+							"raw": "{{circulation_domain}}/internal/api/circulation/getInfoCirculation?circulationUUID=7d5af8ef-5139-416b-b647-da8a22276f90&direction=EVEN",
 							"host": [
 								"{{circulation_domain}}"
 							],
@@ -369,7 +369,7 @@
 							"query": [
 								{
 									"key": "circulationUUID",
-									"value": "fb958efa-e753-4ff1-8be7-6a02276c64f7"
+									"value": "7d5af8ef-5139-416b-b647-da8a22276f90"
 								},
 								{
 									"key": "circulationUUID",
@@ -378,7 +378,7 @@
 								},
 								{
 									"key": "direction",
-									"value": "ODD",
+									"value": "EVEN",
 									"description": "ODD / EVEN (empty not overide circulation direction)"
 								}
 							]
