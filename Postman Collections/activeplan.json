@@ -1974,7 +1974,8 @@
 									"});\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						},
 						{
@@ -1993,7 +1994,8 @@
 									"\r",
 									"pm.variables.set('currentDay', currentDay);"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						}
 					],
@@ -2011,7 +2013,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"start\": 0,\n    \"end\": 100,\n    \"filter\": {\n        \"conditions\": [\n            {\n                \"condition\": {\n                    \"field\": \"applicationDay\",\n                    \"operator\": \"EQUALS\",\n                    \"value\": {{currentDay}}\n                }\n            }\n        ],\n        \"operator\": \"AND\"\n    },\n    \"order\": [\n        {\n            \"field\": \"applicationDay\",\n            \"dir\": \"ASC\"\n        }\n    ]\n}"
+							"raw": "{\n    \"start\": 0,\n    \"end\": 100,\n    \"filter\": {\n        \"conditions\": [\n            {\n                \"condition\": {\n                    \"field\": \"applicationDay\",\n                    \"operator\": \"EQUALS\",\n                    \"value\": {{currentDay}}\n                }\n            },\n            {\n                \"condition\": {\n                    \"field\": \"planned\",\n                    \"operator\": \"EQUALS\",\n                    \"value\": true\n                }\n            }\n        ],\n        \"operator\": \"AND\"\n    },\n    \"order\": [\n        {\n            \"field\": \"applicationDay\",\n            \"dir\": \"ASC\"\n        }\n    ]\n}"
 						},
 						"url": "{{activeplan}}/api/activeplanmng/circulation-info/search"
 					},
