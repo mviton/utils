@@ -2019,7 +2019,7 @@
 									"variable": [
 										{
 											"key": "mnemonic",
-											"value": "SE.IE-LDSO-CKOSH-SL811"
+											"value": "SE.IE-MHEN-MLGAR-SL739"
 										}
 									]
 								}
@@ -3526,7 +3526,7 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{detection_domain}}/internal/api/detection/zoneproximitybysignal?signalId=SE.IE-LK01-LMRCK-LK483",
+											"raw": "{{detection_domain}}/internal/api/detection/zoneproximitybysignal?signalId=SE.IE-MHEN-MLGAR-SL739",
 											"host": [
 												"{{detection_domain}}"
 											],
@@ -3539,7 +3539,7 @@
 											"query": [
 												{
 													"key": "signalId",
-													"value": "SE.IE-LK01-LMRCK-LK483",
+													"value": "SE.IE-MHEN-MLGAR-SL739",
 													"description": "Mnemonic FieldElement"
 												}
 											]
