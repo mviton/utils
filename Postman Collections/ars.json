@@ -2742,39 +2742,40 @@
 				},
 				{
 					"name": "SystemStatus (internal)",
-					"item": [],
-					"id": "ed1bd4cb-1f59-4177-b782-a770ee8a74f1"
-				},
-				{
-					"name": "Get RoutingStatus Copy",
-					"id": "37231e09-757f-466d-be36-2aeae42aba8c",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{management_domain}}/api/management/routing-status/:mnemonic",
-							"host": [
-								"{{management_domain}}"
-							],
-							"path": [
-								"api",
-								"management",
-								"routing-status",
-								":mnemonic"
-							],
-							"variable": [
-								{
-									"id": "28e060b4-358e-415a-8827-d0b361355e7d",
-									"key": "mnemonic",
-									"value": "SE.IE-MHEN-KLCAN-SL715"
+					"item": [
+						{
+							"name": "InjectSystemStatus",
+							"id": "37231e09-757f-466d-be36-2aeae42aba8c",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{management_domain}}/internal/api/management/injectSystemStatus/:eventSystemCore",
+									"host": [
+										"{{management_domain}}"
+									],
+									"path": [
+										"internal",
+										"api",
+										"management",
+										"injectSystemStatus",
+										":eventSystemCore"
+									],
+									"variable": [
+										{
+											"key": "eventSystemCore",
+											"value": "SYSTEM_UP"
+										}
+									]
 								}
-							]
+							},
+							"response": []
 						}
-					},
-					"response": []
+					],
+					"id": "ed1bd4cb-1f59-4177-b782-a770ee8a74f1"
 				}
 			],
 			"id": "6b73f6ac-4f09-4a73-b87e-069db3c7ad60"
