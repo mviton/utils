@@ -1402,7 +1402,8 @@
 									"    resTable: dataTableVisualization\r",
 									"});"
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						}
 					],
