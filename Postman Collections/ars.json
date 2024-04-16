@@ -3253,7 +3253,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{circulation_domain}}/api/circulation/traindetector?trainDetectorId=CV.IE-LK01-LMRCK-4266",
+							"raw": "{{circulation_domain}}/api/circulation/traindetector?trainDetectorId=CV.IE-LDSO-LFORD-6321",
 							"host": [
 								"{{circulation_domain}}"
 							],
@@ -3265,7 +3265,7 @@
 							"query": [
 								{
 									"key": "trainDetectorId",
-									"value": "CV.IE-LK01-LMRCK-4266"
+									"value": "CV.IE-LDSO-LFORD-6321"
 								}
 							]
 						}
@@ -3557,7 +3557,7 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{detection_domain}}/internal/api/detection/zoneproximity_jsonbysignal?signalId=SE.IE-MHEN-ENFLD-SL707",
+											"raw": "{{detection_domain}}/internal/api/detection/zoneproximity_jsonbysignal?signalId=SE.IE-MHEN-MLGAR-SL739",
 											"host": [
 												"{{detection_domain}}"
 											],
@@ -3570,7 +3570,7 @@
 											"query": [
 												{
 													"key": "signalId",
-													"value": "SE.IE-MHEN-ENFLD-SL707",
+													"value": "SE.IE-MHEN-MLGAR-SL739",
 													"description": "Mnemonic FieldElement"
 												}
 											]
@@ -3619,7 +3619,7 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{detection_domain}}/internal/api/detection/zonecompatibilitybysignal?signalId=SE.IE-MHEN-ENFLD-SL707",
+											"raw": "{{detection_domain}}/internal/api/detection/zonecompatibilitybysignal?signalId=SE.IE-MHEN-KLCAN-SL715",
 											"host": [
 												"{{detection_domain}}"
 											],
@@ -3632,7 +3632,7 @@
 											"query": [
 												{
 													"key": "signalId",
-													"value": "SE.IE-MHEN-ENFLD-SL707",
+													"value": "SE.IE-MHEN-KLCAN-SL715",
 													"description": "Mnemonic FieldElement"
 												}
 											]
