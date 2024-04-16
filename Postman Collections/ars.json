@@ -191,6 +191,8 @@
 								"exec": [
 									"console.log(`--------- '${pm.info.requestName}' / ${pm.info.eventName} -------`);\r",
 									"\r",
+									"var moment = require('moment');\r",
+									"\r",
 									"// ****** Get params ******\r",
 									"const paramsString = request.url.split('?')[1];\r",
 									"const eachParamArray = paramsString.split('&');\r",
@@ -214,6 +216,30 @@
 									"//const tczInfo = tmp.tczInfo;\r",
 									"\r",
 									"const tczInfo = jsonData.tczInfo;\r",
+									"const jsonDataDetail = jsonData.circulation;\r",
+									"\r",
+									"let aTD = [];\r",
+									"const td_sorted = jsonDataDetail.currentStatus ? _.sortBy(jsonDataDetail.currentStatus.trainDetectors, function(trainDetector){ return trainDetector.order; }) : [];\r",
+									"_.each(td_sorted, (itemTD) => {\r",
+									"    aTD = [...aTD, itemTD.trainDetectorId]\r",
+									"});\r",
+									"const tdStr = _.reduce(aTD, (all, td2) =>  all + \", \"+ td2);\r",
+									"\r",
+									"const dataVisualizationDetail = {\r",
+									"    uuid: jsonDataDetail.id,\r",
+									"    originNumber: jsonDataDetail.originNumber,\r",
+									"    applicationDay: jsonDataDetail.applicationDay ? moment.utc(jsonDataDetail.applicationDay).format(\"DD/MM\") : \"-\",\r",
+									"    currentStatus: jsonDataDetail.currentStatus,\r",
+									"    currentStatusHour: utils.convertToTime(jsonDataDetail.currentStatus?.hour, true, \"DD/MM HH:mm\"),\r",
+									"    currentEdge: jsonDataDetail.currentStatus?.edgeId,\r",
+									"    type: jsonDataDetail.generalData?.trafficType,\r",
+									"    trainDetectors: tdStr,\r",
+									"    state: jsonDataDetail.state,\r",
+									"    planned: jsonDataDetail.planned,\r",
+									"    plannedRoute: jsonDataDetail.plannedRoute ? jsonDataDetail.plannedRoute.length : \"-null-\",\r",
+									"    arsStatus: jsonDataDetail.arsStatus ? jsonDataDetail.arsStatus : \"-null-\",\r",
+									"    excludedSignalId: jsonDataDetail.excludedSignalId \r",
+									"};\r",
 									"\r",
 									"let dataVisualization = {\r",
 									"    circulationUUID: circulationUUID,\r",
@@ -284,6 +310,16 @@
 									"                position: absolute;\r",
 									"                top: 5px; left: 1rem;\r",
 									"            }\r",
+									"            .shadowboxDetail {\r",
+									"                font: 1.2rem \"Fira Sans\", sans-serif;\r",
+									"                width: 40rem;\r",
+									"                border: 1px solid #333;\r",
+									"                box-shadow: 8px 8px 5px #444;\r",
+									"                padding: 8px 12px;\r",
+									"                background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);\r",
+									"                position: absolute;\r",
+									"                top: 200px; left: 1rem;\r",
+									"            }\r",
 									"            .timetable {                \r",
 									"                width: 100rem;\r",
 									"                border: 1px solid #333;\r",
@@ -303,6 +339,17 @@
 									"        {{#with response}}\r",
 									"            <p>UUID: {{circulationUUID}}</p>\r",
 									"            <p>Direction: {{direction}}</p>\r",
+									"        {{/with}}\r",
+									"        </div>\r",
+									"        <div class=\"shadowboxDetail\">        \r",
+									"        {{#with responseDetail}}\r",
+									"            <p>UUID: {{uuid}}</p>\r",
+									"            <p>OriginNumber: {{originNumber}} (AppDay:{{applicationDay}})</p>\r",
+									"            <p>{{type}} ({{state}}) planned:{{planned}}</p>\r",
+									"            <p>({{currentStatusHour}}) {{currentStatus.direction}} TrainDetectors:[{{trainDetectors}}]</p>\r",
+									"            <p>{{currentEdge}}</p>\r",
+									"            <p>plannedRoute: #items {{plannedRoute}}</p>\r",
+									"            <p>arsStatus: {{arsStatus}} / excludedSignal: {{excludedSignalId}}</p>\r",
 									"        {{/with}}\r",
 									"        </div>\r",
 									"        <div class=\"timetable\">        \r",
@@ -340,6 +387,7 @@
 									"    // Pass the response body parsed as JSON as `data`\r",
 									"    // response: pm.response.json()\r",
 									"    response: dataVisualization,\r",
+									"    responseDetail: dataVisualizationDetail,\r",
 									"    resTable: dataTableVisualization\r",
 									"});"
 								],
@@ -356,7 +404,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{circulation_domain}}/internal/api/circulation/getInfoCirculation?circulationUUID=7d5af8ef-5139-416b-b647-da8a22276f90&direction=EVEN",
+							"raw": "{{circulation_domain}}/internal/api/circulation/getInfoCirculation?circulationUUID=4aaba94a-029d-4cb2-a36f-716a1da745db&direction=ODD",
 							"host": [
 								"{{circulation_domain}}"
 							],
@@ -369,7 +417,7 @@
 							"query": [
 								{
 									"key": "circulationUUID",
-									"value": "7d5af8ef-5139-416b-b647-da8a22276f90"
+									"value": "4aaba94a-029d-4cb2-a36f-716a1da745db"
 								},
 								{
 									"key": "circulationUUID",
@@ -378,8 +426,14 @@
 								},
 								{
 									"key": "direction",
-									"value": "EVEN",
+									"value": "ODD",
 									"description": "ODD / EVEN (empty not overide circulation direction)"
+								},
+								{
+									"key": "direction",
+									"value": "EVEN",
+									"type": "text",
+									"disabled": true
 								}
 							]
 						}
