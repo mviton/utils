@@ -3061,6 +3061,19 @@
 								"url": "{{circulation_domain}}/internal/api/circulation/clearCirculations"
 							},
 							"response": []
+						},
+						{
+							"name": "Request Circulations",
+							"id": "cf3d2356-0431-42ce-83d7-3fcdcc8155fa",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": "{{circulation_domain}}/internal/api/circulation/requestCirculations"
+							},
+							"response": []
 						}
 					],
 					"id": "ceeb2490-90b3-4cd1-b4aa-ce2d45350478"
