@@ -6230,7 +6230,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "db9da0fc-c21a-4d67-a5a4-c70ad7e990d6",
+				"id": "7e52efbe-7ad6-4e0c-a731-8261c351a17c",
 				"type": "text/javascript",
 				"exec": [
 					"console.log(`----ARS----- '${pm.info.requestName}' / ${pm.info.eventName} -------`);",
@@ -6334,6 +6334,14 @@
 					"    console.log(\"Token not update!\");",
 					"}",
 					"/** FIN Get Token  */",
+					"/**",
+					" * Loaded in collection TopologyCacheManager",
+					" */",
+					"// Convert Node",
+					"const nodeNameTranslate = JSON.parse(pm.globals.get(\"translateNodeName\"));",
+					"// Convert TCZ",
+					"const tczNameTranslate = JSON.parse(pm.globals.get(\"translateTczName\"));",
+					"",
 					"let trainNameTranslate = [];",
 					"const globalTranslateTainNumber = pm.globals.get(\"translateTrainNumber\");",
 					"if(!globalTranslateTainNumber){",
@@ -6452,7 +6460,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "b8ca778c-4d0c-4260-b6aa-412843d10774",
+				"id": "1b41e987-c2ec-4cf3-9086-07587a086778",
 				"type": "text/javascript",
 				"exec": [
 					""
