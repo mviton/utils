@@ -2966,7 +2966,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{circulation_domain}}/internal/api/circulation/circulationbytd?trainDetectorId=CV.IE-LDSO-BOYLE-6367",
+									"raw": "{{circulation_domain}}/internal/api/circulation/circulationbytd?trainDetectorId=CV.IE-LDSO-BOYLE-6368",
 									"host": [
 										"{{circulation_domain}}"
 									],
@@ -2979,7 +2979,7 @@
 									"query": [
 										{
 											"key": "trainDetectorId",
-											"value": "CV.IE-LDSO-BOYLE-6367",
+											"value": "CV.IE-LDSO-BOYLE-6368",
 											"description": "Mnemonic FieldElement"
 										}
 									]
