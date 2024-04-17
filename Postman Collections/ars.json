@@ -6230,7 +6230,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "13b2ddb4-745c-4c78-b719-7c55d1cbb689",
+				"id": "db9da0fc-c21a-4d67-a5a4-c70ad7e990d6",
 				"type": "text/javascript",
 				"exec": [
 					"console.log(`----ARS----- '${pm.info.requestName}' / ${pm.info.eventName} -------`);",
@@ -6368,6 +6368,34 @@
 					"    convertIxlName: (enceId) => {",
 					"        const itemIxl = _.find(translateIxl, (item) => item.ixl === enceId);",
 					"        return (itemIxl && itemIxl.name)? itemIxl.name : \"-\";",
+					"    },",
+					"    convertNodeUuidToName: (uuidNode) => {",
+					"        if(!uuidNode){",
+					"            return \"-\";",
+					"        }",
+					"        const itemNode = _.find(nodeNameTranslate, (item) => item.uuid === uuidNode);",
+					"        return (itemNode && itemNode.name)? itemNode.name : uuidNode;",
+					"    },",
+					"    convertNameToNodeUuid: (nodeName) => {",
+					"        if(!nodeName){",
+					"            return \"\";",
+					"        }",
+					"        const itemNode = _.find(nodeNameTranslate, (item) => item.name.toLowerCase() === nodeName.toLowerCase());",
+					"        return (itemNode && itemNode.uuid)? itemNode.uuid : \"\";",
+					"    },",
+					"    convertTczUuidToName: (uuidTcz) => {",
+					"        if(!uuidTcz){",
+					"            return \"-\";",
+					"        }",
+					"        const itemTcz = _.find(tczNameTranslate, (item) => item.uuid === uuidTcz);",
+					"        return (itemTcz && itemTcz.name)? itemTcz.name : uuidTcz;",
+					"    },",
+					"    convertNameToTczUuid: (tczName) => {",
+					"        if(!tczName){",
+					"            return \"\";",
+					"        }",
+					"        const itemTcz = _.find(tczNameTranslate, (item) => item.name.toLowerCase() === tczName.toLowerCase());",
+					"        return (itemTcz && itemTcz.uuid)? itemTcz.uuid : \"\";",
 					"    }",
 					"};",
 					"",
@@ -6424,7 +6452,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "3796d102-1d3e-464f-92de-1462506f1cf1",
+				"id": "b8ca778c-4d0c-4260-b6aa-412843d10774",
 				"type": "text/javascript",
 				"exec": [
 					""
