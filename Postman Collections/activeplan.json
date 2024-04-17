@@ -214,15 +214,6 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"circulationId\": {\r\n        \"id\": \"{{circulationUUID}}\"\r\n    },\r\n    \"arsStatus\": \"SELECTED_SIGNAL_NO\",\r\n    \"excludedSignalId\": \"SE.ER-KOID-KOID-M6\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
 						"url": {
 							"raw": "{{activeplan_operation}}/api/activeplanmng/trts/force/:circulationUUID/:status",
 							"host": [
@@ -249,7 +240,84 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"id": "ce9a6aab-e0d0-41ee-b2c0-52f4de7dd2a9",
+							"name": "READY",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{activeplan_operation}}/api/activeplanmng/trts/force/:circulationUUID/:status",
+									"host": [
+										"{{activeplan_operation}}"
+									],
+									"path": [
+										"api",
+										"activeplanmng",
+										"trts",
+										"force",
+										":circulationUUID",
+										":status"
+									],
+									"variable": [
+										{
+											"key": "circulationUUID",
+											"value": "{{circulationUUID}}"
+										},
+										{
+											"key": "status",
+											"value": "READY",
+											"description": "READY / NOT_READY"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": null
+						},
+						{
+							"id": "b9a78356-54d9-46f2-acb2-ab9d3e843835",
+							"name": "NOT READT",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{activeplan_operation}}/api/activeplanmng/trts/force/:circulationUUID/:status",
+									"host": [
+										"{{activeplan_operation}}"
+									],
+									"path": [
+										"api",
+										"activeplanmng",
+										"trts",
+										"force",
+										":circulationUUID",
+										":status"
+									],
+									"variable": [
+										{
+											"key": "circulationUUID",
+											"value": "{{circulationUUID}}"
+										},
+										{
+											"key": "status",
+											"value": "NOT_READY",
+											"description": "READY / NOT_READY"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": null
+						}
+					]
 				}
 			],
 			"id": "e843f997-be2a-41fc-86d1-dcbcc812feb6",
