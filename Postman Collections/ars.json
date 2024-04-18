@@ -2773,6 +2773,19 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "reInitSystem",
+							"id": "5a1b1940-9cdc-4712-92a4-47e423754da6",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{management_domain}}/internal/api/management/reinitSystem"
+							},
+							"response": []
 						}
 					],
 					"id": "ed1bd4cb-1f59-4177-b782-a770ee8a74f1"
