@@ -404,7 +404,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{circulation_domain}}/internal/api/circulation/getInfoCirculation?circulationUUID=4aaba94a-029d-4cb2-a36f-716a1da745db&direction=ODD",
+							"raw": "{{circulation_domain}}/internal/api/circulation/getInfoCirculation?circulationUUID=f2e91815-06c8-44a8-a95a-1a4048475af7&direction=ODD",
 							"host": [
 								"{{circulation_domain}}"
 							],
@@ -417,7 +417,7 @@
 							"query": [
 								{
 									"key": "circulationUUID",
-									"value": "4aaba94a-029d-4cb2-a36f-716a1da745db"
+									"value": "f2e91815-06c8-44a8-a95a-1a4048475af7"
 								},
 								{
 									"key": "circulationUUID",
@@ -432,7 +432,6 @@
 								{
 									"key": "direction",
 									"value": "EVEN",
-									"type": "text",
 									"disabled": true
 								}
 							]
@@ -3774,7 +3773,7 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{detection_domain}}/internal/api/detection/zoneproximity_jsonbysignal?signalId=SE.IE-MHEN-MLGAR-SL739",
+											"raw": "{{detection_domain}}/internal/api/detection/zoneproximity_jsonbysignal?signalId=SE.IE-DNRI-DRKEN-DN581",
 											"host": [
 												"{{detection_domain}}"
 											],
@@ -3787,7 +3786,7 @@
 											"query": [
 												{
 													"key": "signalId",
-													"value": "SE.IE-MHEN-MLGAR-SL739",
+													"value": "SE.IE-DNRI-DRKEN-DN581",
 													"description": "Mnemonic FieldElement"
 												}
 											]
@@ -3945,7 +3944,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{detection_domain}}/internal/api/detection/getFieldElementState?fieldElementId=CV.IE-LK01-LMRCK-4291",
+									"raw": "{{detection_domain}}/internal/api/detection/getFieldElementState?fieldElementId=CV.IE-LDSO-DRMOD-6337",
 									"host": [
 										"{{detection_domain}}"
 									],
@@ -3958,7 +3957,7 @@
 									"query": [
 										{
 											"key": "fieldElementId",
-											"value": "CV.IE-LK01-LMRCK-4291"
+											"value": "CV.IE-LDSO-DRMOD-6337"
 										}
 									]
 								}
@@ -6243,7 +6242,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "71e74c56-aa9f-49e6-942f-1ffa8e6506bf",
+				"id": "ab73ebea-c548-4886-bbf6-e408afb66df4",
 				"type": "text/javascript",
 				"exec": [
 					"console.log(`----ARS----- '${pm.info.requestName}' / ${pm.info.eventName} -------`);",
@@ -6450,7 +6449,7 @@
 					"                },",
 					"                scrollX: false,",
 					"                scrollY: true,",
-					"                bodyHeight: 270,",
+					"                bodyHeight: 300,",
 					"                columnOptions: {",
 					"                    resizable: true",
 					"                },",
@@ -6473,7 +6472,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "4b8e17de-de66-4727-a539-1f6b0438a51f",
+				"id": "8776cbfc-59ba-4d55-84b6-73c005366c02",
 				"type": "text/javascript",
 				"exec": [
 					""
