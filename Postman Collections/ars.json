@@ -4343,7 +4343,7 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{process_domain}}/internal/api/process/signalbymnemonic?signalMnemo=SE.IE-LK01-LMRCK-LK461",
+											"raw": "{{process_domain}}/internal/api/process/signalbymnemonic?signalMnemo=SE.IE-DNRI-DRKEN-DN581",
 											"host": [
 												"{{process_domain}}"
 											],
@@ -4356,7 +4356,7 @@
 											"query": [
 												{
 													"key": "signalMnemo",
-													"value": "SE.IE-LK01-LMRCK-LK461"
+													"value": "SE.IE-DNRI-DRKEN-DN581"
 												}
 											]
 										}
@@ -4951,7 +4951,7 @@
 								"method": "POST",
 								"header": [],
 								"url": {
-									"raw": "{{process_domain}}/internal/api/eulynx/process?zoneType=CZ&elementType=TVP_SECTION&eulynxTrace={{eulynxMsg}}",
+									"raw": "{{process_domain}}/internal/api/eulynx/process?zoneType=PZ&elementType=SIGNAL_MAIN&eulynxTrace={{eulynxMsg}}",
 									"host": [
 										"{{process_domain}}"
 									],
@@ -4964,11 +4964,11 @@
 									"query": [
 										{
 											"key": "zoneType",
-											"value": "CZ"
+											"value": "PZ"
 										},
 										{
 											"key": "elementType",
-											"value": "TVP_SECTION"
+											"value": "SIGNAL_MAIN"
 										},
 										{
 											"key": "eulynxTrace",
@@ -5075,7 +5075,7 @@
 							"variable": [
 								{
 									"key": "signalId",
-									"value": "SE.IE-LK01-LMRCK-LK425"
+									"value": "SE.IE-DNRI-DRKEN-DN581"
 								}
 							]
 						}
