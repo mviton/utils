@@ -3944,7 +3944,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{detection_domain}}/internal/api/detection/getFieldElementState?fieldElementId=CV.IE-LDSO-DRMOD-6337",
+									"raw": "{{detection_domain}}/internal/api/detection/getFieldElementState?fieldElementId=AG.IE-LK01-LMRCK-307B",
 									"host": [
 										"{{detection_domain}}"
 									],
@@ -3957,7 +3957,7 @@
 									"query": [
 										{
 											"key": "fieldElementId",
-											"value": "CV.IE-LDSO-DRMOD-6337"
+											"value": "AG.IE-LK01-LMRCK-307B"
 										}
 									]
 								}
