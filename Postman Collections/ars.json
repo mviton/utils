@@ -3309,7 +3309,7 @@
 								"method": "POST",
 								"header": [],
 								"url": {
-									"raw": "{{circulation_domain}}/internal/api/circulation/refreshCacheCirculations?expirationTime=3600",
+									"raw": "{{circulation_domain}}/internal/api/circulation/refreshCacheCirculations?expirationTime=7200",
 									"host": [
 										"{{circulation_domain}}"
 									],
@@ -3322,7 +3322,7 @@
 									"query": [
 										{
 											"key": "expirationTime",
-											"value": "3600",
+											"value": "7200",
 											"description": "Seconds (86400)"
 										}
 									]
