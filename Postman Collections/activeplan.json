@@ -760,7 +760,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"operation\": \"set\",\r\n    \"tczName\": \"Limerick\",\r\n    \"arrival\": \"20:10.00\",\r\n    \"departure\": \"20:15.00\"\r\n}",
+									"raw": "{\r\n    \"operation\": \"set\",\r\n    \"tczName\": \"Limerick\",\r\n    \"arrival\": \"03:10.00\",\r\n    \"departure\": \"20:15.00\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
