@@ -2089,7 +2089,31 @@
 						},
 						"url": "{{activeplan}}/api/activeplanmng/circulation-info/search"
 					},
-					"response": []
+					"response": [
+						{
+							"id": "68cc0101-dd16-47e2-a7a8-6c9042f40df1",
+							"name": "Circulations [current-day]",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"start\": 0,\n    \"end\": 100,\n    \"filter\": {\n        \"conditions\": [\n            {\n                \"condition\": {\n                    \"field\": \"applicationDay\",\n                    \"operator\": \"EQUALS\",\n                    \"value\": {{currentDay}}\n                }\n            },\n            {\n                \"condition\": {\n                    \"field\": \"planned\",\n                    \"operator\": \"EQUALS\",\n                    \"value\": true\n                }\n            }\n        ],\n        \"operator\": \"AND\"\n    },\n    \"order\": [\n        {\n            \"field\": \"applicationDay\",\n            \"dir\": \"ASC\"\n        }\n    ]\n}"
+								},
+								"url": "{{activeplan}}/api/activeplanmng/circulation-info/search"
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": null
+						}
+					]
 				},
 				{
 					"name": "Create Circulation",
