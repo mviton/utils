@@ -633,7 +633,7 @@
 							"response": []
 						},
 						{
-							"name": "Set Logger Copy",
+							"name": "Command Compatibility",
 							"id": "fba6aaca-890f-445a-8842-50a156b57022",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -651,9 +651,9 @@
 									}
 								},
 								"url": {
-									"raw": "{{process_domain}}/actuator/loggers/:logId",
+									"raw": "{{management_domain}}/actuator/loggers/:logId",
 									"host": [
-										"{{process_domain}}"
+										"{{management_domain}}"
 									],
 									"path": [
 										"actuator",
@@ -662,9 +662,8 @@
 									],
 									"variable": [
 										{
-											"id": "9b482716-33d6-4eac-8d0a-6f54ec828693",
 											"key": "logId",
-											"value": "com.indra.tms.ars.process.service.ProcessService"
+											"value": "com.indra.tms.ars.management.controller.CommandCompatibilityController"
 										}
 									]
 								}
@@ -672,7 +671,7 @@
 							"response": [
 								{
 									"id": "c95078cd-fd45-43c3-8b96-bde1aaaf2c55",
-									"name": "Mana",
+									"name": "Command Compatibility",
 									"originalRequest": {
 										"method": "POST",
 										"header": [],
@@ -686,9 +685,9 @@
 											}
 										},
 										"url": {
-											"raw": "{{process_domain}}/actuator/loggers/:logId",
+											"raw": "{{management_domain}}/actuator/loggers/:logId",
 											"host": [
-												"{{process_domain}}"
+												"{{management_domain}}"
 											],
 											"path": [
 												"actuator",
