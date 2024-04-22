@@ -2292,7 +2292,7 @@
 									"// Get current day\r",
 									"var moment = require('moment');\r",
 									"\r",
-									"const currentDay = moment().utc().startOf('day').unix() - 86400 * 1000;\r",
+									"const currentDay = moment().utc().startOf('day').unix() - 2*86400 * 1000;\r",
 									"\r",
 									"console.log(`${moment().utc().startOf('day').format('LLLL')} -> ${currentDay}`);\r",
 									"\r",
