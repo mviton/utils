@@ -633,6 +633,202 @@
 							"response": []
 						},
 						{
+							"name": "Set Logger Copy",
+							"id": "fba6aaca-890f-445a-8842-50a156b57022",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"configuredLevel\": \"DEBUG\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{process_domain}}/actuator/loggers/:logId",
+									"host": [
+										"{{process_domain}}"
+									],
+									"path": [
+										"actuator",
+										"loggers",
+										":logId"
+									],
+									"variable": [
+										{
+											"id": "9b482716-33d6-4eac-8d0a-6f54ec828693",
+											"key": "logId",
+											"value": "com.indra.tms.ars.process.service.ProcessService"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "7a17fe8c-450b-4a0c-9e17-e70625b771fe",
+									"name": "Eulynx",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"configuredLevel\": \"DEBUG\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{process_domain}}/actuator/loggers/:logId",
+											"host": [
+												"{{process_domain}}"
+											],
+											"path": [
+												"actuator",
+												"loggers",
+												":logId"
+											],
+											"variable": [
+												{
+													"key": "logId",
+													"value": "com.indra.tms.ars.eulynx"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": null
+								},
+								{
+									"id": "c95078cd-fd45-43c3-8b96-bde1aaaf2c55",
+									"name": "ProcessService",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"configuredLevel\": \"DEBUG\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{process_domain}}/actuator/loggers/:logId",
+											"host": [
+												"{{process_domain}}"
+											],
+											"path": [
+												"actuator",
+												"loggers",
+												":logId"
+											],
+											"variable": [
+												{
+													"key": "logId",
+													"value": "com.indra.tms.ars.process.service.ProcessService"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": null
+								},
+								{
+									"id": "69e7fb88-30ff-4c54-a524-8078a5c9b0bb",
+									"name": "SignalRules",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"configuredLevel\": \"DEBUG\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{process_domain}}/actuator/loggers/:logId",
+											"host": [
+												"{{process_domain}}"
+											],
+											"path": [
+												"actuator",
+												"loggers",
+												":logId"
+											],
+											"variable": [
+												{
+													"key": "logId",
+													"value": "com.indra.tms.ars.signalrules.service.SignalRulesService"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": null
+								},
+								{
+									"id": "ada6280e-eb16-43f1-acaa-7d741e3f47e9",
+									"name": "ProximityService",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"configuredLevel\": \"DEBUG\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{process_domain}}/actuator/loggers/:logId",
+											"host": [
+												"{{process_domain}}"
+											],
+											"path": [
+												"actuator",
+												"loggers",
+												":logId"
+											],
+											"variable": [
+												{
+													"key": "logId",
+													"value": "com.indra.tms.ars.process.service.ProximityService"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": null
+								}
+							]
+						},
+						{
 							"name": "Environment",
 							"id": "6f77364a-c4dc-4f10-9109-20f1ce79432a",
 							"protocolProfileBehavior": {
