@@ -3851,7 +3851,7 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{detection_domain}}/internal/api/detection/zoneproximity_jsonbysignal?signalId=SE.IE-DNRI-DRKEN-DN581",
+											"raw": "{{detection_domain}}/internal/api/detection/zoneproximity_jsonbysignal?signalId=SE.IE-LK01-LMRCK-LK473",
 											"host": [
 												"{{detection_domain}}"
 											],
@@ -3864,7 +3864,7 @@
 											"query": [
 												{
 													"key": "signalId",
-													"value": "SE.IE-DNRI-DRKEN-DN581",
+													"value": "SE.IE-LK01-LMRCK-LK473",
 													"description": "Mnemonic FieldElement"
 												}
 											]
