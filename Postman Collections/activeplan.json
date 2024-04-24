@@ -206,6 +206,147 @@
 					]
 				},
 				{
+					"name": "Clean Audit",
+					"id": "68cad557-2802-4ded-8148-1839cfc9c4be",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{activeplan_operation}}/api/activeplanmng/audit/clean/:circulationId/:eventId",
+							"host": [
+								"{{activeplan_operation}}"
+							],
+							"path": [
+								"api",
+								"activeplanmng",
+								"audit",
+								"clean",
+								":circulationId",
+								":eventId"
+							],
+							"variable": [
+								{
+									"key": "circulationId",
+									"value": "d49fe047-1290-4ecd-beb8-e8af7dc0f5d7"
+								},
+								{
+									"key": "eventId",
+									"value": "8eee45c9-b502-4806-a1fc-06b2a5cd0dea"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "e996bc48-b7d6-474b-9cba-19f8a8349684",
+							"name": "READY",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"circulationId\": {\r\n        \"id\": \"{{circulationUUID}}\"\r\n    },\r\n    \"arsStatus\": \"SELECTED_SIGNAL_NO\",\r\n    \"excludedSignalId\": \"SE.ER-KOID-KOID-M6\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{activeplan_operation}}/api/activeplanmng/trts/force/:circulationUUID/:status/:tczOrder",
+									"host": [
+										"{{activeplan_operation}}"
+									],
+									"path": [
+										"api",
+										"activeplanmng",
+										"trts",
+										"force",
+										":circulationUUID",
+										":status",
+										":tczOrder"
+									],
+									"variable": [
+										{
+											"key": "circulationUUID",
+											"value": "{{circulationUUID}}"
+										},
+										{
+											"key": "status",
+											"value": "READY",
+											"description": "READY / NOT_READY"
+										},
+										{
+											"key": "tczOrder",
+											"value": "9"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": null
+						},
+						{
+							"id": "2ae72510-e584-405e-b6f5-e3c7bdf8e56e",
+							"name": "NOT READY",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"circulationId\": {\r\n        \"id\": \"{{circulationUUID}}\"\r\n    },\r\n    \"arsStatus\": \"SELECTED_SIGNAL_NO\",\r\n    \"excludedSignalId\": \"SE.ER-KOID-KOID-M6\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{activeplan_operation}}/api/activeplanmng/trts/force/:circulationUUID/:status/:tczOrder",
+									"host": [
+										"{{activeplan_operation}}"
+									],
+									"path": [
+										"api",
+										"activeplanmng",
+										"trts",
+										"force",
+										":circulationUUID",
+										":status",
+										":tczOrder"
+									],
+									"variable": [
+										{
+											"key": "circulationUUID",
+											"value": "{{circulationUUID}}"
+										},
+										{
+											"key": "status",
+											"value": "NOT_READY",
+											"description": "READY / NOT_READY"
+										},
+										{
+											"key": "tczOrder",
+											"value": "6"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": null
+						}
+					]
+				},
+				{
 					"name": "Change TRS status [ALL tczs]",
 					"id": "a16401ee-4dd2-4b77-8107-8eabc2237f99",
 					"protocolProfileBehavior": {
