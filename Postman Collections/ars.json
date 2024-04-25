@@ -2827,7 +2827,7 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
+								"method": "POST",
 								"header": [],
 								"url": {
 									"raw": "{{management_domain}}/internal/api/management/injectSystemStatus/:eventSystemCore",
