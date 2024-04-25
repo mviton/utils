@@ -3147,6 +3147,56 @@
 					"name": "Controller",
 					"item": [
 						{
+							"name": "caches",
+							"item": [
+								{
+									"name": "Refresh Cache Circulations",
+									"id": "c799c398-a9e3-4f11-b223-d5875fc807d6",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{circulation_domain}}/internal/api/circulation/refreshCacheCirculations?expirationTime=7200",
+											"host": [
+												"{{circulation_domain}}"
+											],
+											"path": [
+												"internal",
+												"api",
+												"circulation",
+												"refreshCacheCirculations"
+											],
+											"query": [
+												{
+													"key": "expirationTime",
+													"value": "7200",
+													"description": "Seconds (86400)"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Clear Caches Circulations",
+									"id": "549ec250-b81c-4073-824c-103cf10bdddc",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": "{{circulation_domain}}/internal/api/circulation/clearCirculations"
+									},
+									"response": []
+								}
+							],
+							"id": "e372d19e-a583-4557-a17c-34cd3bc67406"
+						},
+						{
 							"name": "Get Circulation by UUID",
 							"event": [
 								{
@@ -3427,50 +3477,6 @@
 										}
 									]
 								}
-							},
-							"response": []
-						},
-						{
-							"name": "Refresh Cache Circulations",
-							"id": "c799c398-a9e3-4f11-b223-d5875fc807d6",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [],
-								"url": {
-									"raw": "{{circulation_domain}}/internal/api/circulation/refreshCacheCirculations?expirationTime=7200",
-									"host": [
-										"{{circulation_domain}}"
-									],
-									"path": [
-										"internal",
-										"api",
-										"circulation",
-										"refreshCacheCirculations"
-									],
-									"query": [
-										{
-											"key": "expirationTime",
-											"value": "7200",
-											"description": "Seconds (86400)"
-										}
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "Clear Caches Circulations",
-							"id": "549ec250-b81c-4073-824c-103cf10bdddc",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [],
-								"url": "{{circulation_domain}}/internal/api/circulation/clearCirculations"
 							},
 							"response": []
 						},
@@ -3856,6 +3862,19 @@
 								"method": "GET",
 								"header": [],
 								"url": "{{detection_domain}}/actuator/env"
+							},
+							"response": []
+						},
+						{
+							"name": "Loggers",
+							"id": "8fb831de-b77f-4caf-aaec-c5519b4878c8",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{detection_domain}}/actuator/loggers"
 							},
 							"response": []
 						},
