@@ -2968,7 +2968,7 @@
 							"response": []
 						},
 						{
-							"name": "Set Logger Copy",
+							"name": "Set Logger",
 							"id": "84f1153c-9965-4d20-a81f-b7bf692adf8a",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -2986,9 +2986,9 @@
 									}
 								},
 								"url": {
-									"raw": "{{process_domain}}/actuator/loggers/:logId",
+									"raw": "{{circulation_domain}}/actuator/loggers/:logId",
 									"host": [
-										"{{process_domain}}"
+										"{{circulation_domain}}"
 									],
 									"path": [
 										"actuator",
@@ -3007,7 +3007,7 @@
 							"response": [
 								{
 									"id": "dbe65aad-17eb-4825-9d7d-9ba14211a077",
-									"name": "Eulynx",
+									"name": "VerificationService",
 									"originalRequest": {
 										"method": "POST",
 										"header": [],
@@ -3021,9 +3021,9 @@
 											}
 										},
 										"url": {
-											"raw": "{{process_domain}}/actuator/loggers/:logId",
+											"raw": "{{circulation_domain}}/actuator/loggers/:logId",
 											"host": [
-												"{{process_domain}}"
+												"{{circulation_domain}}"
 											],
 											"path": [
 												"actuator",
@@ -3033,124 +3033,7 @@
 											"variable": [
 												{
 													"key": "logId",
-													"value": "com.indra.tms.ars.eulynx"
-												}
-											]
-										}
-									},
-									"_postman_previewlanguage": null,
-									"header": null,
-									"cookie": [],
-									"responseTime": null,
-									"body": null
-								},
-								{
-									"id": "da625c21-5a92-445d-a4be-4abe4c3a940c",
-									"name": "ProcessService",
-									"originalRequest": {
-										"method": "POST",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "{\r\n    \"configuredLevel\": \"DEBUG\"\r\n}",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": {
-											"raw": "{{process_domain}}/actuator/loggers/:logId",
-											"host": [
-												"{{process_domain}}"
-											],
-											"path": [
-												"actuator",
-												"loggers",
-												":logId"
-											],
-											"variable": [
-												{
-													"key": "logId",
-													"value": "com.indra.tms.ars.process.service.ProcessService"
-												}
-											]
-										}
-									},
-									"_postman_previewlanguage": null,
-									"header": null,
-									"cookie": [],
-									"responseTime": null,
-									"body": null
-								},
-								{
-									"id": "3f233f08-e177-4b26-8d6f-18a1c2b08e29",
-									"name": "SignalRules",
-									"originalRequest": {
-										"method": "POST",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "{\r\n    \"configuredLevel\": \"DEBUG\"\r\n}",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": {
-											"raw": "{{process_domain}}/actuator/loggers/:logId",
-											"host": [
-												"{{process_domain}}"
-											],
-											"path": [
-												"actuator",
-												"loggers",
-												":logId"
-											],
-											"variable": [
-												{
-													"key": "logId",
-													"value": "com.indra.tms.ars.signalrules.service.SignalRulesService"
-												}
-											]
-										}
-									},
-									"_postman_previewlanguage": null,
-									"header": null,
-									"cookie": [],
-									"responseTime": null,
-									"body": null
-								},
-								{
-									"id": "a1e55293-fb23-4596-83eb-857909b86ac1",
-									"name": "ProximityService",
-									"originalRequest": {
-										"method": "POST",
-										"header": [],
-										"body": {
-											"mode": "raw",
-											"raw": "{\r\n    \"configuredLevel\": \"DEBUG\"\r\n}",
-											"options": {
-												"raw": {
-													"language": "json"
-												}
-											}
-										},
-										"url": {
-											"raw": "{{process_domain}}/actuator/loggers/:logId",
-											"host": [
-												"{{process_domain}}"
-											],
-											"path": [
-												"actuator",
-												"loggers",
-												":logId"
-											],
-											"variable": [
-												{
-													"key": "logId",
-													"value": "com.indra.tms.ars.process.service.ProximityService"
+													"value": "com.indra.tms.ars.process.service.VerificationService"
 												}
 											]
 										}
