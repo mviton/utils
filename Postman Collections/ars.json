@@ -3043,6 +3043,45 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": null
+								},
+								{
+									"id": "e3a6f71c-c3e1-489b-9979-676f4bbbd802",
+									"name": "ctc",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"configuredLevel\": \"DEBUG\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{circulation_domain}}/actuator/loggers/:logId",
+											"host": [
+												"{{circulation_domain}}"
+											],
+											"path": [
+												"actuator",
+												"loggers",
+												":logId"
+											],
+											"variable": [
+												{
+													"key": "logId",
+													"value": "com.indra.tms.ctc"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": null
 								}
 							]
 						},
