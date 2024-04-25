@@ -2844,7 +2844,7 @@
 									"variable": [
 										{
 											"key": "eventSystemCore",
-											"value": "SYSTEM_UP"
+											"value": "true"
 										}
 									]
 								}
