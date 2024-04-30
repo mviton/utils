@@ -5568,7 +5568,7 @@
 											"variable": [
 												{
 													"key": "logId",
-													"value": "com.indra.tms.ars.cache.ctc.commands.CommandsCacheService"
+													"value": "com.indra.tms.ars.commands.service.CommandService"
 												}
 											]
 										}
