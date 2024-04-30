@@ -5004,7 +5004,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{process_domain}}/internal/api/process/analyzeCommands?signalId=SE.ER-ORAV-ORAV-A1&zoneType=VZ_NE",
+									"raw": "{{process_domain}}/internal/api/process/analyzeCommands?signalId=SE.IE-DNRI-DRKEN-DN581&zoneType=VZ_NE",
 									"host": [
 										"{{process_domain}}"
 									],
@@ -5017,12 +5017,18 @@
 									"query": [
 										{
 											"key": "signalId",
-											"value": "SE.ER-ORAV-ORAV-A1"
+											"value": "SE.IE-DNRI-DRKEN-DN581"
 										},
 										{
 											"key": "zoneType",
 											"value": "VZ_NE",
 											"description": "\"VZ_NE\" or \"VZ_E\""
+										},
+										{
+											"key": "zoneType",
+											"value": "VZ_E",
+											"type": "text",
+											"disabled": true
 										}
 									]
 								}
