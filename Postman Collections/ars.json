@@ -4403,7 +4403,7 @@
 								},
 								{
 									"id": "4154eb6e-a855-4763-ad24-ea29a16262b2",
-									"name": "SignalRules",
+									"name": "SignalRulesService",
 									"originalRequest": {
 										"method": "POST",
 										"header": [],
