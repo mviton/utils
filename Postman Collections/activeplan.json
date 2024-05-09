@@ -1432,7 +1432,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "95e19745-c549-4631-a32b-b2a4e93972aa",
+								"id": "5e71ca40-57b0-4017-9c1e-495059c03f09",
 								"exec": [
 									"console.log(`--------- '${pm.info.requestName}' / ${pm.info.eventName} -------`);\r",
 									"\r",
@@ -1517,7 +1517,8 @@
 									"}\r",
 									"if(realTime){\r",
 									"    _.each(realTime, (item) => {\r",
-									"        if(!!item.plannedTczOrder){\r",
+									"        //console.info(`RealTime ${item.plannedTczOrder} -> ${item.eventType} ${utils.convertToTime(item.updateTime, true, \"HH:mm.ss\")}`);\r",
+									"        if(item.plannedTczOrder !== undefined){\r",
 									"            dataTableVisualization[item.plannedTczOrder].realEventType = item.eventType;\r",
 									"            dataTableVisualization[item.plannedTczOrder].realUpdate = utils.convertToTime(item.updateTime, true, \"HH:mm.ss\");\r",
 									"        }\r",
