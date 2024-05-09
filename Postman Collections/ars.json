@@ -4481,7 +4481,7 @@
 								},
 								{
 									"id": "75171b19-7408-4dd4-8545-07dbe5d2b2ef",
-									"name": "ArsEventService",
+									"name": "com.indra.tms.ars.reactive.impl",
 									"originalRequest": {
 										"method": "POST",
 										"header": [],
@@ -4507,7 +4507,7 @@
 											"variable": [
 												{
 													"key": "logId",
-													"value": "com.indra.tms.ars.process.service.ProcessService"
+													"value": "com.indra.tms.ars.reactive.impl.ArsEventService"
 												}
 											]
 										}
