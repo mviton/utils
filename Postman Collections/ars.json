@@ -404,7 +404,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{circulation_domain}}/internal/api/circulation/getInfoCirculation?circulationUUID=f2e91815-06c8-44a8-a95a-1a4048475af7&direction=ODD",
+							"raw": "{{circulation_domain}}/internal/api/circulation/getInfoCirculation?circulationUUID=af962ff1-c373-4597-bf15-0970a477e797&direction=ODD",
 							"host": [
 								"{{circulation_domain}}"
 							],
@@ -417,7 +417,7 @@
 							"query": [
 								{
 									"key": "circulationUUID",
-									"value": "f2e91815-06c8-44a8-a95a-1a4048475af7"
+									"value": "af962ff1-c373-4597-bf15-0970a477e797"
 								},
 								{
 									"key": "circulationUUID",
@@ -427,11 +427,12 @@
 								{
 									"key": "direction",
 									"value": "ODD",
-									"description": "ODD / EVEN (empty not overide circulation direction)"
+									"description": "ODD / DOWN <-"
 								},
 								{
 									"key": "direction",
 									"value": "EVEN",
+									"description": "EVENT / UP ->",
 									"disabled": true
 								}
 							]
@@ -1630,7 +1631,7 @@
 													"variable": [
 														{
 															"key": "mnemonic",
-															"value": "SE.IE-KNRI-KONAN-KJ567"
+															"value": "SE.IE-DNRI-DRKEN-DN582"
 														}
 													]
 												}
@@ -2096,7 +2097,7 @@
 									"variable": [
 										{
 											"key": "mnemonic",
-											"value": "SE.IE-LK01-LMRCK-LK493"
+											"value": "SE.IE-DNRI-DRKEN-DN582"
 										}
 									]
 								}
