@@ -4173,7 +4173,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{detection_domain}}/internal/api/detection/getFieldElementState?fieldElementId=CV.IE-LK01-LMRCK-4287R",
+									"raw": "{{detection_domain}}/internal/api/detection/getFieldElementState?fieldElementId=CV.IE-KNRI-KONAN-959",
 									"host": [
 										"{{detection_domain}}"
 									],
@@ -4186,7 +4186,7 @@
 									"query": [
 										{
 											"key": "fieldElementId",
-											"value": "CV.IE-LK01-LMRCK-4287R"
+											"value": "CV.IE-KNRI-KONAN-959"
 										}
 									]
 								}
