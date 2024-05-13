@@ -1631,7 +1631,7 @@
 													"variable": [
 														{
 															"key": "mnemonic",
-															"value": "SE.IE-DNRI-DRKEN-DN582"
+															"value": "SE.IE-DNRI-DRKEN-DN576"
 														}
 													]
 												}
@@ -1669,7 +1669,7 @@
 													"variable": [
 														{
 															"key": "mnemonic",
-															"value": "SE.IE-DNRI-DRKEN-DN582"
+															"value": "SE.IE-DNRI-DRKEN-DN576"
 														}
 													]
 												}
@@ -2097,7 +2097,7 @@
 									"variable": [
 										{
 											"key": "mnemonic",
-											"value": "SE.IE-DNRI-DRKEN-DN582"
+											"value": "SE.IE-DNRI-DRKEN-DN576"
 										}
 									]
 								}
