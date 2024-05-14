@@ -634,6 +634,19 @@
 							"response": []
 						},
 						{
+							"name": "Set Logger",
+							"id": "0d37a8a0-0dd3-4604-8c15-e82a1972089c",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{management_domain}}/actuator/loggers"
+							},
+							"response": []
+						},
+						{
 							"name": "Command Compatibility",
 							"id": "fba6aaca-890f-445a-8842-50a156b57022",
 							"protocolProfileBehavior": {
