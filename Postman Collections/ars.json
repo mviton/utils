@@ -640,9 +640,34 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
+								"method": "POST",
 								"header": [],
-								"url": "{{management_domain}}/actuator/loggers"
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"configuredLevel\": \"INFO\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{management_domain}}/actuator/loggers/:logId",
+									"host": [
+										"{{management_domain}}"
+									],
+									"path": [
+										"actuator",
+										"loggers",
+										":logId"
+									],
+									"variable": [
+										{
+											"key": "logId",
+											"value": "com.indra"
+										}
+									]
+								}
 							},
 							"response": []
 						},
