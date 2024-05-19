@@ -4009,7 +4009,7 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{detection_domain}}/internal/api/detection/zoneproximitybysignal?signalId=SE.IE-MHEN-MLGAR-SL739",
+											"raw": "{{detection_domain}}/internal/api/detection/zoneproximitybysignal?signalId=SE.IE-MHEN-ETOWN-SL769",
 											"host": [
 												"{{detection_domain}}"
 											],
@@ -4022,13 +4022,46 @@
 											"query": [
 												{
 													"key": "signalId",
-													"value": "SE.IE-MHEN-MLGAR-SL739",
+													"value": "SE.IE-MHEN-ETOWN-SL769",
 													"description": "Mnemonic FieldElement"
 												}
 											]
 										}
 									},
-									"response": []
+									"response": [
+										{
+											"id": "a59bbaf8-202f-4f0f-a154-f44e8d123ce1",
+											"name": "LK475",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{detection_domain}}/internal/api/detection/zoneproximitybysignal?signalId=SE.IE-LK01-LMRCK-LK475",
+													"host": [
+														"{{detection_domain}}"
+													],
+													"path": [
+														"internal",
+														"api",
+														"detection",
+														"zoneproximitybysignal"
+													],
+													"query": [
+														{
+															"key": "signalId",
+															"value": "SE.IE-LK01-LMRCK-LK475",
+															"description": "Mnemonic FieldElement"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
+										}
+									]
 								},
 								{
 									"name": "Zone Proximity JSON",
