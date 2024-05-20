@@ -4034,7 +4034,7 @@
 													"    });\r",
 													"    let cRoute = _.reduce(aPathStr, (all, route2) =>  all + \" <- \"+ route2);\r",
 													"\r",
-													"    let cElements = _.reduce(itemPath.elements, (all, element2) =>  all + \" <- \"+ element2.id);\r",
+													"    let cElements = _.reduce(itemPath.elements, (all, element2) =>  all + \" <- \"+ element2.id, '');\r",
 													"    dataVisualization.push({\r",
 													"        path: cRoute,\r",
 													"        elements: cElements\r",
