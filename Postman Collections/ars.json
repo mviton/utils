@@ -4000,7 +4000,7 @@
 									"response": []
 								},
 								{
-									"name": "Get Zone Proximity Info",
+									"name": "Zone Proximity Info",
 									"id": "caba1745-bd0d-4242-9bb8-5d70bf17f7cc",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
