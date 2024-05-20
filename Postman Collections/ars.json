@@ -4014,7 +4014,7 @@
 													"        return \"\";\r",
 													"    }\r",
 													"    let nameParts = mnemonic.split('-');\r",
-													"    return (includeType ? `${nameParts[0]}.` :'') + (includeEnce ? `${nameParts[2]}-${nameParts[3]}` : `${nameParts[3]}`);\r",
+													"    return (includeType ? `${nameParts[0].split('.')[0]}_` :'') + (includeEnce ? `${nameParts[2]}-${nameParts[3]}` : `${nameParts[3]}`);\r",
 													"}\r",
 													"\r",
 													"// Check response code\r",
