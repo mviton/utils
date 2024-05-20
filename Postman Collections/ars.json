@@ -4005,9 +4005,17 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "02b091bc-79e0-420f-90ae-5bbf3ca974c9",
+												"id": "80a5db5b-df98-40a2-b272-26a20711adf3",
 												"exec": [
 													"console.log(`--------- '${pm.info.requestName}' / ${pm.info.eventName} -------`);\r",
+													"\r",
+													"const getShortName = (mnemonic) => {\r",
+													"    if(!mnemonic) {\r",
+													"        return \"\";\r",
+													"    }\r",
+													"    let nameParts = mnemonic.split('-');\r",
+													"    return `${nameParts[2]}-${nameParts[3]}`;\r",
+													"}\r",
 													"\r",
 													"// Check response code\r",
 													"pm.test(\"Status code is 200\", function(){\r",
@@ -4022,7 +4030,7 @@
 													"_.each(paths, (itemPath) => {\r",
 													"    let aPathStr = [];\r",
 													"    _.each(itemPath.route, (itemRoute) => {\r",
-													"        aPathStr = [...aPathStr, (itemRoute == \"INVERSE\" ? \"!\": \"\") + itemRoute.id]\r",
+													"        aPathStr = [...aPathStr, (itemRoute == \"INVERSE\" ? \"!\": \"\") + getShortName(itemRoute.id)]\r",
 													"    });\r",
 													"    let cRoute = _.reduce(aPathStr, (all, route2) =>  all + \" <- \"+ route2);\r",
 													"\r",
