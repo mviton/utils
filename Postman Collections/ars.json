@@ -4001,6 +4001,62 @@
 								},
 								{
 									"name": "Zone Proximity Info",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "02b091bc-79e0-420f-90ae-5bbf3ca974c9",
+												"exec": [
+													"console.log(`--------- '${pm.info.requestName}' / ${pm.info.eventName} -------`);\r",
+													"\r",
+													"// Check response code\r",
+													"pm.test(\"Status code is 200\", function(){\r",
+													"   pm.response.to.have.status(200); \r",
+													"});\r",
+													"\r",
+													"const jsonData = pm.response.json();\r",
+													"const paths = jsonData.paths;\r",
+													"\r",
+													"let dataVisualization = [];\r",
+													"\r",
+													"_.each(paths, (itemPath) => {\r",
+													"    let aPathStr = [];\r",
+													"    _.each(itemPath.route, (itemRoute) => {\r",
+													"        aPathStr = [...aPathStr, (itemRoute == \"INVERSE\" ? \"!\": \"\") + itemRoute.id]\r",
+													"    });\r",
+													"    let cRoute = _.reduce(aPathStr, (all, route2) =>  all + \" <- \"+ route2);\r",
+													"\r",
+													"    let cElements = _.reduce(itemPath.elements, (all, element2) =>  all + \" <- \"+ element2.id);\r",
+													"    dataVisualization.push({\r",
+													"        path: cRoute,\r",
+													"        elements: cElements\r",
+													"    });\r",
+													"});\r",
+													"\r",
+													"\r",
+													"pm.visualizer.set(template, {\r",
+													"    // Pass the response body parsed as JSON as `data`\r",
+													"    // response: pm.response.json()\r",
+													"    data: dataVisualization,\r",
+													"    columns: [\r",
+													"        {\r",
+													"            header: 'Path',\r",
+													"            name: 'path',\r",
+													"            minWidth: 320,\r",
+													"        },\r",
+													"        {\r",
+													"            header: 'Elements',\r",
+													"            name: 'elements',\r",
+													"        }\r",
+													"    ]\r",
+													"});\r",
+													""
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
 									"id": "caba1745-bd0d-4242-9bb8-5d70bf17f7cc",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
