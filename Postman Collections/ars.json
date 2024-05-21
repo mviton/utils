@@ -1724,6 +1724,43 @@
 							"id": "85224ee5-c60f-467b-93f6-d004c74d256d"
 						},
 						{
+							"name": "Monitoring",
+							"item": [
+								{
+									"name": "Signal State",
+									"id": "71c94d35-0324-45ae-9bff-3e3fa4d5e187",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{management_domain}}/api/management/routing-status/signal-state/:mnemonic",
+											"host": [
+												"{{management_domain}}"
+											],
+											"path": [
+												"api",
+												"management",
+												"routing-status",
+												"signal-state",
+												":mnemonic"
+											],
+											"variable": [
+												{
+													"key": "mnemonic",
+													"value": "SE.IE-DNRI-DRKEN-DN576"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"id": "57baf63c-4f3c-490f-9b79-3c923844ad89"
+						},
+						{
 							"name": "Get Global Status",
 							"id": "7392c269-6406-4126-b226-d0980c07394e",
 							"protocolProfileBehavior": {
