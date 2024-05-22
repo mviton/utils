@@ -3013,7 +3013,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "9258d2ad-6179-4daa-877f-cd482238b79a",
+				"id": "d02dd822-72ac-4e3a-9b40-ae6201262145",
 				"type": "text/javascript",
 				"exec": [
 					"",
@@ -3445,9 +3445,11 @@
 					"    <link rel=\"stylesheet\" href=\"https://uicdn.toast.com/grid/latest/tui-grid.min.css\" />",
 					"    <script src=\"https://uicdn.toast.com/grid/latest/tui-grid.min.js\"></script>",
 					"    <script type=\"text/javascript\">",
+					"        const Grid = tui.Grid;",
+					"        ",
 					"        pm.getData(function (err, value) {            ",
 					"            //instance.resetData(value.res);",
-					"            const Grid = tui.Grid;",
+					"            //const Grid = tui.Grid;           ",
 					"",
 					"            const instance = new Grid({",
 					"                el: document.getElementById('grid'), // Container element",
@@ -3483,7 +3485,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "3f5036a4-e7b8-4a33-aab3-0b2c45cd79bd",
+				"id": "b23d989d-ae0d-42a0-9dc5-1cb2971ac256",
 				"type": "text/javascript",
 				"exec": [
 					""
