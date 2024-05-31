@@ -4115,7 +4115,7 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{detection_domain}}/internal/api/detection/zoneproximitybysignal?signalId=SE.IE-MHEN-ETOWN-SL769",
+											"raw": "{{detection_domain}}/internal/api/detection/zoneproximitybysignal?signalId=SE.IE-LK01-LMRCK-LK475",
 											"host": [
 												"{{detection_domain}}"
 											],
@@ -4128,7 +4128,7 @@
 											"query": [
 												{
 													"key": "signalId",
-													"value": "SE.IE-MHEN-ETOWN-SL769",
+													"value": "SE.IE-LK01-LMRCK-LK475",
 													"description": "Mnemonic FieldElement"
 												}
 											]
