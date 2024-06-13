@@ -1755,7 +1755,40 @@
 											]
 										}
 									},
-									"response": []
+									"response": [
+										{
+											"id": "6f5e2baa-42d7-469c-9cfc-56635fc210aa",
+											"name": "KJ567",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{management_domain}}/api/management/routing-status/signal-state/:mnemonic",
+													"host": [
+														"{{management_domain}}"
+													],
+													"path": [
+														"api",
+														"management",
+														"routing-status",
+														"signal-state",
+														":mnemonic"
+													],
+													"variable": [
+														{
+															"key": "mnemonic",
+															"value": "SE.IE-KNRI-KONAN-KJ567"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
+										}
+									]
 								}
 							],
 							"id": "57baf63c-4f3c-490f-9b79-3c923844ad89"
