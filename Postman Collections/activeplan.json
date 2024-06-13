@@ -901,7 +901,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"operation\": \"set\",\r\n    \"tczName\": \"Limerick\",\r\n    \"arrival\": \"03:10.00\",\r\n    \"departure\": \"20:15.00\"\r\n}",
+									"raw": "{\r\n    \"operation\": \"set\",\r\n    \"tczName\": \"Limerick\",\r\n    \"arrival\": \"15:00.00\",\r\n    \"departure\": \"15:15.00\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -909,7 +909,7 @@
 									}
 								},
 								"url": {
-									"raw": "postman-echo.com/get?sourceOriginNumber=K403&originNumber=ARS406",
+									"raw": "postman-echo.com/get?sourceOriginNumber=A425&originNumber=B425",
 									"host": [
 										"postman-echo",
 										"com"
@@ -926,12 +926,12 @@
 										},
 										{
 											"key": "sourceOriginNumber",
-											"value": "K403",
+											"value": "A425",
 											"description": "circulationUUI or sourceOriginNumber"
 										},
 										{
 											"key": "originNumber",
-											"value": "ARS406"
+											"value": "B425"
 										},
 										{
 											"key": "removeSource",
