@@ -117,6 +117,11 @@
 					"id": "f6c48fa4-0021-4b8e-b756-ad590030ad52"
 				},
 				{
+					"name": "Monitorize",
+					"item": [],
+					"id": "767b5ae2-1783-4f06-9e91-7294cf55e8df"
+				},
+				{
 					"name": "IsSignalOutput",
 					"id": "83f8c8b0-903f-4063-b32f-c10e3cfd56b4",
 					"protocolProfileBehavior": {
