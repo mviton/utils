@@ -4216,7 +4216,7 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{detection_domain}}/internal/api/detection/zoneproximity_jsonbysignal?signalId=SE.IE-LK01-LMRCK-LK475",
+											"raw": "{{detection_domain}}/internal/api/detection/zoneproximity_jsonbysignal?signalId=SE.IE-LK01-LMRCK-LK463",
 											"host": [
 												"{{detection_domain}}"
 											],
@@ -4229,7 +4229,7 @@
 											"query": [
 												{
 													"key": "signalId",
-													"value": "SE.IE-LK01-LMRCK-LK475",
+													"value": "SE.IE-LK01-LMRCK-LK463",
 													"description": "Mnemonic FieldElement"
 												}
 											]
@@ -4309,7 +4309,7 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{detection_domain}}/internal/api/detection/zonecompatibility_jsonbysignal?signalId=SE.IE-LK01-LMRCK-LK476",
+											"raw": "{{detection_domain}}/internal/api/detection/zonecompatibility_jsonbysignal?signalId=SE.IE-DNRI-DRKEN-DN581",
 											"host": [
 												"{{detection_domain}}"
 											],
@@ -4322,7 +4322,7 @@
 											"query": [
 												{
 													"key": "signalId",
-													"value": "SE.IE-LK01-LMRCK-LK476",
+													"value": "SE.IE-DNRI-DRKEN-DN581",
 													"description": "Mnemonic FieldElement"
 												}
 											]
