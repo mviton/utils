@@ -2981,7 +2981,37 @@
 					"id": "ed1bd4cb-1f59-4177-b782-a770ee8a74f1"
 				}
 			],
-			"id": "6b73f6ac-4f09-4a73-b87e-069db3c7ad60"
+			"id": "6b73f6ac-4f09-4a73-b87e-069db3c7ad60",
+			"auth": {
+				"type": "bearer",
+				"bearer": {
+					"token": "{{token}}"
+				}
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "1153a629-f5e8-433e-aad2-b52f690e75be",
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "fe4de68f-7321-44f7-81e6-d5916cf5c0f9",
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
 		},
 		{
 			"name": "Circulation",
