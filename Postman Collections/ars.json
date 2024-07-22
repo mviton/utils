@@ -3671,7 +3671,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n    \"circulation\": {\r\n        \"id\": \"15aeb552-039c-4424-8d05-1c97a3ff13bc\"\r\n    },\r\n    \"properties\":{\r\n        \"ARS_STATUS\": \"SELECTED_SIGNAL_NO\",\r\n        \"EXCLUDED_SIGNAL_ID\": \"SE.IE-LDSO-CKOSH-SL811\"\r\n    }\r\n}",
+											"raw": "{\r\n    \"circulation\": {\r\n        \"id\": \"{{circulationUUID}}\"\r\n    },\r\n    \"properties\":{\r\n        \"ARS_STATUS\": \"SELECTED_SIGNAL_NO\",\r\n        \"EXCLUDED_SIGNAL_ID\": \"SE.ER-ORAV-VER-A\"\r\n    }\r\n}",
 											"options": {
 												"raw": {
 													"language": "json"
