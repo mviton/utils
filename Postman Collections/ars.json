@@ -161,7 +161,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{circulation_domain}}/internal/api/circulation/getNextSignal?circulationUUID=fefd8d82-6da1-4062-979e-2b297f889319",
+							"raw": "{{circulation_domain}}/internal/api/circulation/getNextSignal?circulationUUID={{circulationUUID}}",
 							"host": [
 								"{{circulation_domain}}"
 							],
@@ -174,12 +174,12 @@
 							"query": [
 								{
 									"key": "circulationUUID",
-									"value": "fefd8d82-6da1-4062-979e-2b297f889319"
+									"value": "fefd8d82-6da1-4062-979e-2b297f889319",
+									"disabled": true
 								},
 								{
 									"key": "circulationUUID",
-									"value": "{{circulationUUID}}",
-									"disabled": true
+									"value": "{{circulationUUID}}"
 								}
 							]
 						}
