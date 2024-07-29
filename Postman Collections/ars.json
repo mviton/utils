@@ -2979,6 +2979,43 @@
 						}
 					],
 					"id": "ed1bd4cb-1f59-4177-b782-a770ee8a74f1"
+				},
+				{
+					"name": "ArsZones (internal)",
+					"item": [
+						{
+							"name": "Agnostic (ALL)",
+							"id": "02793f7d-cd11-45a3-8307-600cf9ea71df",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{management_domain}}/internal/api/consult/agnostic/:netVersion",
+									"host": [
+										"{{management_domain}}"
+									],
+									"path": [
+										"internal",
+										"api",
+										"consult",
+										"agnostic",
+										":netVersion"
+									],
+									"variable": [
+										{
+											"key": "netVersion",
+											"value": "IE_TOPO_GLOBAL_3_1_6"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "c213b86d-e852-490d-ad53-2492edf71a45"
 				}
 			],
 			"id": "6b73f6ac-4f09-4a73-b87e-069db3c7ad60",
