@@ -3091,7 +3091,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{management_domain}}/internal/api/consult/cz/:netVersion",
+									"raw": "{{management_domain}}/internal/api/consult/cz/:netVersion/:signalId",
 									"host": [
 										"{{management_domain}}"
 									],
@@ -3100,13 +3100,125 @@
 										"api",
 										"consult",
 										"cz",
+										":netVersion",
+										":signalId"
+									],
+									"variable": [
+										{
+											"key": "netVersion",
+											"value": "IE_TOPO_GLOBAL_3_1_6"
+										},
+										{
+											"key": "signalId",
+											"value": "a"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Campatibility (origin - target)",
+							"id": "5e57457d-e1dc-471d-9138-3db241463022",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{management_domain}}/internal/api/consult/cz/:netVersion/:signalId/:targetId",
+									"host": [
+										"{{management_domain}}"
+									],
+									"path": [
+										"internal",
+										"api",
+										"consult",
+										"cz",
+										":netVersion",
+										":signalId",
+										":targetId"
+									],
+									"variable": [
+										{
+											"key": "netVersion",
+											"value": "IE_TOPO_GLOBAL_3_1_6"
+										},
+										{
+											"key": "signalId",
+											"value": "a"
+										},
+										{
+											"key": "targetId",
+											"value": "b"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Proximity (ALL)",
+							"id": "70c1908e-112a-4c34-b0c8-b685e74d912c",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{management_domain}}/internal/api/consult/pz/:netVersion",
+									"host": [
+										"{{management_domain}}"
+									],
+									"path": [
+										"internal",
+										"api",
+										"consult",
+										"pz",
 										":netVersion"
 									],
 									"variable": [
 										{
-											"id": "2127a867-42a1-411d-8dd0-53f8a799011f",
 											"key": "netVersion",
 											"value": "IE_TOPO_GLOBAL_3_1_6"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Proximity",
+							"id": "caac3cdd-2355-40c8-b12e-69ec618cefb5",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{management_domain}}/internal/api/consult/pz/:netVersion/:signalId",
+									"host": [
+										"{{management_domain}}"
+									],
+									"path": [
+										"internal",
+										"api",
+										"consult",
+										"pz",
+										":netVersion",
+										":signalId"
+									],
+									"variable": [
+										{
+											"key": "netVersion",
+											"value": "IE_TOPO_GLOBAL_3_1_6"
+										},
+										{
+											"key": "signalId",
+											"value": "a"
 										}
 									]
 								}
