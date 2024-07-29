@@ -3051,7 +3051,7 @@
 							"response": []
 						},
 						{
-							"name": "Campatibility (ALL)",
+							"name": "Compatibility (ALL)",
 							"id": "31d6d675-5a4e-4cc2-a61c-76db0d5658fa",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -3082,7 +3082,7 @@
 							"response": []
 						},
 						{
-							"name": "Campatibility",
+							"name": "Compatibility",
 							"id": "cbff2ffe-bbc2-43d4-8a1d-1212af06275c",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -3118,7 +3118,7 @@
 							"response": []
 						},
 						{
-							"name": "Campatibility (origin - target)",
+							"name": "Compatibility (origin - target)",
 							"id": "5e57457d-e1dc-471d-9138-3db241463022",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
