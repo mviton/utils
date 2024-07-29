@@ -4581,37 +4581,6 @@
 							"id": "150cd05d-1a54-4c38-b540-9b9ad4f8680f"
 						},
 						{
-							"name": "Get List SignalIds from FieldElement",
-							"id": "af5fcc3b-c2c6-47fa-8c72-024cd53228ad",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "{{detection_domain}}/internal/api/detection/signalsbyfieldelement?fieldElementId=CV.IE-LDSO-SLIGO-6397",
-									"host": [
-										"{{detection_domain}}"
-									],
-									"path": [
-										"internal",
-										"api",
-										"detection",
-										"signalsbyfieldelement"
-									],
-									"query": [
-										{
-											"key": "fieldElementId",
-											"value": "CV.IE-LDSO-SLIGO-6397",
-											"description": "Mnemonic FieldElement"
-										}
-									]
-								}
-							},
-							"response": []
-						},
-						{
 							"name": "Forze Request FieldElement State",
 							"id": "c73842fa-7d78-464a-ac67-ad9093bc8d22",
 							"protocolProfileBehavior": {
@@ -5295,7 +5264,7 @@
 							"id": "0e7cd338-0756-4507-82e5-ab88e834135d"
 						},
 						{
-							"name": "caches",
+							"name": "caches (OLD)",
 							"item": [
 								{
 									"name": "RoutingOrder (Get Info cache)",
