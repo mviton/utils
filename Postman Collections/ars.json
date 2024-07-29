@@ -3013,6 +3013,105 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "Affected (agnostic)",
+							"id": "ece8ef27-ebf5-4129-a510-b57a8d34ffef",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{management_domain}}/internal/api/consult/agnostic/:netVersion/:elementID",
+									"host": [
+										"{{management_domain}}"
+									],
+									"path": [
+										"internal",
+										"api",
+										"consult",
+										"agnostic",
+										":netVersion",
+										":elementID"
+									],
+									"variable": [
+										{
+											"key": "netVersion",
+											"value": "IE_TOPO_GLOBAL_3_1_6"
+										},
+										{
+											"key": "elementID",
+											"value": "a"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Campatibility (ALL)",
+							"id": "31d6d675-5a4e-4cc2-a61c-76db0d5658fa",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{management_domain}}/internal/api/consult/cz/:netVersion",
+									"host": [
+										"{{management_domain}}"
+									],
+									"path": [
+										"internal",
+										"api",
+										"consult",
+										"cz",
+										":netVersion"
+									],
+									"variable": [
+										{
+											"key": "netVersion",
+											"value": "IE_TOPO_GLOBAL_3_1_6"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Campatibility",
+							"id": "cbff2ffe-bbc2-43d4-8a1d-1212af06275c",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{management_domain}}/internal/api/consult/cz/:netVersion",
+									"host": [
+										"{{management_domain}}"
+									],
+									"path": [
+										"internal",
+										"api",
+										"consult",
+										"cz",
+										":netVersion"
+									],
+									"variable": [
+										{
+											"id": "2127a867-42a1-411d-8dd0-53f8a799011f",
+											"key": "netVersion",
+											"value": "IE_TOPO_GLOBAL_3_1_6"
+										}
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"id": "c213b86d-e852-490d-ad53-2492edf71a45"
