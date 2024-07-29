@@ -4287,7 +4287,7 @@
 					"name": "Controller",
 					"item": [
 						{
-							"name": "Zones",
+							"name": "Zones (OLD)",
 							"item": [
 								{
 									"name": "Force reload Zones",
