@@ -3893,6 +3893,19 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "Request Circulations",
+							"id": "53b6d9d4-788b-49e8-80b6-f7485d126d51",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": "{{circulation_domain}}/internal/api/circulation/requestCirculations"
+							},
+							"response": []
 						}
 					],
 					"id": "ceeb2490-90b3-4cd1-b4aa-ce2d45350478"
