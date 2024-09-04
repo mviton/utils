@@ -2608,7 +2608,40 @@
 									]
 								}
 							},
-							"response": []
+							"response": [
+								{
+									"id": "16c70670-93ff-41f6-8b4c-38607e6483d7",
+									"name": "SL768 (MHEN-ETOWN)",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{management_domain}}/api/management/routing-status/signal/:mnemonic",
+											"host": [
+												"{{management_domain}}"
+											],
+											"path": [
+												"api",
+												"management",
+												"routing-status",
+												"signal",
+												":mnemonic"
+											],
+											"variable": [
+												{
+													"key": "mnemonic",
+													"value": "SE.IE-MHEN-ETOWN-SL768"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": null
+								}
+							]
 						},
 						{
 							"name": "Signal Extended",
