@@ -2192,7 +2192,7 @@
 							"id": "85224ee5-c60f-467b-93f6-d004c74d256d"
 						},
 						{
-							"name": "Get Global Status",
+							"name": "Global",
 							"id": "7392c269-6406-4126-b226-d0980c07394e",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -2205,7 +2205,7 @@
 							"response": []
 						},
 						{
-							"name": "Ences Status [All]",
+							"name": "Ences [All]",
 							"event": [
 								{
 									"listen": "test",
@@ -2276,80 +2276,7 @@
 							"response": []
 						},
 						{
-							"name": "RoutingStatus Signal [ALL]",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "ca8e459e-b311-44c5-ab97-5161d711f7ec",
-										"exec": [
-											"console.log(`--------- '${pm.info.requestName}' / ${pm.info.eventName} -------`);\r",
-											"\r",
-											"var jsonData = pm.response.json();\r",
-											"\r",
-											"const dataVisualization = [];\r",
-											"_.each(jsonData, (itemRoutingSignal) => {\r",
-											"    dataVisualization.push(\r",
-											"            {\r",
-											"                mnemonic: itemRoutingSignal.mnemonic,\r",
-											"                operativeState: itemRoutingSignal.operativeState,\r",
-											"                authorizationState: itemRoutingSignal.authorizationState,\r",
-											"                routingState: itemRoutingSignal.routingState\r",
-											"            }\r",
-											"    );\r",
-											"});\r",
-											"\r",
-											"pm.visualizer.set(template, {\r",
-											"    // Pass the response body parsed as JSON as `data`\r",
-											"    // response: pm.response.json()\r",
-											"    data: dataVisualization,\r",
-											"    columns: [\r",
-											"        {\r",
-											"            header: 'mnemonic',\r",
-											"            name: 'mnemonic',\r",
-											"            filter: { type: 'text', showApplyBtn: true, showClearBtn: true },\r",
-											"            sortingType: 'desc',\r",
-											"            sortable: true\r",
-											"        },\r",
-											"        {\r",
-											"            header: 'Operative State',\r",
-											"            name: 'operativeState',\r",
-											"            filter: { type: 'select', showApplyBtn: true, showClearBtn: true },\r",
-											"            sortable: true\r",
-											"        },\r",
-											"        {\r",
-											"            header: 'Authorization',\r",
-											"            name: 'authorizationState',\r",
-											"            filter: { type: 'select', showApplyBtn: true, showClearBtn: true },\r",
-											"            sortable: true\r",
-											"        },\r",
-											"        {\r",
-											"            header: 'Routing State',\r",
-											"            name: 'routingState',\r",
-											"            filter: { type: 'select', showApplyBtn: true, showClearBtn: true },\r",
-											"            sortable: true\r",
-											"        }\r",
-											"    ]\r",
-											"});\r",
-											""
-										],
-										"type": "text/javascript"
-									}
-								}
-							],
-							"id": "83012bba-b157-43c5-b3b4-b0f9bc5a234b",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": [],
-								"url": "{{management_domain}}/api/management/routing-status/signal"
-							},
-							"response": []
-						},
-						{
-							"name": "Get Ence Status",
+							"name": "Ence",
 							"id": "46f0e2bc-9ce8-42b2-a295-d430a5da42d5",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -2580,7 +2507,80 @@
 							]
 						},
 						{
-							"name": "Signal RoutingStatus",
+							"name": "Signal [ALL]",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "ca8e459e-b311-44c5-ab97-5161d711f7ec",
+										"exec": [
+											"console.log(`--------- '${pm.info.requestName}' / ${pm.info.eventName} -------`);\r",
+											"\r",
+											"var jsonData = pm.response.json();\r",
+											"\r",
+											"const dataVisualization = [];\r",
+											"_.each(jsonData, (itemRoutingSignal) => {\r",
+											"    dataVisualization.push(\r",
+											"            {\r",
+											"                mnemonic: itemRoutingSignal.mnemonic,\r",
+											"                operativeState: itemRoutingSignal.operativeState,\r",
+											"                authorizationState: itemRoutingSignal.authorizationState,\r",
+											"                routingState: itemRoutingSignal.routingState\r",
+											"            }\r",
+											"    );\r",
+											"});\r",
+											"\r",
+											"pm.visualizer.set(template, {\r",
+											"    // Pass the response body parsed as JSON as `data`\r",
+											"    // response: pm.response.json()\r",
+											"    data: dataVisualization,\r",
+											"    columns: [\r",
+											"        {\r",
+											"            header: 'mnemonic',\r",
+											"            name: 'mnemonic',\r",
+											"            filter: { type: 'text', showApplyBtn: true, showClearBtn: true },\r",
+											"            sortingType: 'desc',\r",
+											"            sortable: true\r",
+											"        },\r",
+											"        {\r",
+											"            header: 'Operative State',\r",
+											"            name: 'operativeState',\r",
+											"            filter: { type: 'select', showApplyBtn: true, showClearBtn: true },\r",
+											"            sortable: true\r",
+											"        },\r",
+											"        {\r",
+											"            header: 'Authorization',\r",
+											"            name: 'authorizationState',\r",
+											"            filter: { type: 'select', showApplyBtn: true, showClearBtn: true },\r",
+											"            sortable: true\r",
+											"        },\r",
+											"        {\r",
+											"            header: 'Routing State',\r",
+											"            name: 'routingState',\r",
+											"            filter: { type: 'select', showApplyBtn: true, showClearBtn: true },\r",
+											"            sortable: true\r",
+											"        }\r",
+											"    ]\r",
+											"});\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"id": "83012bba-b157-43c5-b3b4-b0f9bc5a234b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{management_domain}}/api/management/routing-status/signal"
+							},
+							"response": []
+						},
+						{
+							"name": "Signal",
 							"id": "4e52030d-1162-4348-b703-c3a3d0240dc0",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
