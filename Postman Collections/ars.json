@@ -2603,7 +2603,38 @@
 									"variable": [
 										{
 											"key": "mnemonic",
-											"value": "SE.ER-ORAV-ORAV-A2"
+											"value": "SE.IE-MHEN-KLCAN-SL719"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Signal Extended",
+							"id": "252974a7-0f8c-47a5-9aab-1fd6c307f07e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{management_domain}}/api/management/routing-status/signal-state/:mnemonic",
+									"host": [
+										"{{management_domain}}"
+									],
+									"path": [
+										"api",
+										"management",
+										"routing-status",
+										"signal-state",
+										":mnemonic"
+									],
+									"variable": [
+										{
+											"key": "mnemonic",
+											"value": "SE.IE-MHEN-KLCAN-SL719"
 										}
 									]
 								}
