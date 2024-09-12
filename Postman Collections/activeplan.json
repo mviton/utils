@@ -23,6 +23,19 @@
 								"url": "{{activeplan_operation}}/actuator/health"
 							},
 							"response": []
+						},
+						{
+							"name": "Health (dataaccess)",
+							"id": "0ee7a631-8eae-4f42-8a80-3bb4ac043b38",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{activeplan}}/actuator/health"
+							},
+							"response": []
 						}
 					],
 					"id": "7a64fc6d-a605-4f21-93e4-6e8e452aa1d9"
