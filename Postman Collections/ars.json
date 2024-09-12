@@ -143,7 +143,7 @@
 									"variable": [
 										{
 											"key": "mnemonic",
-											"value": "SE.IE-DNRI-DRKEN-DN576"
+											"value": "SE.IE-MHEN-ETOWN-SL768"
 										}
 									]
 								}
@@ -557,7 +557,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"commands\": [\r\n        {\r\n            \"commandId\": \"MHEN.ROUTE_OK SL715 SL722\",\r\n            \"originSignal\": \"SE.IE-MHEN-KLCAN-SL715\"\r\n        }\r\n    ]\r\n}",
+									"raw": "{\r\n    \"commands\": [\r\n        {\r\n            \"commandId\": \"MHEN.ROUTE_OK SL768 SL762\",\r\n            \"originSignal\": \"SE.IE-MHEN-ETOWN-SL768\"\r\n        }\r\n    ]\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -859,7 +859,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{circulation_domain}}/internal/api/circulation/getInfoCirculation?circulationUUID=abee7a31-08ec-400b-8fed-60402977481f&direction=EVEN",
+							"raw": "{{circulation_domain}}/internal/api/circulation/getInfoCirculation?circulationUUID=abee7a31-08ec-400b-8fed-60402977481f&direction=ODD",
 							"host": [
 								"{{circulation_domain}}"
 							],
@@ -882,13 +882,13 @@
 								{
 									"key": "direction",
 									"value": "ODD",
-									"description": "ODD / DOWN <-",
-									"disabled": true
+									"description": "ODD / (DOWN) <-"
 								},
 								{
 									"key": "direction",
 									"value": "EVEN",
-									"description": "EVEN / UP ->"
+									"description": "EVEN / (UP) ->",
+									"disabled": true
 								}
 							]
 						}
@@ -5909,7 +5909,7 @@
 							"variable": [
 								{
 									"key": "signalId",
-									"value": "SE.IE-MHEN-KLCAN-SL722"
+									"value": "SE.IE-MHEN-ETOWN-SL768"
 								}
 							]
 						}
