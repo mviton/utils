@@ -4613,7 +4613,7 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{detection_domain}}/internal/api/detection/zoneproximity_jsonbysignal?signalId=SE.IE-LK01-LMRCK-LK463",
+											"raw": "{{detection_domain}}/internal/api/detection/zoneproximity_jsonbysignal?signalId=SE.ER-KOID-KOID-A4",
 											"host": [
 												"{{detection_domain}}"
 											],
@@ -4626,7 +4626,7 @@
 											"query": [
 												{
 													"key": "signalId",
-													"value": "SE.IE-LK01-LMRCK-LK463",
+													"value": "SE.ER-KOID-KOID-A4",
 													"description": "Mnemonic FieldElement"
 												}
 											]
@@ -4694,7 +4694,40 @@
 											]
 										}
 									},
-									"response": []
+									"response": [
+										{
+											"id": "6f18463d-eea2-4b1d-b67f-b90bfaaf1bec",
+											"name": "Get Zone Compatibility Info",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{detection_domain}}/internal/api/detection/zonecompatibilitybysignal?signalId=SE.ER-KOID-KOID-A4",
+													"host": [
+														"{{detection_domain}}"
+													],
+													"path": [
+														"internal",
+														"api",
+														"detection",
+														"zonecompatibilitybysignal"
+													],
+													"query": [
+														{
+															"key": "signalId",
+															"value": "SE.ER-KOID-KOID-A4",
+															"description": "Mnemonic FieldElement"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
+										}
+									]
 								},
 								{
 									"name": "Zone Compatibility JSON",
@@ -4725,7 +4758,40 @@
 											]
 										}
 									},
-									"response": []
+									"response": [
+										{
+											"id": "584c2cc2-9a34-47a0-a7eb-fe4b6e0c3850",
+											"name": "SE.ER-KOID-KOID-A4",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{detection_domain}}/internal/api/detection/zonecompatibility_jsonbysignal?signalId=SE.ER-KOID-KOID-A4",
+													"host": [
+														"{{detection_domain}}"
+													],
+													"path": [
+														"internal",
+														"api",
+														"detection",
+														"zonecompatibility_jsonbysignal"
+													],
+													"query": [
+														{
+															"key": "signalId",
+															"value": "SE.ER-KOID-KOID-A4",
+															"description": "Mnemonic FieldElement"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
+										}
+									]
 								}
 							],
 							"id": "150cd05d-1a54-4c38-b540-9b9ad4f8680f"
