@@ -4632,6 +4632,38 @@
 											"cookie": [],
 											"responseTime": null,
 											"body": null
+										},
+										{
+											"id": "40a21986-5769-463f-971f-dd1f65873cd7",
+											"name": "SE.ER-ORAV-ORAV-A2",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{detection_domain}}/internal/api/detection/zoneproximitybysignal?signalId=SE.ER-ORAV-ORAV-A2",
+													"host": [
+														"{{detection_domain}}"
+													],
+													"path": [
+														"internal",
+														"api",
+														"detection",
+														"zoneproximitybysignal"
+													],
+													"query": [
+														{
+															"key": "signalId",
+															"value": "SE.ER-ORAV-ORAV-A2",
+															"description": "Mnemonic FieldElement"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
 										}
 									]
 								},
