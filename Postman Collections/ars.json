@@ -4888,6 +4888,38 @@
 											"cookie": [],
 											"responseTime": null,
 											"body": null
+										},
+										{
+											"id": "84d00778-04e1-4daa-b7dc-4a47c71f9b43",
+											"name": "SE.ER-REOL-REOL-A2",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{detection_domain}}/internal/api/detection/zoneproximitybysignal?signalId=SE.ER-REOL-REOL-A2",
+													"host": [
+														"{{detection_domain}}"
+													],
+													"path": [
+														"internal",
+														"api",
+														"detection",
+														"zoneproximitybysignal"
+													],
+													"query": [
+														{
+															"key": "signalId",
+															"value": "SE.ER-REOL-REOL-A2",
+															"description": "Mnemonic FieldElement"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
 										}
 									]
 								},
