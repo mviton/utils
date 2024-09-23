@@ -859,7 +859,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{circulation_domain}}/internal/api/circulation/getInfoCirculation?circulationUUID=abee7a31-08ec-400b-8fed-60402977481f&direction=ODD",
+							"raw": "{{circulation_domain}}/internal/api/circulation/getInfoCirculation?circulationUUID={{circulationUUID}}&direction=ODD",
 							"host": [
 								"{{circulation_domain}}"
 							],
@@ -872,12 +872,12 @@
 							"query": [
 								{
 									"key": "circulationUUID",
-									"value": "abee7a31-08ec-400b-8fed-60402977481f"
+									"value": "abee7a31-08ec-400b-8fed-60402977481f",
+									"disabled": true
 								},
 								{
 									"key": "circulationUUID",
-									"value": "{{circulationUUID}}",
-									"disabled": true
+									"value": "{{circulationUUID}}"
 								},
 								{
 									"key": "direction",
