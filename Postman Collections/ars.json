@@ -4955,6 +4955,37 @@
 									"response": []
 								},
 								{
+									"name": "Zone Proximity JSON Copy",
+									"id": "ac2dee64-6b8e-497a-b344-0d17f6001501",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{detection_domain}}/internal/api/detection/zoneproximity_jsonbysignal?signalId=SE.ER-KOID-KOID-A4",
+											"host": [
+												"{{detection_domain}}"
+											],
+											"path": [
+												"internal",
+												"api",
+												"detection",
+												"zoneproximity_jsonbysignal"
+											],
+											"query": [
+												{
+													"key": "signalId",
+													"value": "SE.ER-KOID-KOID-A4",
+													"description": "Mnemonic FieldElement"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
 									"name": "Get Zone Verification Info",
 									"id": "9864dcbc-2408-4737-8e31-41f3672db777",
 									"protocolProfileBehavior": {
