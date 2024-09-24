@@ -2299,7 +2299,7 @@
 									"variable": [
 										{
 											"key": "ence",
-											"value": "EN.IE-IL1",
+											"value": "EN.ER-IL3",
 											"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
 										}
 									]
@@ -2631,6 +2631,38 @@
 												{
 													"key": "mnemonic",
 													"value": "SE.IE-MHEN-ETOWN-SL768"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": null
+								},
+								{
+									"id": "7121fd69-267e-4c25-b263-a3e3e9db95a4",
+									"name": "Signal",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{management_domain}}/api/management/routing-status/signal/:mnemonic",
+											"host": [
+												"{{management_domain}}"
+											],
+											"path": [
+												"api",
+												"management",
+												"routing-status",
+												"signal",
+												":mnemonic"
+											],
+											"variable": [
+												{
+													"key": "mnemonic",
+													"value": "SE.ER-KOID-KOID-A4"
 												}
 											]
 										}
@@ -4955,7 +4987,7 @@
 									"response": []
 								},
 								{
-									"name": "Zone Proximity JSON Copy",
+									"name": "Signal Affected",
 									"id": "ac2dee64-6b8e-497a-b344-0d17f6001501",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -4964,7 +4996,7 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{detection_domain}}/internal/api/detection/zoneproximity_jsonbysignal?signalId=SE.ER-KOID-KOID-A4",
+											"raw": "{{detection_domain}}/internal/api/detection/signalsbyfieldelement?fieldElementId=CV.ER-KOID-KOID-IVt",
 											"host": [
 												"{{detection_domain}}"
 											],
@@ -4972,12 +5004,12 @@
 												"internal",
 												"api",
 												"detection",
-												"zoneproximity_jsonbysignal"
+												"signalsbyfieldelement"
 											],
 											"query": [
 												{
-													"key": "signalId",
-													"value": "SE.ER-KOID-KOID-A4",
+													"key": "fieldElementId",
+													"value": "CV.ER-KOID-KOID-IVt",
 													"description": "Mnemonic FieldElement"
 												}
 											]
