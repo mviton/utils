@@ -4321,7 +4321,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{circulation_domain}}/api/circulation/traindetector?trainDetectorId=CV.IE-LK01-LMRCK-4266",
+							"raw": "{{circulation_domain}}/api/circulation/traindetector?trainDetectorId=CV.ER-KOID-KOID-IVt",
 							"host": [
 								"{{circulation_domain}}"
 							],
@@ -4333,7 +4333,7 @@
 							"query": [
 								{
 									"key": "trainDetectorId",
-									"value": "CV.IE-LK01-LMRCK-4266"
+									"value": "CV.ER-KOID-KOID-IVt"
 								}
 							]
 						}
