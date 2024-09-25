@@ -5528,6 +5528,70 @@
 											"body": null
 										},
 										{
+											"id": "cbe1d658-c7d5-4596-9222-24657d837ddb",
+											"name": "SE.ER-REOL-VAKU-A1",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{detection_domain}}/internal/api/detection/zonecompatibility_jsonbysignal?signalId=SE.ER-REOL-VAKU-A1",
+													"host": [
+														"{{detection_domain}}"
+													],
+													"path": [
+														"internal",
+														"api",
+														"detection",
+														"zonecompatibility_jsonbysignal"
+													],
+													"query": [
+														{
+															"key": "signalId",
+															"value": "SE.ER-REOL-VAKU-A1",
+															"description": "Mnemonic FieldElement"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
+										},
+										{
+											"id": "41ca55c0-10a3-4bf5-89cb-c9436860c3fc",
+											"name": "SE.ER-REOL-REOL-A",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{detection_domain}}/internal/api/detection/zonecompatibility_jsonbysignal?signalId=SE.ER-REOL-REOL-A",
+													"host": [
+														"{{detection_domain}}"
+													],
+													"path": [
+														"internal",
+														"api",
+														"detection",
+														"zonecompatibility_jsonbysignal"
+													],
+													"query": [
+														{
+															"key": "signalId",
+															"value": "SE.ER-REOL-REOL-A",
+															"description": "Mnemonic FieldElement"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
+										},
+										{
 											"id": "72111d5b-04c6-437e-b01f-831f5352494e",
 											"name": "SE.ER-KOID-KOID-A4",
 											"originalRequest": {
