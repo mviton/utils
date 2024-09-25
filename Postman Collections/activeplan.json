@@ -2701,10 +2701,10 @@
 									"\r",
 									"let moment = require('moment');\r",
 									"const consultDayVar = pm.variables.get('currentDay');\r",
-									"console.log(`ConsultDay:${moment.utc(consultDayVar).format('DD/MM/YYYY HH:mm')}`);\r",
+									"console.log(`ConsultDay:${moment.utc(consultDayVar).format('DD/MM/YYYY HH:mm')} [${consultDayVar}]`);\r",
 									"\r",
 									"const consultFinalDayVar = pm.variables.get('finalDay');\r",
-									"console.log(`FinalDay:${moment.utc(consultFinalDayVar).format('DD/MM/YYYY HH:mm')}`);\r",
+									"console.log(`FinalDay:${moment.utc(consultFinalDayVar).format('DD/MM/YYYY HH:mm')} [${consultFinalDayVar}]`);\r",
 									"\r",
 									"// Retrieve translate trainNumber UUID -> OriginNumber\r",
 									"const trainNameTranslate = JSON.parse(pm.globals.get(\"translateTrainNumber\"));\r",
@@ -2837,6 +2837,7 @@
 							"script": {
 								"id": "0f8412a1-ebb3-4796-be1a-c3a776fbdc19",
 								"exec": [
+									"console.log(`--------- '${pm.info.requestName}' / ${pm.info.eventName} -------`);\r",
 									"// Get current day\r",
 									"var moment = require('moment');\r",
 									"\r",
@@ -2844,7 +2845,7 @@
 									"const finalDay = currentDay + 86400000;\r",
 									"\r",
 									"console.log(`${moment().utc().startOf('day').format('LLLL')} -> ${currentDay}`);\r",
-									"console.log(`${moment.utc(consultDayVar).format('DD/MM/YYYY HH:mm')} -> ${moment.utc(finalDay).format('DD/MM/YYYY HH:mm')}`);\r",
+									"console.log(`${moment.utc(finalDay).format('DD/MM/YYYY HH:mm')} -> ${moment.utc(finalDay).format('DD/MM/YYYY HH:mm')}`);\r",
 									"\r",
 									"pm.variables.set('currentDay', currentDay);\r",
 									"pm.variables.set('finalDay', finalDay);"
@@ -3086,7 +3087,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "6e85f7dc-89e4-4042-974e-8e1fe81162fb",
+				"id": "82fe5cb0-913f-4574-a1c0-0f683dc65d6e",
 				"type": "text/javascript",
 				"exec": [
 					"",
@@ -3562,7 +3563,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "4fe8a001-e184-4138-94eb-8f169c5f031d",
+				"id": "fae03815-8659-4884-bda7-3c00ef6ce09e",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -3617,16 +3618,6 @@
 		},
 		{
 			"key": "req_creation",
-			"value": "",
-			"type": "string"
-		},
-		{
-			"key": "currentDay",
-			"value": "",
-			"type": "string"
-		},
-		{
-			"key": "finalDay",
 			"value": "",
 			"type": "string"
 		}
