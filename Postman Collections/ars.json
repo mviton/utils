@@ -5024,7 +5024,7 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{detection_domain}}/internal/api/detection/zoneproximity_jsonbysignal?signalId=SE.ER-KOID-KOID-A4",
+													"raw": "{{detection_domain}}/internal/api/detection/zoneproximity_jsonbysignal?signalId=SE.ER-KOID-KOID-A",
 													"host": [
 														"{{detection_domain}}"
 													],
@@ -5037,7 +5037,39 @@
 													"query": [
 														{
 															"key": "signalId",
-															"value": "SE.ER-KOID-KOID-A4",
+															"value": "SE.ER-KOID-KOID-A",
+															"description": "Mnemonic FieldElement"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
+										},
+										{
+											"id": "84af80da-e97f-4500-833c-307df6205d2f",
+											"name": "SE.ER-ORAV-ORAV-A",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{detection_domain}}/internal/api/detection/zoneproximity_jsonbysignal?signalId=SE.ER-ORAV-ORAV-A",
+													"host": [
+														"{{detection_domain}}"
+													],
+													"path": [
+														"internal",
+														"api",
+														"detection",
+														"zoneproximity_jsonbysignal"
+													],
+													"query": [
+														{
+															"key": "signalId",
+															"value": "SE.ER-ORAV-ORAV-A",
 															"description": "Mnemonic FieldElement"
 														}
 													]
@@ -5273,7 +5305,7 @@
 										},
 										{
 											"id": "72111d5b-04c6-437e-b01f-831f5352494e",
-											"name": "SE.ER-KOID-KOID-A4 Copy",
+											"name": "SE.ER-KOID-KOID-A4",
 											"originalRequest": {
 												"method": "GET",
 												"header": [],
