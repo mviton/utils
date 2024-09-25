@@ -5016,7 +5016,40 @@
 											]
 										}
 									},
-									"response": []
+									"response": [
+										{
+											"id": "1d6dd9b1-acf8-4dc0-9e7a-2ec4577758a3",
+											"name": "SE.ER-KOID-KOID-A",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{detection_domain}}/internal/api/detection/zoneproximity_jsonbysignal?signalId=SE.ER-KOID-KOID-A4",
+													"host": [
+														"{{detection_domain}}"
+													],
+													"path": [
+														"internal",
+														"api",
+														"detection",
+														"zoneproximity_jsonbysignal"
+													],
+													"query": [
+														{
+															"key": "signalId",
+															"value": "SE.ER-KOID-KOID-A4",
+															"description": "Mnemonic FieldElement"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
+										}
+									]
 								},
 								{
 									"name": "Signal Affected",
