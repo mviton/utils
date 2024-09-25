@@ -3086,7 +3086,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "2b46c25a-1a39-42d6-9ff0-6d1d06997760",
+				"id": "27a2bc86-4fc4-4608-bb52-80e48ad8d6ac",
 				"type": "text/javascript",
 				"exec": [
 					"",
@@ -3562,7 +3562,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "cf50bc44-60e1-44b4-8f42-4faacc680f8f",
+				"id": "b9343337-5901-4fde-b39a-c8c8e042ca3a",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -3617,6 +3617,11 @@
 		},
 		{
 			"key": "req_creation",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "currentDay",
 			"value": "",
 			"type": "string"
 		}
