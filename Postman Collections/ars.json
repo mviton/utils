@@ -4602,6 +4602,38 @@
 											"body": null
 										},
 										{
+											"id": "e7381533-f3a7-4135-b04c-049c499221da",
+											"name": "SE.ER-KOID-KOID-A",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{detection_domain}}/internal/api/detection/zoneproximitybysignal?signalId=SE.ER-KOID-KOID-A",
+													"host": [
+														"{{detection_domain}}"
+													],
+													"path": [
+														"internal",
+														"api",
+														"detection",
+														"zoneproximitybysignal"
+													],
+													"query": [
+														{
+															"key": "signalId",
+															"value": "SE.ER-KOID-KOID-A",
+															"description": "Mnemonic FieldElement"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
+										},
+										{
 											"id": "ba2de580-80b3-49d8-827b-86f30860d221",
 											"name": "SE.ER-KOID-KOID-A4",
 											"originalRequest": {
