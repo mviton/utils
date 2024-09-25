@@ -2935,6 +2935,29 @@
 							"cookie": [],
 							"responseTime": null,
 							"body": null
+						},
+						{
+							"id": "88558f05-4198-4ca2-930c-b521e6aca685",
+							"name": "Today",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"start\": 0,\r\n    \"end\": 100,\r\n    \"filter\": {\r\n        \"conditions\": [\r\n            {\r\n                \"conditions\": []\r\n            }\r\n        ]\r\n    },\r\n    \"order\": [\r\n        {\r\n            \"field\": \"initialHour\",\r\n            \"dir\": \"DESC\"\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{conflictmanager}}/api/conflictsmng/query"
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"responseTime": null,
+							"body": null
 						}
 					]
 				},
