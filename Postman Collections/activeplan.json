@@ -3086,7 +3086,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "27a2bc86-4fc4-4608-bb52-80e48ad8d6ac",
+				"id": "6e85f7dc-89e4-4042-974e-8e1fe81162fb",
 				"type": "text/javascript",
 				"exec": [
 					"",
@@ -3562,7 +3562,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "b9343337-5901-4fde-b39a-c8c8e042ca3a",
+				"id": "4fe8a001-e184-4138-94eb-8f169c5f031d",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -3622,6 +3622,11 @@
 		},
 		{
 			"key": "currentDay",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "finalDay",
 			"value": "",
 			"type": "string"
 		}
