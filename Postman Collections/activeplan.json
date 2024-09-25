@@ -2699,6 +2699,13 @@
 								"exec": [
 									"console.log(`--------- '${pm.info.requestName}' / ${pm.info.eventName} -------`);\r",
 									"\r",
+									"let moment = require('moment');\r",
+									"const consultDayVar = pm.globals.get('currentDay');\r",
+									"console.log(`ConsultDay:${moment.utc(consultDayVar).format('DD/MM/YYYY HH:mm')}`);\r",
+									"\r",
+									"const consultFinalDayVar = pm.globals.get('finalDay');\r",
+									"console.log(`FinalDay:${moment.utc(consultFinalDayVar).format('DD/MM/YYYY HH:mm')}`);\r",
+									"\r",
 									"// Retrieve translate trainNumber UUID -> OriginNumber\r",
 									"const trainNameTranslate = JSON.parse(pm.globals.get(\"translateTrainNumber\"));\r",
 									"//console.log(`Train Translate:${JSON.stringify(trainNameTranslate)}`);\r",
@@ -2821,7 +2828,29 @@
 									"});\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "0f8412a1-ebb3-4796-be1a-c3a776fbdc19",
+								"exec": [
+									"// Get current day\r",
+									"var moment = require('moment');\r",
+									"\r",
+									"const currentDay = moment().utc().startOf('day').unix() * 1000;\r",
+									"const finalDay = currentDay + 86400000;\r",
+									"\r",
+									"console.log(`${moment().utc().startOf('day').format('LLLL')} -> ${currentDay}`);\r",
+									"console.log(`${moment.utc(consultDayVar).format('DD/MM/YYYY HH:mm')} -> ${moment.utc(finalDay).format('DD/MM/YYYY HH:mm')}`);\r",
+									"\r",
+									"pm.variables.set('currentDay', currentDay);\r",
+									"pm.variables.set('finalDay', finalDay);"
+								],
+								"type": "text/javascript",
+								"packages": {}
 							}
 						}
 					],
@@ -2944,7 +2973,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"start\": 0,\r\n    \"end\": 100,\r\n    \"filter\": {\r\n        \"conditions\": [\r\n            {\r\n                \"conditions\": []\r\n            }\r\n        ]\r\n    },\r\n    \"order\": [\r\n        {\r\n            \"field\": \"initialHour\",\r\n            \"dir\": \"DESC\"\r\n        }\r\n    ]\r\n}",
+									"raw": "{\r\n    \"start\": 0,\r\n    \"end\": 100,\r\n    \"filter\": {\r\n        \"conditions\": [\r\n            {\r\n                \"conditions\": [\r\n                    {\r\n                \"condition\": {\r\n                    \"field\": \"finalHour\",\r\n                    \"operator\": \"LESS_EQUALS_THAN\",\r\n                    \"value\": {{finalDay}}\r\n                }\r\n            },\r\n            {\r\n                \"condition\": {\r\n                    \"field\": \"initialHour\",\r\n                    \"operator\": \"GREATER_EQUALS_THAN\",\r\n                    \"value\": \"{{currentDay}}\"\r\n                }\r\n            }\r\n                ]\r\n            }\r\n        ]\r\n    },\r\n    \"order\": [\r\n        {\r\n            \"field\": \"initialHour\",\r\n            \"dir\": \"DESC\"\r\n        }\r\n    ]\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
