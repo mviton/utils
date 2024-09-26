@@ -5056,7 +5056,7 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{detection_domain}}/internal/api/detection/zoneproximitybysignal?signalId=SE.ER-REOL-VAKU-B",
+													"raw": "{{detection_domain}}/internal/api/detection/zoneproximitybysignal?signalId=SE.ER-REOL-VAKU-B1",
 													"host": [
 														"{{detection_domain}}"
 													],
@@ -5069,7 +5069,7 @@
 													"query": [
 														{
 															"key": "signalId",
-															"value": "SE.ER-REOL-VAKU-B",
+															"value": "SE.ER-REOL-VAKU-B1",
 															"description": "Mnemonic FieldElement"
 														}
 													]
@@ -5772,6 +5772,38 @@
 														{
 															"key": "signalId",
 															"value": "SE.ER-REOL-VAKU-B",
+															"description": "Mnemonic FieldElement"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
+										},
+										{
+											"id": "908e4f15-ae06-421d-af66-4284dc02b647",
+											"name": "SE.ER-REOL-VAKU-B1",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{detection_domain}}/internal/api/detection/zonecompatibility_jsonbysignal?signalId=SE.ER-REOL-VAKU-B1",
+													"host": [
+														"{{detection_domain}}"
+													],
+													"path": [
+														"internal",
+														"api",
+														"detection",
+														"zonecompatibility_jsonbysignal"
+													],
+													"query": [
+														{
+															"key": "signalId",
+															"value": "SE.ER-REOL-VAKU-B1",
 															"description": "Mnemonic FieldElement"
 														}
 													]
