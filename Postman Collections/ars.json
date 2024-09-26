@@ -6230,6 +6230,38 @@
 											"cookie": [],
 											"responseTime": null,
 											"body": null
+										},
+										{
+											"id": "f9910188-20a6-4bf9-8be7-51529084aaf1",
+											"name": "SE.ER-KOID-KOID-BO",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{detection_domain}}/internal/api/detection/zonecompatibility_jsonbysignal?signalId=SE.ER-KOID-KOID-BO",
+													"host": [
+														"{{detection_domain}}"
+													],
+													"path": [
+														"internal",
+														"api",
+														"detection",
+														"zonecompatibility_jsonbysignal"
+													],
+													"query": [
+														{
+															"key": "signalId",
+															"value": "SE.ER-KOID-KOID-BO",
+															"description": "Mnemonic FieldElement"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
 										}
 									]
 								}
