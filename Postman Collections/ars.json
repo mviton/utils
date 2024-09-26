@@ -5686,6 +5686,38 @@
 											"cookie": [],
 											"responseTime": null,
 											"body": null
+										},
+										{
+											"id": "e4b3abd1-21b7-4266-8f47-e12223c5b543",
+											"name": "SE.ER-REOL-VAKU-B",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{detection_domain}}/internal/api/detection/zonecompatibility_jsonbysignal?signalId=SE.ER-REOL-VAKU-B",
+													"host": [
+														"{{detection_domain}}"
+													],
+													"path": [
+														"internal",
+														"api",
+														"detection",
+														"zonecompatibility_jsonbysignal"
+													],
+													"query": [
+														{
+															"key": "signalId",
+															"value": "SE.ER-REOL-VAKU-B",
+															"description": "Mnemonic FieldElement"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
 										}
 									]
 								}
