@@ -2032,6 +2032,46 @@
 											"body": null
 										},
 										{
+											"id": "13321d27-a797-496c-8ce4-63a5a199eb82",
+											"name": "Enable EN.ER-IL1 [Reola]",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{management_domain}}/api/management/routing-status/ence-restriction/:ixl?operativeState=ENABLED",
+													"host": [
+														"{{management_domain}}"
+													],
+													"path": [
+														"api",
+														"management",
+														"routing-status",
+														"ence-restriction",
+														":ixl"
+													],
+													"query": [
+														{
+															"key": "operativeState",
+															"value": "ENABLED",
+															"description": "ENABLED / DISABLED"
+														}
+													],
+													"variable": [
+														{
+															"key": "ixl",
+															"value": "EN.IE-IL13",
+															"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
+										},
+										{
 											"id": "a8e7c2f5-dd94-4894-9a6e-c79f688bddaa",
 											"name": "Disable IL13 (LKGT)",
 											"originalRequest": {
@@ -2525,8 +2565,8 @@
 											"variable": [
 												{
 													"key": "ence",
-													"value": "EN.ER-IL3",
-													"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
+													"value": "EN.ER-IL1",
+													"description": "EN.ER-IL1 [Reola],EN.ER-IL2 [Orava], EN.ER-IL3 [Koidula] / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
 												}
 											]
 										}
