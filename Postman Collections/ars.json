@@ -2756,7 +2756,7 @@
 								},
 								{
 									"id": "7121fd69-267e-4c25-b263-a3e3e9db95a4",
-									"name": "Signal",
+									"name": "SE.ER-REOL-POLV-B",
 									"originalRequest": {
 										"method": "GET",
 										"header": [],
@@ -2775,7 +2775,7 @@
 											"variable": [
 												{
 													"key": "mnemonic",
-													"value": "SE.ER-KOID-KOID-A4"
+													"value": "SE.ER-REOL-POLV-B"
 												}
 											]
 										}
