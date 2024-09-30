@@ -2059,7 +2059,47 @@
 													"variable": [
 														{
 															"key": "ixl",
-															"value": "EN.IE-IL13",
+															"value": "EN.ER-IL1",
+															"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
+										},
+										{
+											"id": "d0188bd9-cb2e-47e3-9ab9-8bc807917c43",
+											"name": "Enable EN.ER-IL1 [Reola] Copy",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{management_domain}}/api/management/routing-status/ence-restriction/:ixl?operativeState=ENABLED",
+													"host": [
+														"{{management_domain}}"
+													],
+													"path": [
+														"api",
+														"management",
+														"routing-status",
+														"ence-restriction",
+														":ixl"
+													],
+													"query": [
+														{
+															"key": "operativeState",
+															"value": "ENABLED",
+															"description": "ENABLED / DISABLED"
+														}
+													],
+													"variable": [
+														{
+															"key": "ixl",
+															"value": "EN.ER-IL1",
 															"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
 														}
 													]
