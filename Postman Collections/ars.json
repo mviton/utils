@@ -2503,6 +2503,39 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": null
+								},
+								{
+									"id": "a3b1d33d-f21c-42c9-8e6f-f7aec87711f6",
+									"name": "REOL - EN.ER-IL1",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{management_domain}}/api/management/routing-status/ence-restriction/:ence",
+											"host": [
+												"{{management_domain}}"
+											],
+											"path": [
+												"api",
+												"management",
+												"routing-status",
+												"ence-restriction",
+												":ence"
+											],
+											"variable": [
+												{
+													"key": "ence",
+													"value": "EN.ER-IL3",
+													"description": "KOID,REOL,ORAV / EN.IE-IL1 [LDSO], EN.IE-IL2 [MHEN]"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": null
 								}
 							]
 						},
