@@ -6008,6 +6008,38 @@
 											"body": null
 										},
 										{
+											"id": "7d18b6fb-ee3d-4c22-bd3d-2bad70d0d169",
+											"name": "SE.ER-REOL-REOL-B1",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{detection_domain}}/internal/api/detection/zonecompatibility_jsonbysignal?signalId=SE.ER-REOL-REOL-B1",
+													"host": [
+														"{{detection_domain}}"
+													],
+													"path": [
+														"internal",
+														"api",
+														"detection",
+														"zonecompatibility_jsonbysignal"
+													],
+													"query": [
+														{
+															"key": "signalId",
+															"value": "SE.ER-REOL-REOL-B1",
+															"description": "Mnemonic FieldElement"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
+										},
+										{
 											"id": "e4b3abd1-21b7-4266-8f47-e12223c5b543",
 											"name": "SE.ER-REOL-VAKU-B",
 											"originalRequest": {
