@@ -5590,7 +5590,7 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{detection_domain}}/internal/api/detection/signalsbyfieldelement?fieldElementId=CV.ER-KOID-KOID-IVt",
+											"raw": "{{detection_domain}}/internal/api/detection/signalsbyfieldelement?fieldElementId=CV.ER-REOL-REOL-IIt",
 											"host": [
 												"{{detection_domain}}"
 											],
@@ -5603,7 +5603,7 @@
 											"query": [
 												{
 													"key": "fieldElementId",
-													"value": "CV.ER-KOID-KOID-IVt",
+													"value": "CV.ER-REOL-REOL-IIt",
 													"description": "Mnemonic FieldElement"
 												}
 											]
