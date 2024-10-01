@@ -3073,8 +3073,8 @@
 	"auth": {
 		"type": "oauth2",
 		"oauth2": {
-			"tokenName": "activeplan_{{product}}_{{environment}}",
 			"accessTokenUrl": "{{keycloak}}/token",
+			"tokenName": "activeplan_{{product}}_{{environment}}",
 			"authUrl": "{{keycloak}}/auth",
 			"clientSecret": "{{clientSecret}}",
 			"clientId": "{{clientID}}",
@@ -3087,7 +3087,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "82fe5cb0-913f-4574-a1c0-0f683dc65d6e",
+				"id": "5acd24c0-517f-43f8-9468-8c27e8fd7e45",
 				"type": "text/javascript",
 				"exec": [
 					"",
@@ -3563,7 +3563,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "fae03815-8659-4884-bda7-3c00ef6ce09e",
+				"id": "4ad1336f-4e32-4e00-8977-192aab6984e2",
 				"type": "text/javascript",
 				"exec": [
 					""
