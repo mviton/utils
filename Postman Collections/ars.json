@@ -3239,7 +3239,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{management_domain}}/api/management/routing-circulation/originNumber?originNumber=A425",
+									"raw": "{{management_domain}}/api/management/routing-circulation/originNumber?originNumber=A403",
 									"host": [
 										"{{management_domain}}"
 									],
@@ -3252,7 +3252,7 @@
 									"query": [
 										{
 											"key": "originNumber",
-											"value": "A425"
+											"value": "A403"
 										}
 									]
 								}
