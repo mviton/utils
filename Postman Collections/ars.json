@@ -1089,6 +1089,19 @@
 							"response": []
 						},
 						{
+							"name": "ping",
+							"id": "cff844d9-4e9f-4386-96ba-eda4c77589c7",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "{{management_domain}}/actuator/health/ping"
+							},
+							"response": []
+						},
+						{
 							"name": "Loggers",
 							"id": "104a15ad-97dd-42a8-92d8-ee407831d7ea",
 							"protocolProfileBehavior": {
