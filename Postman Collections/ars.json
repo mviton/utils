@@ -8648,15 +8648,16 @@
 											"    <head>    \r",
 											"    <style type=\"text/css\">\r",
 											"        table {\r",
-											"            font-size: 14px;\r",
+											"                /*font-size: 12px;*/\r",
+											"                font: 1.1rem \"Fira Sans\", sans-serif;\r",
 											"        }\r",
 											"    </style>\r",
 											"    <script type=\"text/javascript\">\r",
 											"    </script>\r",
 											"    </head>\r",
 											"    <body>    \r",
-											"    <div class=\"table-responsive\">\r",
-											"    <table class=\"table table-striped\">\r",
+											"    <div>\r",
+											"    <table class=\"table\">\r",
 											"        <caption>Commands: {{info.total}}</caption>\r",
 											"        <thead class=\"thead-dark\">\r",
 											"            <tr>\r",
@@ -8702,7 +8703,8 @@
 											"    response: dataVisualization\r",
 											"});"
 										],
-										"type": "text/javascript"
+										"type": "text/javascript",
+										"packages": {}
 									}
 								}
 							],
