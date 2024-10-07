@@ -3037,54 +3037,6 @@
 						"url": "{{conflictmanager}}/api/conflictsmng/query"
 					},
 					"response": []
-				},
-				{
-					"name": "Health",
-					"event": [
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "8c122b0c-a8bf-4112-80b2-6d381715815f",
-								"exec": [
-									"pm.collectionVariables.set(\"initialHour\", \"1701430458029\");\r",
-									"pm.collectionVariables.set(\"finalHour\", \"1701430458029\");\r",
-									"\r",
-									"pm.collectionVariables.set(\"tczId1\", \"580c12f7-07d3-3cfa-b3e6-f2a0eb347843\");\r",
-									"pm.collectionVariables.set(\"tczId2\", \"580c12f7-07d3-3cfa-b3e6-f2a0eb347843\");\r",
-									"\r",
-									"pm.collectionVariables.set(\"nodeId1\", \"f5698dff-0971-3d73-8620-bc6263d5ecd5\");\r",
-									"pm.collectionVariables.set(\"nodeId2\", \"f5698dff-0971-3d73-8620-bc6263d5ecd5\");\r",
-									"\r",
-									"pm.collectionVariables.set(\"circulationNumber1\", \"1006\");\r",
-									"pm.collectionVariables.set(\"circulationNumber2\", \"1006\");\r",
-									"\r",
-									"pm.collectionVariables.set(\"circulationId1\", \"4d265451-4b27-4553-a390-1f0fefaa6312\");\r",
-									"pm.collectionVariables.set(\"circulationId2\", \"4d265451-4b27-4553-a390-1f0fefaa6312\");"
-								],
-								"type": "text/javascript",
-								"packages": {}
-							}
-						}
-					],
-					"id": "3903b106-e761-402e-80f7-abfb3cd46e48",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"start\": 0,\r\n    \"end\": 100,\r\n    \"filter\": {\r\n        \"conditions\": [\r\n            {\r\n                \"condition\": {\r\n                    \"field\": \"initialHour\",\r\n                    \"operator\": \"LESS_EQUALS_THAN\",\r\n                    \"value\": \"{{initialHour}}\"\r\n                }\r\n            },\r\n            {\r\n                \"condition\": {\r\n                    \"field\": \"finalHour\",\r\n                    \"operator\": \"GREATER_EQUALS_THAN\",\r\n                    \"value\": \"{{finalHour}}\"\r\n                }\r\n            },\r\n            {\r\n                \"conditions\": [\r\n                    {\r\n                        \"condition\": {\r\n                            \"field\": \"tczId1\",\r\n                            \"operator\": \"IN\",\r\n                            \"value\": \"{{tczId1}}\"\r\n                        }\r\n                    },\r\n                    {\r\n                        \"condition\": {\r\n                            \"field\": \"tczId2\",\r\n                            \"operator\": \"IN\",\r\n                            \"value\": \"{{tczId2}}\"\r\n                        }\r\n                    },\r\n                    {\r\n                        \"condition\": {\r\n                            \"field\": \"nodeId1\",\r\n                            \"operator\": \"IN\",\r\n                            \"value\": \"{{nodeId1}}\"\r\n                        }\r\n                    },\r\n                    {\r\n                        \"condition\": {\r\n                            \"field\": \"nodeId2\",\r\n                            \"operator\": \"IN\",\r\n                            \"value\": \"{{nodeId2}}\"\r\n                        }\r\n                    }\r\n                ],\r\n                \"operator\": \"OR\"\r\n            },\r\n            {\r\n                \"conditions\": [\r\n                    {\r\n                        \"condition\": {\r\n                            \"field\": \"circulationNumber1\",\r\n                            \"operator\": \"EQUALS\",\r\n                            \"value\": \"{{circulationNumber1}}\"\r\n                        }\r\n                    },\r\n                    {\r\n                        \"condition\": {\r\n                            \"field\": \"circulationNumber2\",\r\n                            \"operator\": \"EQUALS\",\r\n                            \"value\": \"{{circulationNumber2}}\"\r\n                        }\r\n                    }\r\n                ],\r\n                \"operator\": \"OR\"\r\n            },\r\n            {\r\n                \"conditions\": [\r\n                    {\r\n                        \"condition\": {\r\n                            \"field\": \"circulationId1\",\r\n                            \"operator\": \"EQUALS\",\r\n                            \"value\": \"{{circulationId1}}\"\r\n                        }\r\n                    },\r\n                    {\r\n                        \"condition\": {\r\n                            \"field\": \"circulationId2\",\r\n                            \"operator\": \"EQUALS\",\r\n                            \"value\": \"{{circulationId2}}\"\r\n                        }\r\n                    }\r\n                ],\r\n                \"operator\": \"OR\"\r\n            }\r\n        ],\r\n        \"operator\": \"AND\"\r\n    },\r\n    \"order\": [\r\n        {\r\n            \"field\": \"initialHour\",\r\n            \"dir\": \"DESC\"\r\n        }\r\n    ]\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{conflictmanager}}/actuator/health"
-					},
-					"response": []
 				}
 			],
 			"id": "f81b8db0-f59a-437c-bdb6-6a87891d3229",
