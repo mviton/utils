@@ -5475,7 +5475,7 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{detection_domain}}/internal/api/detection/zoneproximity_jsonbysignal?signalId=SE.ER-KOID-KOID-A4",
+											"raw": "{{detection_domain}}/internal/api/detection/zoneproximity_jsonbysignal?signalId={{signal}}",
 											"host": [
 												"{{detection_domain}}"
 											],
@@ -5488,7 +5488,7 @@
 											"query": [
 												{
 													"key": "signalId",
-													"value": "SE.ER-KOID-KOID-A4",
+													"value": "{{signal}}",
 													"description": "Mnemonic FieldElement"
 												}
 											]
@@ -5566,7 +5566,7 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{detection_domain}}/internal/api/detection/zoneproximity_jsonbysignal?signalId={{signal}}",
+													"raw": "{{detection_domain}}/internal/api/detection/zoneproximity_jsonbysignal?signalId=SE.ER-REOL-REOL-B1",
 													"host": [
 														"{{detection_domain}}"
 													],
@@ -5579,7 +5579,7 @@
 													"query": [
 														{
 															"key": "signalId",
-															"value": "{{signal}}",
+															"value": "SE.ER-REOL-REOL-B1",
 															"description": "Mnemonic FieldElement"
 														}
 													]
