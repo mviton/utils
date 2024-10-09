@@ -5566,7 +5566,7 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{detection_domain}}/internal/api/detection/zoneproximity_jsonbysignal?signalId=SE.ER-REOL-REOL-B2",
+													"raw": "{{detection_domain}}/internal/api/detection/zoneproximity_jsonbysignal?signalId={{signal}}",
 													"host": [
 														"{{detection_domain}}"
 													],
@@ -5579,7 +5579,7 @@
 													"query": [
 														{
 															"key": "signalId",
-															"value": "SE.ER-REOL-REOL-B2",
+															"value": "{{signal}}",
 															"description": "Mnemonic FieldElement"
 														}
 													]
