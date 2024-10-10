@@ -8863,13 +8863,13 @@
 									"// 50 minutos\r",
 									"const executionTime = (moment().utc().unix() + 60*50) * 1000;\r",
 									"\r",
-									"\r",
 									"pm.collectionVariables.set(\"cmdTimeExecution\", executionTime);\r",
 									"pm.collectionVariables.set(\"timeReceive\", aMomentAgo);\r",
 									"pm.collectionVariables.set(\"appDay\", appDayToday);\r",
 									""
 								],
-								"type": "text/javascript"
+								"type": "text/javascript",
+								"packages": {}
 							}
 						}
 					],
