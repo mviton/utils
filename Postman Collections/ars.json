@@ -859,7 +859,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{circulation_domain}}/internal/api/circulation/getInfoCirculation?circulationUUID={{circulationUUID}}&direction=ODD",
+							"raw": "{{circulation_domain}}/internal/api/circulation/getInfoCirculation?circulationUUID={{circulationUUID}}&direction=EVEN",
 							"host": [
 								"{{circulation_domain}}"
 							],
@@ -882,13 +882,13 @@
 								{
 									"key": "direction",
 									"value": "ODD",
-									"description": "ODD / (DOWN) <-"
+									"description": "ODD / (DOWN) <-",
+									"disabled": true
 								},
 								{
 									"key": "direction",
 									"value": "EVEN",
-									"description": "EVEN / (UP) ->",
-									"disabled": true
+									"description": "EVEN / (UP) ->"
 								}
 							]
 						}
