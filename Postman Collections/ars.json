@@ -4402,7 +4402,7 @@
 							"variable": [
 								{
 									"key": "circulationUUID",
-									"value": "a"
+									"value": "{{circulationUUID}}"
 								}
 							]
 						}
