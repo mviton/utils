@@ -5501,12 +5501,12 @@
 									"response": [
 										{
 											"id": "1d6dd9b1-acf8-4dc0-9e7a-2ec4577758a3",
-											"name": "SE.ER-KOID-KOID-A",
+											"name": "SE.ER-KOID-KOID-A4",
 											"originalRequest": {
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{detection_domain}}/internal/api/detection/zoneproximity_jsonbysignal?signalId=SE.ER-KOID-KOID-A",
+													"raw": "{{detection_domain}}/internal/api/detection/zoneproximity_jsonbysignal?signalId=SE.ER-KOID-KOID-A4",
 													"host": [
 														"{{detection_domain}}"
 													],
@@ -5519,7 +5519,7 @@
 													"query": [
 														{
 															"key": "signalId",
-															"value": "SE.ER-KOID-KOID-A",
+															"value": "SE.ER-KOID-KOID-A4",
 															"description": "Mnemonic FieldElement"
 														}
 													]
