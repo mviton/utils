@@ -7705,7 +7705,7 @@
 							"variable": [
 								{
 									"key": "signalId",
-									"value": "SE.ER-REOL-REOL-B3"
+									"value": "{{signal}}"
 								}
 							]
 						}
