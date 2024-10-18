@@ -763,7 +763,8 @@
 									"                padding: 8px 12px;\r",
 									"                background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);\r",
 									"                position: absolute;\r",
-									"                top: 5px; left: 1rem;\r",
+									"                //top: 5px; left: 1rem;\r",
+									"                top: 5px; left: 105rem;\r",
 									"            }\r",
 									"            .shadowboxDetail {\r",
 									"                font: 1.2rem \"Fira Sans\", sans-serif;\r",
@@ -773,7 +774,8 @@
 									"                padding: 8px 12px;\r",
 									"                background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);\r",
 									"                position: absolute;\r",
-									"                top: 200px; left: 1rem;\r",
+									"                //top: 200px; left: 1rem;\r",
+									"                top: 200px; left: 105rem;\r",
 									"            }\r",
 									"            .timetable {                \r",
 									"                width: 100rem;\r",
@@ -782,7 +784,8 @@
 									"                padding: 8px 12px;\r",
 									"                background-image: linear-gradient(180deg, #fff, #4a3 40%, #aaa);\r",
 									"                position: absolute;\r",
-									"                top: 5px; left: 45rem;\r",
+									"                //top: 5px; left: 45rem;\r",
+									"                top: 5px; left: 1rem;\r",
 									"            }\r",
 									"            table {\r",
 									"                /*font-size: 12px;*/\r",
@@ -872,7 +875,7 @@
 							"query": [
 								{
 									"key": "circulationUUID",
-									"value": "abee7a31-08ec-400b-8fed-60402977481f",
+									"value": "07b38b77-1621-4afe-94b7-45e6e533606f",
 									"disabled": true
 								},
 								{
