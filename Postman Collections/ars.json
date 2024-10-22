@@ -5314,6 +5314,38 @@
 											"body": null
 										},
 										{
+											"id": "f9c40d58-77bf-4639-80c8-e1de99922702",
+											"name": "SE.ER-REOL-REOL-B",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{detection_domain}}/internal/api/detection/zoneproximitybysignal?signalId=SE.ER-REOL-REOL-B",
+													"host": [
+														"{{detection_domain}}"
+													],
+													"path": [
+														"internal",
+														"api",
+														"detection",
+														"zoneproximitybysignal"
+													],
+													"query": [
+														{
+															"key": "signalId",
+															"value": "SE.ER-REOL-REOL-B",
+															"description": "Mnemonic FieldElement"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
+										},
+										{
 											"id": "d83e9a63-45d9-440e-b546-b78783f04119",
 											"name": "SE.ER-REOL-VAKU-B",
 											"originalRequest": {
