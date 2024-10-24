@@ -7311,6 +7311,45 @@
 									"body": null
 								},
 								{
+									"id": "d806c9ab-22b9-48c1-bcfc-949938fd8465",
+									"name": "ProximityService Copy",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"configuredLevel\": \"DEBUG\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{process_domain}}/actuator/loggers/:logId",
+											"host": [
+												"{{process_domain}}"
+											],
+											"path": [
+												"actuator",
+												"loggers",
+												":logId"
+											],
+											"variable": [
+												{
+													"key": "logId",
+													"value": "com.indra.tms.ars.process.service.ProximityService"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": null
+								},
+								{
 									"id": "75171b19-7408-4dd4-8545-07dbe5d2b2ef",
 									"name": "com.indra.tms.ars.reactive.impl",
 									"originalRequest": {
