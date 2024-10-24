@@ -4685,6 +4685,84 @@
 							"response": []
 						},
 						{
+							"name": "Set Logger",
+							"id": "3a9b84bc-7749-4666-b44c-5de4517236f9",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"configuredLevel\": \"DEBUG\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{detection_domain}}/actuator/loggers/:logId",
+									"host": [
+										"{{detection_domain}}"
+									],
+									"path": [
+										"actuator",
+										"loggers",
+										":logId"
+									],
+									"variable": [
+										{
+											"key": "logId",
+											"value": "com.indra.tms.ars.process.service.ProcessService"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "cd5b7bcb-e89a-4149-8223-51502a88df1f",
+									"name": "com.indra.tms.ars.reactive.impl",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"configuredLevel\": \"DEBUG\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{detection_domain}}/actuator/loggers/:logId",
+											"host": [
+												"{{detection_domain}}"
+											],
+											"path": [
+												"actuator",
+												"loggers",
+												":logId"
+											],
+											"variable": [
+												{
+													"key": "logId",
+													"value": "com.indra.tms.ars.reactive.impl.ArsEventService"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": null
+								}
+							]
+						},
+						{
 							"name": "Cache list",
 							"id": "3b491833-192f-46b8-877d-0792002a64c6",
 							"protocolProfileBehavior": {
