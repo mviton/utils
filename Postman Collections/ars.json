@@ -5864,7 +5864,7 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{detection_domain}}/internal/api/detection/zoneproximity_jsonbysignal?signalId=SE.ER-ORAV-ORAV-B2",
+													"raw": "{{detection_domain}}/internal/api/detection/zoneproximity_jsonbysignal?signalId=SE.ER-ORAV-VER-A1",
 													"host": [
 														"{{detection_domain}}"
 													],
@@ -5877,7 +5877,199 @@
 													"query": [
 														{
 															"key": "signalId",
-															"value": "SE.ER-ORAV-ORAV-B2",
+															"value": "SE.ER-ORAV-VER-A1",
+															"description": "Mnemonic FieldElement"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
+										},
+										{
+											"id": "d9eef7cf-bd8a-423c-9025-00dc00b61331",
+											"name": "ER-ORAV-VER-B1",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{detection_domain}}/internal/api/detection/zoneproximity_jsonbysignal?signalId=SE.ER-ORAV-VER-B1",
+													"host": [
+														"{{detection_domain}}"
+													],
+													"path": [
+														"internal",
+														"api",
+														"detection",
+														"zoneproximity_jsonbysignal"
+													],
+													"query": [
+														{
+															"key": "signalId",
+															"value": "SE.ER-ORAV-VER-B1",
+															"description": "Mnemonic FieldElement"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
+										},
+										{
+											"id": "617dbf4f-ae17-4eb0-9a9f-cd1bc673ee89",
+											"name": "ER-REOL-POLV-A2",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{detection_domain}}/internal/api/detection/zoneproximity_jsonbysignal?signalId=SE.ER-REOL-POLV-A2",
+													"host": [
+														"{{detection_domain}}"
+													],
+													"path": [
+														"internal",
+														"api",
+														"detection",
+														"zoneproximity_jsonbysignal"
+													],
+													"query": [
+														{
+															"key": "signalId",
+															"value": "SE.ER-REOL-POLV-A2",
+															"description": "Mnemonic FieldElement"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
+										},
+										{
+											"id": "2a54d183-95ce-4645-a0a1-d997c1abe4dd",
+											"name": "ER-REOL-POLV-B2",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{detection_domain}}/internal/api/detection/zoneproximity_jsonbysignal?signalId=SE.ER-REOL-POLV-B2",
+													"host": [
+														"{{detection_domain}}"
+													],
+													"path": [
+														"internal",
+														"api",
+														"detection",
+														"zoneproximity_jsonbysignal"
+													],
+													"query": [
+														{
+															"key": "signalId",
+															"value": "SE.ER-REOL-POLV-B2",
+															"description": "Mnemonic FieldElement"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
+										},
+										{
+											"id": "f800dbc1-5455-4ffa-9758-ba9a8b6073ce",
+											"name": "ER-REOL-VAKU-A1",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{detection_domain}}/internal/api/detection/zoneproximity_jsonbysignal?signalId=SE.ER-REOL-VAKU-A1",
+													"host": [
+														"{{detection_domain}}"
+													],
+													"path": [
+														"internal",
+														"api",
+														"detection",
+														"zoneproximity_jsonbysignal"
+													],
+													"query": [
+														{
+															"key": "signalId",
+															"value": "SE.ER-REOL-VAKU-A1",
+															"description": "Mnemonic FieldElement"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
+										},
+										{
+											"id": "07076b29-29f2-45e3-9a43-d77a3fa58a45",
+											"name": "ER-REOL-VAKU-B1",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{detection_domain}}/internal/api/detection/zoneproximity_jsonbysignal?signalId=SE.ER-REOL-VAKU-B1",
+													"host": [
+														"{{detection_domain}}"
+													],
+													"path": [
+														"internal",
+														"api",
+														"detection",
+														"zoneproximity_jsonbysignal"
+													],
+													"query": [
+														{
+															"key": "signalId",
+															"value": "SE.ER-REOL-VAKU-B1",
+															"description": "Mnemonic FieldElement"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
+										},
+										{
+											"id": "06fa4ed8-7834-401d-b8f1-a4fa6b615283",
+											"name": "ER-ORAV-ORAV-A2",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{detection_domain}}/internal/api/detection/zoneproximity_jsonbysignal?signalId=SE.ER-ORAV-ORAV-A2",
+													"host": [
+														"{{detection_domain}}"
+													],
+													"path": [
+														"internal",
+														"api",
+														"detection",
+														"zoneproximity_jsonbysignal"
+													],
+													"query": [
+														{
+															"key": "signalId",
+															"value": "SE.ER-ORAV-ORAV-A2",
 															"description": "Mnemonic FieldElement"
 														}
 													]
