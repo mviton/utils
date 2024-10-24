@@ -7312,13 +7312,13 @@
 								},
 								{
 									"id": "d806c9ab-22b9-48c1-bcfc-949938fd8465",
-									"name": "ProximityService Copy",
+									"name": "IncommingLoggingRequest",
 									"originalRequest": {
 										"method": "POST",
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n    \"configuredLevel\": \"DEBUG\"\r\n}",
+											"raw": "{\r\n    \"configuredLevel\": \"WARN\"\r\n}",
 											"options": {
 												"raw": {
 													"language": "json"
@@ -7338,7 +7338,7 @@
 											"variable": [
 												{
 													"key": "logId",
-													"value": "com.indra.tms.ars.process.service.ProximityService"
+													"value": "com.indra.tms.ars.common.util.IncommingLoggingRequest"
 												}
 											]
 										}
@@ -8484,6 +8484,45 @@
 												{
 													"key": "logId",
 													"value": "com.indra.tms.ars.commands.service.CommandService"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": null
+								},
+								{
+									"id": "ff75e1ac-f0a3-43de-a027-0a80410a531f",
+									"name": "CommandService Copy",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"configuredLevel\": \"WARN\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{command_domain}}/actuator/loggers/:logId",
+											"host": [
+												"{{command_domain}}"
+											],
+											"path": [
+												"actuator",
+												"loggers",
+												":logId"
+											],
+											"variable": [
+												{
+													"key": "logId",
+													"value": "com.indra.tms.ars.common.util.IncommingLoggingRequest"
 												}
 											]
 										}
