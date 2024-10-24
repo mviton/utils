@@ -5827,7 +5827,39 @@
 										},
 										{
 											"id": "fb62b214-1f7d-4bb8-a379-4138549f5f90",
-											"name": "ER-ORAV-VER-B1 Copy",
+											"name": "ER-ORAV-ORAV-B2",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{detection_domain}}/internal/api/detection/zoneproximity_jsonbysignal?signalId=SE.ER-ORAV-ORAV-B2",
+													"host": [
+														"{{detection_domain}}"
+													],
+													"path": [
+														"internal",
+														"api",
+														"detection",
+														"zoneproximity_jsonbysignal"
+													],
+													"query": [
+														{
+															"key": "signalId",
+															"value": "SE.ER-ORAV-ORAV-B2",
+															"description": "Mnemonic FieldElement"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
+										},
+										{
+											"id": "3b4bfd2a-6191-47b9-a307-9a2eb51b947f",
+											"name": "ER-ORAV-VER-A1",
 											"originalRequest": {
 												"method": "GET",
 												"header": [],
