@@ -1156,7 +1156,47 @@
 									]
 								}
 							},
-							"response": []
+							"response": [
+								{
+									"id": "f04cb534-cfcd-447c-9038-340d6eb294d7",
+									"name": "Set Logger",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"configuredLevel\": \"INFO\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{management_domain}}/actuator/loggers/:logId",
+											"host": [
+												"{{management_domain}}"
+											],
+											"path": [
+												"actuator",
+												"loggers",
+												":logId"
+											],
+											"variable": [
+												{
+													"key": "logId",
+													"value": "com.indra"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": null
+								}
+							]
 						},
 						{
 							"name": "Command Compatibility",
@@ -3915,6 +3955,45 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": null
+								},
+								{
+									"id": "bf65cbe5-c31f-4f79-9631-2059951b9ff0",
+									"name": "IncommingLoggingRequest",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"configuredLevel\": \"WARN\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{circulation_domain}}/actuator/loggers/:logId",
+											"host": [
+												"{{circulation_domain}}"
+											],
+											"path": [
+												"actuator",
+												"loggers",
+												":logId"
+											],
+											"variable": [
+												{
+													"key": "logId",
+													"value": "com.indra.tms.ars.common.util.IncommingLoggingRequest"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"responseTime": null,
+									"body": null
 								}
 							]
 						},
@@ -4723,13 +4802,13 @@
 							"response": [
 								{
 									"id": "cd5b7bcb-e89a-4149-8223-51502a88df1f",
-									"name": "com.indra.tms.ars.reactive.impl",
+									"name": "IncommingLoggingRequest",
 									"originalRequest": {
 										"method": "POST",
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n    \"configuredLevel\": \"DEBUG\"\r\n}",
+											"raw": "{\r\n    \"configuredLevel\": \"WARN\"\r\n}",
 											"options": {
 												"raw": {
 													"language": "json"
@@ -4749,7 +4828,7 @@
 											"variable": [
 												{
 													"key": "logId",
-													"value": "com.indra.tms.ars.reactive.impl.ArsEventService"
+													"value": "com.indra.tms.ars.common.util.IncommingLoggingRequest"
 												}
 											]
 										}
