@@ -1165,7 +1165,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n    \"configuredLevel\": \"INFO\"\r\n}",
+											"raw": "{\r\n    \"configuredLevel\": \"WARN\"\r\n}",
 											"options": {
 												"raw": {
 													"language": "json"
@@ -1185,7 +1185,7 @@
 											"variable": [
 												{
 													"key": "logId",
-													"value": "com.indra"
+													"value": "com.indra.tms.ars.common.util.IncommingLoggingRequest"
 												}
 											]
 										}
