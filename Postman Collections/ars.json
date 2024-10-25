@@ -4932,7 +4932,20 @@
 									"request": {
 										"method": "GET",
 										"header": [],
-										"url": "{{detection_domain}}/internal/api/detection/zoneproximity"
+										"url": "{{detection_domain}}/internal/api/detection/zoneproximity_json"
+									},
+									"response": []
+								},
+								{
+									"name": "ALL Zone Compatibility JSON",
+									"id": "722ac56f-1d27-421b-ab84-2afc1c78ca16",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": "{{detection_domain}}/internal/api/detection/zonecompatibility_json"
 									},
 									"response": []
 								},
