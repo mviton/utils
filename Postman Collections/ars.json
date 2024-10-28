@@ -6233,6 +6233,38 @@
 											"body": null
 										},
 										{
+											"id": "4c9ad2c7-a6c8-4dc6-af05-82c2cff5f598",
+											"name": "ER-REOL-VAKU-B",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{detection_domain}}/internal/api/detection/zoneproximity_jsonbysignal?signalId=SE.ER-REOL-VAKU-B",
+													"host": [
+														"{{detection_domain}}"
+													],
+													"path": [
+														"internal",
+														"api",
+														"detection",
+														"zoneproximity_jsonbysignal"
+													],
+													"query": [
+														{
+															"key": "signalId",
+															"value": "SE.ER-REOL-VAKU-B",
+															"description": "Mnemonic FieldElement"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
+										},
+										{
 											"id": "06fa4ed8-7834-401d-b8f1-a4fa6b615283",
 											"name": "ER-ORAV-ORAV-A2",
 											"originalRequest": {
