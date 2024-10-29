@@ -1540,6 +1540,7 @@
 									"    _.each(realTime, (item) => {\r",
 									"        //console.info(`RealTime ${item.plannedTczOrder} -> ${item.eventType} ${utils.convertToTime(item.updateTime, true, \"HH:mm.ss\")}`);\r",
 									"        if(item.plannedTczOrder !== undefined){\r",
+									"            console.warn(`item.plannedTczOrder:${item.plannedTczOrder} Item:${JSON.stringify(item)}`);\r",
 									"            dataTableVisualization[item.plannedTczOrder].realEventType = item.eventType;\r",
 									"            dataTableVisualization[item.plannedTczOrder].realUpdate = utils.convertToTime(item.updateTime, true, \"HH:mm:ss\");\r",
 									"        }\r",
