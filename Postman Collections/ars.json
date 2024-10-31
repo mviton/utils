@@ -105,7 +105,7 @@
 									"variable": [
 										{
 											"key": "up",
-											"value": "true",
+											"value": "",
 											"description": "true / false"
 										}
 									]
