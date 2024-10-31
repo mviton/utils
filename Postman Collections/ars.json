@@ -6327,7 +6327,40 @@
 											]
 										}
 									},
-									"response": []
+									"response": [
+										{
+											"id": "f0e35cbe-c3bf-43bc-bc46-bfeb66e2e339",
+											"name": "Signal Affected",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{detection_domain}}/internal/api/detection/signalsbyfieldelement?=CV.ER-REOL-REOL-1AP",
+													"host": [
+														"{{detection_domain}}"
+													],
+													"path": [
+														"internal",
+														"api",
+														"detection",
+														"signalsbyfieldelement"
+													],
+													"query": [
+														{
+															"key": null,
+															"value": "CV.ER-REOL-REOL-1AP",
+															"type": "text"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
+										}
+									]
 								},
 								{
 									"name": "Get Zone Verification Info",
