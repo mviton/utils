@@ -6330,12 +6330,12 @@
 									"response": [
 										{
 											"id": "f0e35cbe-c3bf-43bc-bc46-bfeb66e2e339",
-											"name": "Signal Affected",
+											"name": "CV.ER-REOL-REOL-1AP",
 											"originalRequest": {
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "{{detection_domain}}/internal/api/detection/signalsbyfieldelement?=CV.ER-REOL-REOL-1AP",
+													"raw": "{{detection_domain}}/internal/api/detection/signalsbyfieldelement?fieldElementId=CV.ER-REOL-REOL-1AP",
 													"host": [
 														"{{detection_domain}}"
 													],
@@ -6347,9 +6347,8 @@
 													],
 													"query": [
 														{
-															"key": null,
-															"value": "CV.ER-REOL-REOL-1AP",
-															"type": "text"
+															"key": "fieldElementId",
+															"value": "CV.ER-REOL-REOL-1AP"
 														}
 													]
 												}
