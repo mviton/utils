@@ -9736,7 +9736,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "f2b8b595-db9d-490b-92a3-dee4a81c954b",
+				"id": "63795396-a4c2-457f-9c2b-eb0ca6dfa55f",
 				"type": "text/javascript",
 				"exec": [
 					"console.log(`----ARS----- '${pm.info.requestName}' / ${pm.info.eventName} -------`);",
@@ -9848,6 +9848,7 @@
 					"// Convert TCZ",
 					"const tczNameTranslate = JSON.parse(pm.globals.get(\"translateTczName\"));",
 					"",
+					"// Setted in ctc-trains",
 					"let trainNameTranslate = [];",
 					"const globalTranslateTainNumber = pm.globals.get(\"translateTrainNumber\");",
 					"if(!globalTranslateTainNumber){",
@@ -9966,7 +9967,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "dc827917-27bc-4578-9a74-dc506db01a34",
+				"id": "13252ae7-6d86-4880-a0c6-040201c65f64",
 				"type": "text/javascript",
 				"exec": [
 					""
