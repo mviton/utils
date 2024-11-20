@@ -2382,7 +2382,7 @@
 										"method": "POST",
 										"header": [],
 										"url": {
-											"raw": "{{management_domain}}/api/management/routing-status/signal/:mnemonic?operativeState=ENABLED",
+											"raw": "{{management_domain}}/api/management/routing-status/signal/:mnemonic?operativeState={{state}}",
 											"host": [
 												"{{management_domain}}"
 											],
@@ -2396,14 +2396,14 @@
 											"query": [
 												{
 													"key": "operativeState",
-													"value": "ENABLED",
+													"value": "{{state}}",
 													"description": "ENABLED / DISABLED"
 												}
 											],
 											"variable": [
 												{
 													"key": "mnemonic",
-													"value": "SE.IE-MHEN-KLCAN-SL715"
+													"value": "{{mnemonic}}"
 												}
 											]
 										}
@@ -2488,7 +2488,7 @@
 									]
 								},
 								{
-									"name": "Disable Signal (run)",
+									"name": "Signal (run)",
 									"id": "783c6e5f-6113-4b71-b046-c9f3a656a4a6",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
@@ -2497,7 +2497,7 @@
 										"method": "POST",
 										"header": [],
 										"url": {
-											"raw": "{{management_domain}}/api/management/routing-status/signal/:mnemonic?operativeState=DISABLED",
+											"raw": "{{management_domain}}/api/management/routing-status/signal/:mnemonic?operativeState={{state}}",
 											"host": [
 												"{{management_domain}}"
 											],
@@ -2511,14 +2511,14 @@
 											"query": [
 												{
 													"key": "operativeState",
-													"value": "DISABLED",
+													"value": "{{state}}",
 													"description": "ENABLED / DISABLED"
 												}
 											],
 											"variable": [
 												{
 													"key": "mnemonic",
-													"value": "{{mnemo}}"
+													"value": "{{mnemonic}}"
 												}
 											]
 										}
