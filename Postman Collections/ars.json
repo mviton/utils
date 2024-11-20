@@ -2486,6 +2486,121 @@
 											"body": null
 										}
 									]
+								},
+								{
+									"name": "Disable Signal (run)",
+									"id": "783c6e5f-6113-4b71-b046-c9f3a656a4a6",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{management_domain}}/api/management/routing-status/signal/:mnemonic?operativeState=DISABLED",
+											"host": [
+												"{{management_domain}}"
+											],
+											"path": [
+												"api",
+												"management",
+												"routing-status",
+												"signal",
+												":mnemonic"
+											],
+											"query": [
+												{
+													"key": "operativeState",
+													"value": "DISABLED",
+													"description": "ENABLED / DISABLED"
+												}
+											],
+											"variable": [
+												{
+													"key": "mnemonic",
+													"value": "{{mnemo}}"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "f1209e2d-e9d0-4306-9b8e-2870f65a6f32",
+											"name": "Enable",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{management_domain}}/api/management/routing-status/signal/:mnemonic?operativeState=ENABLED",
+													"host": [
+														"{{management_domain}}"
+													],
+													"path": [
+														"api",
+														"management",
+														"routing-status",
+														"signal",
+														":mnemonic"
+													],
+													"query": [
+														{
+															"key": "operativeState",
+															"value": "ENABLED"
+														}
+													],
+													"variable": [
+														{
+															"key": "mnemonic",
+															"value": "SE.ER-REOL-POLV-B"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
+										},
+										{
+											"id": "0c26b78c-2e31-4257-a74d-35ae837a197e",
+											"name": "Disable",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{management_domain}}/api/management/routing-status/signal/:mnemonic?operativeState=DISABLED",
+													"host": [
+														"{{management_domain}}"
+													],
+													"path": [
+														"api",
+														"management",
+														"routing-status",
+														"signal",
+														":mnemonic"
+													],
+													"query": [
+														{
+															"key": "operativeState",
+															"value": "DISABLED"
+														}
+													],
+													"variable": [
+														{
+															"key": "mnemonic",
+															"value": "SE.ER-REOL-POLV-B"
+														}
+													]
+												}
+											},
+											"_postman_previewlanguage": null,
+											"header": null,
+											"cookie": [],
+											"responseTime": null,
+											"body": null
+										}
+									]
 								}
 							],
 							"id": "85224ee5-c60f-467b-93f6-d004c74d256d"
