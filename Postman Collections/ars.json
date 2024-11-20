@@ -3050,7 +3050,7 @@
 									"variable": [
 										{
 											"key": "mnemonic",
-											"value": "SE.IE-MHEN-KLCAN-SL719"
+											"value": "{{signal}}"
 										}
 									]
 								}
